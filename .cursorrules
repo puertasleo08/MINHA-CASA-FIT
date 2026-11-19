@@ -1,0 +1,36 @@
+# Detailed Review (detailed-review.com) — Engineering & Editorial Rules
+
+## 1. Niche, Audience, and Monetization
+- **Portal Identity:** Independent international authority portal focused on in-depth reviews, empirical benchmarks, and interactive comparison tools for B2B Software, SaaS, and Artificial Intelligence platforms.
+- **Target Audience:** Founders, CTOs, growth marketers, agency owners, and operations executives researching software stacks to scale business velocity and maximize ROI. Commercial / bottom-of-the-funnel intent.
+- **Language:** 100% English (`en-US`).
+- **Monetization:** High-ticket and recurring SaaS affiliate programs. Every affiliate link must strictly use:
+  - `rel="sponsored noopener"`
+  - `target="_blank"`
+  - `data-aff="vendor-slug"`
+  - `data-tool="tool-name"`
+  - `data-position="podium-card|hero|sticky|table"`
+  - Telemetry handled through `assets/js/site.js` via `dataLayer.push({ event: 'affiliate_outbound_click' })`. Never use inline `onclick` or direct `gtag()`.
+
+## 2. Visual Identity & High-Tech Dark Mode
+- **Theme:** Native High-Tech Dark Mode (`#0B0F19` deep slate navy background with subtle grid and cyan/lime ambient radial glow).
+- **Secondary Surfaces & Cards:** Dark glassmorphic styling (`bg-white/[0.035]` with `backdrop-blur-md` and `border border-white/10`, transitioning to `hover:border-accent/30`).
+- **Accent & Primary CTA:** Neon Lime (`#C0FF00` / `accent`), high-contrast dark text (`text-slate-950 font-extrabold`) for AAA accessibility.
+- **Typography:** `Plus Jakarta Sans` for display headlines/numbers, `Inter` for crisp body copy.
+- **Zero Frameworks:** HTML5 Semantic + Tailwind CSS utilities + Vanilla JavaScript. No React, Next.js, or Vue runtime overhead.
+
+## 3. E-E-A-T, Authorship, and Structured Data
+- **Standardized Primary Author:** **Leonardo Puertas** (Founder & Lead Enterprise Software Analyst), with author profile and schema linkage to `#author` and `/author`.
+- **JSON-LD Schema.org in `@graph`:** Organization, WebSite, WebPage, ItemList (Categories), FAQPage, and future Product/Review nodes.
+- **FAQ Integrity:** Every question and answer in `<details data-faq>` must match its corresponding `FAQPage` Schema.org node character-for-character.
+- **Outbound Authority References:** Technical benchmarks, SOC 2 / GDPR compliance databases, and official vendor API documentation.
+
+## 4. Internal Linking Architecture (Strict Hub & Spoke)
+1. **Contextual Relevance (Pure Cluster):** Related links and recommendations must strictly point to pages within the exact same software silo/category.
+2. **Descriptive Anchor Texts:** Every internal link and button must contain the explicit destination keyword (e.g., `Read Make.com Review`, `Explore AI Writing & SEO Rankings`, `Launch Full SaaS ROI Calculator`). Never use generic anchors like "click here", "read more", "ranking", or "learn more".
+3. **Anti-404 Rule:** Never insert clickable internal links to pages that do not yet exist physically in the repository. Use a non-clickable container with a sleek `"Coming Soon"` badge until the target page is published.
+
+## 5. Performance & Core Web Vitals
+- Explicit `width` and `height` attributes on all `<img>` elements to guarantee zero Cumulative Layout Shift (CLS).
+- High-priority above-the-fold media uses `fetchpriority="high"`.
+- Non-critical scripts load with `defer`.

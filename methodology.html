@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Primary Meta Tags -->
+  <title>Testing Methodology & Scoring Guidelines | Detailed Review</title>
+  <meta name="title" content="Testing Methodology & Scoring Guidelines | Detailed Review">
+  <meta name="description" content="Discover our 5-pillar empirical software testing framework, weighted 0-10 scoring system, and strict affiliate transparency principles.">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+  <link rel="canonical" href="https://detailed-review.com/methodology">
+  <meta name="theme-color" content="#0B0F19">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:site_name" content="Detailed Review">
+  <meta property="og:url" content="https://detailed-review.com/methodology">
+  <meta property="og:title" content="Testing Methodology & Scoring Guidelines | Detailed Review">
+  <meta property="og:description" content="Discover our 5-pillar empirical software testing framework, weighted 0-10 scoring system, and strict affiliate transparency principles.">
+  <meta property="og:image" content="https://detailed-review.com/assets/ui/logo.jpg">
+  <meta property="og:image:width" content="1024">
+  <meta property="og:image:height" content="1024">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://detailed-review.com/methodology">
+  <meta name="twitter:title" content="Testing Methodology & Scoring Guidelines | Detailed Review">
+  <meta name="twitter:description" content="Discover our 5-pillar empirical software testing framework, weighted 0-10 scoring system, and strict affiliate transparency principles.">
+  <meta name="twitter:image" content="https://detailed-review.com/assets/ui/logo.jpg">
+
+  <!-- Favicon & Icons -->
+  <link rel="icon" type="image/jpeg" href="assets/ui/favicon.jpg">
+  <link rel="apple-touch-icon" href="assets/ui/favicon.jpg">
+
+  <!-- Google Fonts Preconnect -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS CDN Engine -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              dark: '#0B0F19',
+              slate: '#0F172A',
+              card: 'rgba(255, 255, 255, 0.035)',
+              border: 'rgba(255, 255, 255, 0.08)',
+              hover: 'rgba(255, 255, 255, 0.06)',
+              muted: '#94A3B8',
+              dim: '#64748B'
+            },
+            accent: {
+              DEFAULT: '#C0FF00',
+              hover: '#AEE600',
+              glow: 'rgba(192, 255, 0, 0.35)'
+            }
+          },
+          fontFamily: {
+            sans: ['Inter', 'system-ui', 'sans-serif'],
+            display: ['"Plus Jakarta Sans"', 'Inter', 'system-ui', 'sans-serif']
+          },
+          boxShadow: {
+            'neon': '0 0 25px -4px rgba(192, 255, 0, 0.45)',
+            'neon-sm': '0 0 14px -2px rgba(192, 255, 0, 0.35)',
+            'glass': '0 8px 32px 0 rgba(0, 0, 0, 0.45)',
+            'card': '0 10px 30px -10px rgba(0, 0, 0, 0.6)'
+          }
+        }
+      }
+    };
+  </script>
+
+  <!-- Custom High-Tech Dark Styles -->
+  <style>
+    body {
+      background-color: #0B0F19;
+      background-image: 
+        radial-gradient(ellipse 75% 55% at 50% -20%, rgba(192, 255, 0, 0.07), transparent 70%),
+        radial-gradient(ellipse 45% 35% at 95% 15%, rgba(56, 189, 248, 0.05), transparent 60%),
+        radial-gradient(ellipse 45% 45% at 5% 55%, rgba(192, 255, 0, 0.04), transparent 65%),
+        linear-gradient(rgba(255, 255, 255, 0.018) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.018) 1px, transparent 1px);
+      background-size: auto, auto, auto, 40px 40px, 40px 40px;
+      background-attachment: fixed;
+    }
+    .glass-card {
+      background: rgba(255, 255, 255, 0.035);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .glass-card:hover {
+      border-color: rgba(192, 255, 0, 0.28);
+      background: rgba(255, 255, 255, 0.055);
+    }
+  </style>
+
+  <!-- Technical SEO: Schema.org Structured Data (JSON-LD) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://detailed-review.com/#organization",
+        "name": "Detailed Review",
+        "url": "https://detailed-review.com/",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://detailed-review.com/assets/ui/logo.jpg"
+        }
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://detailed-review.com/#website",
+        "name": "Detailed Review",
+        "url": "https://detailed-review.com/",
+        "inLanguage": "en-US",
+        "publisher": { "@id": "https://detailed-review.com/#organization" }
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://detailed-review.com/methodology#webpage",
+        "url": "https://detailed-review.com/methodology",
+        "name": "Testing Methodology & Scoring Guidelines | Detailed Review",
+        "description": "Discover our 5-pillar empirical software testing framework, weighted 0-10 scoring system, and strict affiliate transparency principles.",
+        "inLanguage": "en-US",
+        "isPartOf": { "@id": "https://detailed-review.com/#website" },
+        "about": { "@id": "https://detailed-review.com/#organization" },
+        "publishingPrinciples": "https://detailed-review.com/methodology"
+      }
+    ]
+  }
+  </script>
+</head>
+<body class="bg-brand-dark font-sans text-slate-300 antialiased selection:bg-accent selection:text-slate-950">
+
+  <!-- A11y Skip Link -->
+  <a href="#content" class="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[70] focus:rounded-xl focus:bg-accent focus:px-5 focus:py-3 focus:font-extrabold focus:text-slate-950 focus:shadow-neon">
+    Skip to main content
+  </a>
+
+  <!-- HEADER -->
+  <header id="site-header" class="sticky top-0 z-50 border-b border-white/10 bg-[#0B0F19]/80 backdrop-blur-md">
+    <div class="mx-auto flex h-20 max-w-7xl items-center justify-between gap-4 px-4 sm:px-6 lg:px-8">
+      
+      <!-- Brand Logo -->
+      <a href="/" class="flex shrink-0 items-center gap-3.5 transition hover:opacity-90" aria-label="Detailed Review — Homepage">
+        <img 
+          src="assets/ui/logo.jpg" 
+          alt="Detailed Review Logo" 
+          width="44" 
+          height="44" 
+          class="h-11 w-11 rounded-xl object-cover ring-1 ring-white/20 shadow-neon-sm"
+          fetchpriority="high"
+        >
+        <div class="flex flex-col leading-none">
+          <span class="font-display text-lg font-black tracking-tight text-white">
+            DETAILED<span class="text-accent">REVIEW</span>
+          </span>
+          <span class="mt-0.5 text-[10px] font-bold uppercase tracking-widest text-slate-400">
+            B2B & AI Intelligence
+          </span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="hidden items-center gap-8 text-sm font-semibold text-slate-300 md:flex" aria-label="Primary Navigation">
+        <a href="/#categories" class="transition hover:text-accent">Categories</a>
+        <a href="/#rankings" class="transition hover:text-accent">Top Rankings</a>
+        <a href="blog.html" class="transition hover:text-accent">Blog & Insights</a>
+        <a href="methodology.html" class="text-accent font-bold">Methodology</a>
+        <a href="about.html" class="transition hover:text-accent">About</a>
+      </nav>
+
+      <!-- Header CTA -->
+      <div class="hidden items-center gap-4 md:flex">
+        <a 
+          href="/#roi-calculator" 
+          class="inline-flex h-11 items-center justify-center gap-2 rounded-xl bg-accent px-5 text-sm font-extrabold text-slate-950 shadow-neon-sm transition hover:bg-accent-hover hover:shadow-neon"
+        >
+          Find Your Tool
+        </a>
+      </div>
+
+      <!-- Mobile Hamburger Button -->
+      <button 
+        id="nav-toggle" 
+        type="button" 
+        class="inline-flex h-11 w-11 items-center justify-center rounded-xl border border-white/10 bg-white/5 text-white transition hover:bg-white/10 md:hidden" 
+        aria-label="Toggle navigation menu" 
+        aria-expanded="false" 
+        aria-controls="mobile-nav"
+      >
+        <span class="flex flex-col gap-1.5" aria-hidden="true">
+          <span class="block h-0.5 w-6 bg-white"></span>
+          <span class="block h-0.5 w-6 bg-white"></span>
+          <span class="block h-0.5 w-4 bg-accent"></span>
+        </span>
+      </button>
+    </div>
+
+    <!-- Mobile Drawer Nav -->
+    <div id="mobile-nav" class="hidden border-t border-white/10 bg-[#0B0F19]/95 px-4 py-5 backdrop-blur-xl md:hidden">
+      <nav class="flex flex-col gap-1 text-base font-semibold" aria-label="Mobile Navigation">
+        <a href="/#categories" class="rounded-lg px-3 py-3 text-slate-200 hover:bg-white/5 hover:text-accent">Categories</a>
+        <a href="/#rankings" class="rounded-lg px-3 py-3 text-slate-200 hover:bg-white/5 hover:text-accent">Top Rankings</a>
+        <a href="blog.html" class="rounded-lg px-3 py-3 text-slate-200 hover:bg-white/5 hover:text-accent">Blog & Insights</a>
+        <a href="methodology.html" class="rounded-lg px-3 py-3 text-accent bg-white/5 font-bold">Methodology</a>
+        <a href="about.html" class="rounded-lg px-3 py-3 text-slate-200 hover:bg-white/5 hover:text-accent">About Us</a>
+        <a href="contact.html" class="rounded-lg px-3 py-3 text-slate-200 hover:bg-white/5 hover:text-accent">Contact</a>
+      </nav>
+      <div class="mt-4 border-t border-white/10 pt-4">
+        <a href="/#roi-calculator" class="inline-flex h-12 w-full items-center justify-center gap-2 rounded-xl bg-accent font-extrabold text-slate-950 shadow-neon-sm">
+          Find Your Tool
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main id="content">
+
+    <!-- HERO SECTION -->
+    <section class="relative px-4 pb-16 pt-12 sm:px-6 lg:pb-24 lg:pt-20" aria-labelledby="methodology-title">
+      <div class="mx-auto max-w-4xl text-center">
+        
+        <div class="inline-flex items-center gap-2 rounded-full border border-accent/40 bg-accent/10 px-4 py-1.5 text-xs font-bold text-accent">
+          <span class="h-1.5 w-1.5 rounded-full bg-accent"></span>
+          Engineering Protocol & Audit Transparency
+        </div>
+
+        <h1 id="methodology-title" class="mt-6 font-display text-4xl font-extrabold leading-tight text-white sm:text-5xl lg:text-6xl">
+          The Engineering Behind Our <span class="text-accent">Software Benchmarks</span>
+        </h1>
+
+        <p class="mt-6 text-lg leading-relaxed text-slate-300">
+          We treat B2B software and Artificial Intelligence evaluation as an empirical science. Discover how our 5-stage testing pipeline, weighted 0-10 scoring matrix, and price monitoring systems operate.
+        </p>
+
+      </div>
+    </section>
+
+    <!-- 5-STAGE TESTING PIPELINE -->
+    <section class="px-4 py-16 sm:px-6 lg:py-20 border-t border-white/5" aria-labelledby="pipeline-heading">
+      <div class="mx-auto max-w-7xl">
+        
+        <div class="text-center max-w-3xl mx-auto">
+          <p class="text-xs font-extrabold uppercase tracking-widest text-accent">Standard Operating Procedure</p>
+          <h2 id="pipeline-heading" class="mt-2 font-display text-3xl font-black text-white sm:text-4xl">
+            Our 5-Stage Empirical Audit Protocol
+          </h2>
+          <p class="mt-3 text-sm text-slate-400">
+            Every candidate software undergoes this sequential 14-day protocol before any score or review is published.
+          </p>
+        </div>
+
+        <div class="mt-14 space-y-6">
+          
+          <!-- Stage 1 -->
+          <div class="glass-card rounded-2xl p-6 sm:p-8 flex flex-col md:flex-row gap-6 items-start">
+            <div class="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-accent text-slate-950 font-display font-black text-lg">
+              01
+            </div>
+            <div class="space-y-2">
+              <span class="text-xs font-bold uppercase tracking-wider text-accent">Days 1 - 3</span>
+              <h3 class="font-display text-xl font-bold text-white">Provisioning, SSO & Onboarding Friction Audit</h3>
+              <p class="text-sm leading-relaxed text-slate-300">
+                We sign up via paid corporate credit card accounts (never sponsored accounts). We configure Google Workspace / SAML SSO, invite team members, set up role-based access control (RBAC), and measure the total human minutes required to achieve an operational state. We test out-of-the-box templates versus custom configuration friction.
+              </p>
+            </div>
+          </div>
+
+          <!-- Stage 2 -->
+          <div class="glass-card rounded-2xl p-6 sm:p-8 flex flex-col md:flex-row gap-6 items-start">
+            <div class="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-sky-400 text-slate-950 font-display font-black text-lg">
+              02
+            </div>
+            <div class="space-y-2">
+              <span class="text-xs font-bold uppercase tracking-wider text-sky-400">Days 4 - 7</span>
+              <h3 class="font-display text-xl font-bold text-white">Latency, Concurrency & API Reliability Testing</h3>
+              <p class="text-sm leading-relaxed text-slate-300">
+                For workflow automation platforms (e.g. Make, Zapier), we trigger bursts of 10,000 webhook events to monitor rate-limiting behavior, queuing delays, and failure auto-recovery. For SaaS dashboards, we measure Largest Contentful Paint (LCP) and DOM rendering latency under heavy data table filtering.
+              </p>
+            </div>
+          </div>
+
+          <!-- Stage 3 -->
+          <div class="glass-card rounded-2xl p-6 sm:p-8 flex flex-col md:flex-row gap-6 items-start">
+            <div class="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-purple-400 text-slate-950 font-display font-black text-lg">
+              03
+            </div>
+            <div class="space-y-2">
+              <span class="text-xs font-bold uppercase tracking-wider text-purple-400">Days 8 - 10</span>
+              <h3 class="font-display text-xl font-bold text-white">AI Output Quality, Hallucination & Consistency Stress Benchmarks</h3>
+              <p class="text-sm leading-relaxed text-slate-300">
+                For AI platforms (copywriting, video generation, CRM intelligence), we run standardized 50-prompt test suites across complex domain topics. We evaluate factual grounding, adherence to custom brand voice rules, generation latency, and output consistency across repeated runs.
+              </p>
+            </div>
+          </div>
+
+          <!-- Stage 4 -->
+          <div class="glass-card rounded-2xl p-6 sm:p-8 flex flex-col md:flex-row gap-6 items-start">
+            <div class="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-emerald-400 text-slate-950 font-display font-black text-lg">
+              04
+            </div>
+            <div class="space-y-2">
+              <span class="text-xs font-bold uppercase tracking-wider text-emerald-400">Days 11 - 12</span>
+              <h3 class="font-display text-xl font-bold text-white">True Seat Cost & Upgrade Traps Audit</h3>
+              <p class="text-sm leading-relaxed text-slate-300">
+                We inspect the checkout terms, usage overage fees, API call costs, add-on costs, and forced annual contract lock-ins. We model out true cost curves for 1 founder, a 10-person team, and a 50-person enterprise to reveal the actual financial investment required.
+              </p>
+            </div>
+          </div>
+
+          <!-- Stage 5 -->
+          <div class="glass-card rounded-2xl p-6 sm:p-8 flex flex-col md:flex-row gap-6 items-start">
+            <div class="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-rose-400 text-slate-950 font-display font-black text-lg">
+              05
+            </div>
+            <div class="space-y-2">
+              <span class="text-xs font-bold uppercase tracking-wider text-rose-400">Days 13 - 14</span>
+              <h3 class="font-display text-xl font-bold text-white">Security, SOC 2, GDPR & Sentiment Synthesis</h3>
+              <p class="text-sm leading-relaxed text-slate-300">
+                We audit SOC 2 Type II audit report availability, GDPR data processing addendums (DPA), data residency guarantees, and AI model training opt-outs. We cross-reference our empirical findings against verified user reviews to identify recurring long-term technical flaws.
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- WEIGHTED SCORING MATRIX (0 - 10 SCALE) -->
+    <section class="px-4 py-16 sm:px-6 lg:py-24 border-t border-white/5 bg-black/30" aria-labelledby="scoring-heading">
+      <div class="mx-auto max-w-7xl">
+        
+        <div class="text-center max-w-3xl mx-auto">
+          <p class="text-xs font-extrabold uppercase tracking-widest text-accent">Quantitative Rigor</p>
+          <h2 id="scoring-heading" class="mt-2 font-display text-3xl font-black text-white sm:text-4xl">
+            Our Weighted 0–10 Scoring Matrix
+          </h2>
+          <p class="mt-3 text-sm text-slate-400">
+            A tool's final score is not an arbitrary editorial gut-feeling. It is computed via our weighted mathematical formula:
+          </p>
+        </div>
+
+        <!-- Criteria Table / Visual Grid -->
+        <div class="mt-12 overflow-hidden rounded-2xl border border-white/10 glass-card">
+          <div class="grid grid-cols-12 border-b border-white/10 bg-white/5 p-4 text-xs font-extrabold uppercase tracking-wider text-white">
+            <div class="col-span-4 sm:col-span-3">Evaluation Pillar</div>
+            <div class="col-span-3 sm:col-span-2 text-accent">Weight</div>
+            <div class="col-span-5 sm:col-span-7">What We Empirically Measure</div>
+          </div>
+
+          <div class="divide-y divide-white/5 text-xs text-slate-300">
+            <div class="grid grid-cols-12 p-4 items-center">
+              <div class="col-span-4 sm:col-span-3 font-bold text-white">Workflow Depth & Utility</div>
+              <div class="col-span-3 sm:col-span-2 font-mono font-bold text-accent">25%</div>
+              <div class="col-span-5 sm:col-span-7">Feature completeness, conditional branch routing, customization flexibility, UI efficiency, and edge-case execution handling.</div>
+            </div>
+
+            <div class="grid grid-cols-12 p-4 items-center">
+              <div class="col-span-4 sm:col-span-3 font-bold text-white">Output Quality & Latency</div>
+              <div class="col-span-3 sm:col-span-2 font-mono font-bold text-sky-400">25%</div>
+              <div class="col-span-5 sm:col-span-7">Standardized prompt benchmarks, response latency under load, hallucination frequency, and artifact fidelity.</div>
+            </div>
+
+            <div class="grid grid-cols-12 p-4 items-center">
+              <div class="col-span-4 sm:col-span-3 font-bold text-white">True Seat Cost & TCO</div>
+              <div class="col-span-3 sm:col-span-2 font-mono font-bold text-emerald-400">20%</div>
+              <div class="col-span-5 sm:col-span-7">Pricing transparency, feature paywalls, overage multiplier fairness, free trial accessibility, and refund policy adherence.</div>
+            </div>
+
+            <div class="grid grid-cols-12 p-4 items-center">
+              <div class="col-span-4 sm:col-span-3 font-bold text-white">Security & Compliance</div>
+              <div class="col-span-3 sm:col-span-2 font-mono font-bold text-purple-400">15%</div>
+              <div class="col-span-5 sm:col-span-7">SOC 2 Type II, GDPR, ISO 27001, data residency, zero model training on customer data, and audit logging features.</div>
+            </div>
+
+            <div class="grid grid-cols-12 p-4 items-center">
+              <div class="col-span-4 sm:col-span-3 font-bold text-white">API Ecosystem & Integration</div>
+              <div class="col-span-3 sm:col-span-2 font-mono font-bold text-rose-400">15%</div>
+              <div class="col-span-5 sm:col-span-7">Native integrations, REST/GraphQL documentation quality, webhook reliability, and webhook retry capabilities.</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Score Tiers -->
+        <div class="mt-12 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
+          <div class="glass-card rounded-2xl p-5 border-l-4 border-accent">
+            <span class="font-display text-2xl font-black text-accent">9.5 – 10.0</span>
+            <h3 class="mt-1 font-bold text-white text-sm">Industry Benchmark</h3>
+            <p class="mt-1 text-xs text-slate-400">Uncontested category leader. Exceptional output reliability, transparent pricing, and enterprise-grade security.</p>
+          </div>
+          <div class="glass-card rounded-2xl p-5 border-l-4 border-sky-400">
+            <span class="font-display text-2xl font-black text-sky-400">8.5 – 9.4</span>
+            <h3 class="mt-1 font-bold text-white text-sm">Highly Recommended</h3>
+            <p class="mt-1 text-xs text-slate-400">Production-ready for 90% of business use cases. Minor caveats or specific pricing tier trade-offs.</p>
+          </div>
+          <div class="glass-card rounded-2xl p-5 border-l-4 border-amber-400">
+            <span class="font-display text-2xl font-black text-amber-400">7.0 – 8.4</span>
+            <h3 class="mt-1 font-bold text-white text-sm">Viable with Limitations</h3>
+            <p class="mt-1 text-xs text-slate-400">Suitable only for niche workflows. Suffers from UI friction, steep pricing walls, or occasional downtime.</p>
+          </div>
+          <div class="glass-card rounded-2xl p-5 border-l-4 border-rose-400">
+            <span class="font-display text-2xl font-black text-rose-400">&lt; 7.0</span>
+            <h3 class="mt-1 font-bold text-white text-sm">Not Recommended</h3>
+            <p class="mt-1 text-xs text-slate-400">Fails reliability benchmarks, displays deceptive billing practices, or lacks critical data security safeguards.</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- PRICING & AFFILIATE DISCLOSURE POLICY -->
+    <section class="px-4 py-16 sm:px-6 lg:py-24 border-t border-white/5" aria-labelledby="disclosure-heading">
+      <div class="mx-auto max-w-4xl space-y-8">
+        
+        <div class="glass-card rounded-3xl p-8 sm:p-10 border border-white/10">
+          <h2 id="disclosure-heading" class="font-display text-2xl font-bold text-white">
+            Pricing Accuracy & Currency Policy
+          </h2>
+          <div class="mt-4 space-y-3 text-xs leading-relaxed text-slate-300">
+            <p>
+              Software pricing plans change rapidly. Detailed Review audits and updates pricing data on a recurring monthly schedule. All prices are listed in USD ($) unless otherwise stated. We always display the date on which a pricing plan was last verified.
+            </p>
+            <p>
+              Because software vendors frequently test dynamic pricing tiers, promotional lifetime deals, and localized pricing, users must always confirm final contract terms directly on the provider's checkout page before completing payment.
+            </p>
+          </div>
+        </div>
+
+        <div class="glass-card rounded-3xl p-8 sm:p-10 border border-accent/25">
+          <h2 class="font-display text-2xl font-bold text-white">
+            FTC Affiliate Disclosure & Editorial Freedom
+          </h2>
+          <div class="mt-4 space-y-3 text-xs leading-relaxed text-slate-300">
+            <p>
+              In compliance with the Federal Trade Commission (FTC) guidelines (16 CFR Part 255), Detailed Review clearly states that we may receive financial referral commissions when users click our affiliate links and purchase software.
+            </p>
+            <p>
+              <strong class="text-white">Our Guarantee to You:</strong> Affiliate relationships never dictate review outcomes, numerical scores, or ranking placement. Software vendors have zero preview rights over our reviews prior to publication. We routinely publish negative critiques and performance warnings even for software products that offer top affiliate payouts.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="border-t border-white/10 bg-[#070A12] px-4 pb-12 pt-16 sm:px-6 lg:px-8">
+    <div class="mx-auto max-w-7xl">
+      <div class="grid grid-cols-1 gap-10 md:grid-cols-12 lg:gap-8">
+        
+        <!-- Brand Info -->
+        <div class="md:col-span-4">
+          <a href="/" class="flex items-center gap-3" aria-label="Detailed Review Footer Homepage">
+            <img 
+              src="assets/ui/logo.jpg" 
+              alt="Detailed Review Logo" 
+              width="40" 
+              height="40" 
+              class="h-10 w-10 rounded-xl object-cover ring-1 ring-white/20"
+              loading="lazy"
+            >
+            <span class="font-display text-lg font-black tracking-tight text-white">
+              DETAILED<span class="text-accent">REVIEW</span>
+            </span>
+          </a>
+          <p class="mt-4 max-w-sm text-xs leading-relaxed text-slate-400">
+            Independent evaluations, empirical benchmarks, and ROI audits of enterprise B2B SaaS and Artificial Intelligence software. Empowering business leaders to make high-conviction software investments.
+          </p>
+          <div class="mt-4 flex items-center gap-2 text-xs font-semibold text-accent">
+            <span class="h-2 w-2 rounded-full bg-accent"></span>
+            100% Editorial Independence Guaranteed
+          </div>
+        </div>
+
+        <!-- Column 2: Categories -->
+        <nav class="md:col-span-3" aria-label="Software Categories Links">
+          <h3 class="font-display text-sm font-bold uppercase tracking-wider text-white">Categories</h3>
+          <ul class="mt-4 space-y-2.5 text-xs text-slate-400">
+            <li><a href="/#rankings" class="transition hover:text-accent">AI Workflow & Automation</a></li>
+            <li><a href="/#rankings" class="transition hover:text-accent">AI Writing & SEO Intelligence</a></li>
+            <li><a href="/#rankings" class="transition hover:text-accent">B2B CRM & Revenue Platforms</a></li>
+            <li><a href="/#rankings" class="transition hover:text-accent">AI Video & Synthetic Avatars</a></li>
+          </ul>
+        </nav>
+
+        <!-- Column 3: Resources -->
+        <nav class="md:col-span-2" aria-label="Interactive Hubs & Tools">
+          <h3 class="font-display text-sm font-bold uppercase tracking-wider text-white">Resources</h3>
+          <ul class="mt-4 space-y-2.5 text-xs text-slate-400">
+            <li><a href="/#rankings" class="transition hover:text-accent">2026 Rankings</a></li>
+            <li><a href="/#roi-calculator" class="transition hover:text-accent">SaaS ROI Calculator</a></li>
+            <li><a href="methodology.html" class="text-accent font-semibold">Testing Methodology</a></li>
+            <li><a href="blog.html" class="transition hover:text-accent">Blog & Insights</a></li>
+          </ul>
+        </nav>
+
+        <!-- Column 4: Editorial & Legal -->
+        <nav class="md:col-span-3" aria-label="Institutional Links">
+          <h3 class="font-display text-sm font-bold uppercase tracking-wider text-white">Editorial & Legal</h3>
+          <ul class="mt-4 space-y-2.5 text-xs text-slate-400">
+            <li><a href="author-leonardo-puertas.html" class="transition hover:text-accent">Leonardo Puertas (Lead Analyst)</a></li>
+            <li><a href="about.html" class="transition hover:text-accent">About Detailed Review</a></li>
+            <li><a href="affiliate-disclosure.html" class="transition hover:text-accent">Affiliate Disclosure Policy</a></li>
+            <li><a href="privacy-policy.html" class="transition hover:text-accent">Privacy Policy</a></li>
+            <li><a href="terms-of-service.html" class="transition hover:text-accent">Terms of Service</a></li>
+            <li><a href="contact.html" class="transition hover:text-accent">Contact & Inquiries</a></li>
+          </ul>
+        </nav>
+
+      </div>
+
+      <!-- Legal Compliance -->
+      <div class="mt-12 border-t border-white/10 pt-8 text-xs text-slate-400 space-y-3">
+        <p class="leading-relaxed">
+          <strong class="text-slate-300">FTC Compliance Disclosure:</strong> Detailed Review is an independent professional review portal. We test software products hands-on and earn referral commissions from select vendor affiliate programs when users register through our links. This does not impact our editorial ratings, benchmark outputs, or critical verdicts.
+        </p>
+        <div class="flex flex-col justify-between gap-2 pt-2 text-[11px] text-slate-400 sm:flex-row">
+          <p>© <span id="y">2026</span> Detailed Review (detailed-review.com) — All rights reserved.</p>
+          <p>Unbiased B2B SaaS & AI Intelligence Portal.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/site.js" defer></script>
+</body>
+</html>

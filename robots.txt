@@ -1,0 +1,8 @@
+# Detailed Review (detailed-review.com) - Robots.txt
+# Technical SEO & Crawl Directives
+
+User-agent: *
+Allow: /
+
+# Sitemap Index / Location
+Sitemap: https://detailed-review.com/sitemap.xml

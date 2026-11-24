@@ -103,6 +103,35 @@
     <priority>0.85</priority>
   </url>
 
+  <!-- Cluster 4: The Tech Stack & Architecture (MOFU) -->
+  <url>
+    <loc>https://detailed-review.com/blog-ai-saas-tech-stack-solo-founders.html</loc>
+    <lastmod>2026-11-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <url>
+    <loc>https://detailed-review.com/blog-must-have-marketing-automation-tools-smb.html</loc>
+    <lastmod>2026-11-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <url>
+    <loc>https://detailed-review.com/blog-audit-saas-stack-reduce-costs.html</loc>
+    <lastmod>2026-11-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <url>
+    <loc>https://detailed-review.com/blog-b2b-saas-consolidation-replace-bloat.html</loc>
+    <lastmod>2026-11-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
   <!-- Institutional & E-E-A-T Authorities -->
   <url>
     <loc>https://detailed-review.com/author-leonardo-puertas.html</loc>

@@ -1,0 +1,852 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Primary Meta Tags -->
+  <title>How to Audit Your Company's SaaS Stack to Reduce Costs (2026 Guide) | Detailed Review</title>
+  <meta name="title" content="How to Audit Your Company's SaaS Stack to Reduce Costs (2026 Guide) | Detailed Review">
+  <meta name="description" content="Step-by-step CFO and RevOps guide to auditing company SaaS spend. Eliminate shadow IT, cut idle seat licenses, and use our interactive SaaS Bloat & Savings Auditor.">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+  <link rel="canonical" href="https://detailed-review.com/blog-audit-saas-stack-reduce-costs.html">
+  <meta name="theme-color" content="#0B0F19">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="article">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:site_name" content="Detailed Review">
+  <meta property="og:url" content="https://detailed-review.com/blog-audit-saas-stack-reduce-costs.html">
+  <meta property="og:title" content="How to Audit Your Company's SaaS Stack to Reduce Costs (2026 Guide)">
+  <meta property="og:description" content="Companies waste up to 30% of software spend on idle seats and duplicate apps. Learn how to conduct an airtight SaaS audit and reclaim thousands in recurring capital.">
+  <meta property="og:image" content="https://detailed-review.com/assets/ui/logo.jpg">
+  <meta property="og:image:width" content="1024">
+  <meta property="og:image:height" content="1024">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://detailed-review.com/blog-audit-saas-stack-reduce-costs.html">
+  <meta name="twitter:title" content="How to Audit Your Company's SaaS Stack to Reduce Costs (2026 Guide)">
+  <meta name="twitter:description" content="Reclaim your software budget. 5-step operational blueprint to audit corporate credit cards, SSO logs, and license utilization rates with our interactive calculator.">
+  <meta name="twitter:image" content="https://detailed-review.com/assets/ui/logo.jpg">
+
+  <!-- Favicon & Icons -->
+  <link rel="icon" type="image/jpeg" href="assets/ui/favicon.jpg">
+  <link rel="apple-touch-icon" href="assets/ui/favicon.jpg">
+
+  <!-- Google Fonts Preconnect -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS CDN Engine -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              dark: '#0B0F19',
+              slate: '#0F172A',
+              card: 'rgba(255, 255, 255, 0.035)',
+              border: 'rgba(255, 255, 255, 0.08)',
+              hover: 'rgba(255, 255, 255, 0.06)',
+              muted: '#94A3B8',
+              dim: '#64748B'
+            },
+            accent: {
+              DEFAULT: '#C0FF00',
+              hover: '#AEE600',
+              glow: 'rgba(192, 255, 0, 0.35)'
+            }
+          },
+          fontFamily: {
+            sans: ['Inter', 'system-ui', 'sans-serif'],
+            display: ['"Plus Jakarta Sans"', 'Inter', 'system-ui', 'sans-serif'],
+            mono: ['"JetBrains Mono"', 'monospace']
+          },
+          boxShadow: {
+            'neon': '0 0 25px -4px rgba(192, 255, 0, 0.45)',
+            'neon-sm': '0 0 14px -2px rgba(192, 255, 0, 0.35)',
+            'glass': '0 8px 32px 0 rgba(0, 0, 0, 0.45)',
+            'card': '0 10px 30px -10px rgba(0, 0, 0, 0.6)'
+          }
+        }
+      }
+    };
+  </script>
+
+  <!-- Custom High-Tech Dark Styles -->
+  <style>
+    body {
+      background-color: #0B0F19;
+      background-image: 
+        radial-gradient(ellipse 75% 55% at 50% -20%, rgba(192, 255, 0, 0.07), transparent 70%),
+        radial-gradient(ellipse 45% 35% at 95% 15%, rgba(56, 189, 248, 0.05), transparent 60%),
+        radial-gradient(ellipse 45% 45% at 5% 55%, rgba(192, 255, 0, 0.04), transparent 65%),
+        linear-gradient(rgba(255, 255, 255, 0.018) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.018) 1px, transparent 1px);
+      background-size: 100% 100%, 100% 100%, 100% 100%, 48px 48px, 48px 48px;
+    }
+    .glass-card {
+      background: rgba(255, 255, 255, 0.035);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+    }
+    input[type=range] {
+      accent-color: #C0FF00;
+    }
+  </style>
+
+  <!-- Schema.org JSON-LD (Graph) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Article",
+        "@id": "https://detailed-review.com/blog-audit-saas-stack-reduce-costs.html#article",
+        "isPartOf": {
+          "@type": "WebPage",
+          "@id": "https://detailed-review.com/blog-audit-saas-stack-reduce-costs.html"
+        },
+        "headline": "How to Audit Your Company's SaaS Stack to Reduce Costs (2026 Guide)",
+        "description": "Comprehensive operational framework for auditing corporate software expenditures: AP financial reconciliation, SSO OAuth token audits, license utilization formulas, and an interactive SaaS Bloat & Savings Auditor.",
+        "image": "https://detailed-review.com/assets/ui/logo.jpg",
+        "datePublished": "2026-11-24T10:00:00+00:00",
+        "dateModified": "2026-11-24T10:00:00+00:00",
+        "author": {
+          "@type": "Person",
+          "name": "Leonardo Puertas",
+          "jobTitle": "Lead Enterprise Software Analyst & Founder",
+          "url": "https://detailed-review.com/author-leonardo-puertas.html",
+          "sameAs": [
+            "https://www.linkedin.com/in/leonardo-puertas",
+            "https://twitter.com/leonardopuertas"
+          ]
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Detailed Review",
+          "url": "https://detailed-review.com",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://detailed-review.com/assets/ui/logo.jpg"
+          }
+        },
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https://detailed-review.com/blog-audit-saas-stack-reduce-costs.html"
+        },
+        "keywords": [
+          "audit SaaS stack",
+          "reduce SaaS costs",
+          "SaaS waste calculator",
+          "license utilization rate",
+          "shadow IT discovery",
+          "SaaS contract renewal governance",
+          "CFO software procurement",
+          "software cost reduction"
+        ]
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://detailed-review.com/blog-audit-saas-stack-reduce-costs.html#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://detailed-review.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Blog & Insights",
+            "item": "https://detailed-review.com/blog.html"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Audit SaaS Stack to Reduce Costs",
+            "item": "https://detailed-review.com/blog-audit-saas-stack-reduce-costs.html"
+          }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://detailed-review.com/blog-audit-saas-stack-reduce-costs.html#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What percentage of software spend is typically wasted in mid-market companies?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Industry procurement audits consistently show that 25% to 35% of total SaaS expenditure is pure waste. This stems from three primary sources: unassigned or idle user seats (employees who left or never log in), shadow IT applications purchased on department credit cards, and overlapping tool functionality across teams."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How do you calculate the License Utilization Rate for a SaaS application?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "License Utilization Rate is calculated with the formula: (Active Users who logged in during the last 30 days ÷ Total Purchased Paid Licenses) × 100. If an application exhibits a utilization rate below 70%, your organization is over-licensed and should immediately downgrade seat tiers before the next renewal window."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How does an Identity Provider (IdP) audit uncover Shadow IT?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "By exporting active OAuth grants and Single Sign-On (SSO) authorizations from your identity platform (such as Google Workspace Admin, Okta, or Microsoft Entra ID), IT administrators can inspect every third-party application employees have connected to corporate accounts without formal procurement approval."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the 'Auto-Renewal Notice Window' in enterprise software contracts?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Most B2B SaaS contracts contain evergreen clauses that automatically renew the agreement for another 12-month term unless written cancellation notice is delivered 30, 60, or 90 days before the renewal date. Missing this deadline locks the company into paying for unneeded software for another full year."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the 'Keep, Cut, or Combine' framework?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "It is an operational triage method where every software application is categorized: 1) CUT (Zero usage, unowned orphans, or dangerous shadow IT), 2) COMBINE (Consolidating overlapping tools like multiple project managers or video platforms onto a single standardized vendor), and 3) KEEP (Mission-critical core platforms with renegotiated seat counts)."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+<body class="bg-brand-dark text-slate-100 font-sans antialiased selection:bg-accent selection:text-slate-950">
+
+  <!-- ACCESSIBILITY SKIP LINK -->
+  <a href="#main-content" class="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-50 focus:px-4 focus:py-2 focus:bg-accent focus:text-slate-950 focus:font-bold focus:rounded-lg">
+    Skip to main content
+  </a>
+
+  <!-- GLOBAL SITE HEADER -->
+  <header class="sticky top-0 z-40 w-full border-b border-white/10 bg-[#0B0F19]/85 backdrop-blur-xl">
+    <div class="mx-auto flex h-20 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
+      
+      <!-- Brand Logo -->
+      <a href="/" class="flex items-center gap-3 group" aria-label="Detailed Review Homepage">
+        <img 
+          src="assets/ui/logo.jpg" 
+          alt="Detailed Review Logo" 
+          width="42" 
+          height="42" 
+          class="h-10 w-10 rounded-xl object-cover ring-1 ring-white/20 transition-transform duration-300 group-hover:scale-105"
+          loading="eager"
+        >
+        <span class="font-display text-xl font-black tracking-tight text-white">
+          DETAILED<span class="text-accent">REVIEW</span>
+        </span>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="hidden md:flex items-center gap-8 text-sm font-semibold text-slate-300" aria-label="Main Navigation">
+        <a href="/#categories" class="hover:text-accent transition">Categories</a>
+        <a href="/#rankings" class="hover:text-accent transition">Rankings</a>
+        <a href="blog.html" class="text-accent font-bold transition">Blog & Playbooks</a>
+        <a href="methodology.html" class="hover:text-accent transition">Methodology</a>
+        <a href="about.html" class="hover:text-accent transition">About</a>
+      </nav>
+
+      <!-- CTA Button -->
+      <div class="hidden md:flex items-center gap-4">
+        <a 
+          href="/#roi-calculator" 
+          class="inline-flex items-center justify-center rounded-xl bg-accent px-5 py-2.5 text-xs font-black uppercase tracking-wider text-slate-950 shadow-neon-sm transition hover:bg-accent-hover hover:shadow-neon"
+        >
+          Find Software
+        </a>
+      </div>
+
+      <!-- Mobile Menu Toggle -->
+      <button 
+        type="button" 
+        id="mobile-menu-btn"
+        class="flex h-10 w-10 items-center justify-center rounded-lg border border-white/10 bg-white/5 text-slate-300 hover:text-white md:hidden"
+        aria-label="Toggle mobile menu"
+        aria-expanded="false"
+      >
+        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+        </svg>
+      </button>
+    </div>
+
+    <!-- Mobile Drawer Nav -->
+    <div id="mobile-drawer" class="hidden border-b border-white/10 bg-[#0B0F19]/95 px-6 py-6 backdrop-blur-2xl md:hidden">
+      <nav class="flex flex-col gap-4 text-base font-semibold text-slate-200">
+        <a href="/#categories" class="hover:text-accent">Categories</a>
+        <a href="/#rankings" class="hover:text-accent">Rankings</a>
+        <a href="blog.html" class="text-accent font-bold">Blog & Playbooks</a>
+        <a href="methodology.html" class="hover:text-accent">Methodology</a>
+        <a href="about.html" class="hover:text-accent">About</a>
+        <a href="/#roi-calculator" class="mt-2 text-center rounded-xl bg-accent py-3 text-xs font-extrabold uppercase text-slate-950">Find Software</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- BREADCRUMBS -->
+  <nav class="border-b border-white/5 bg-slate-950/40 px-4 py-3 text-xs sm:px-6 lg:px-8" aria-label="Breadcrumbs">
+    <div class="mx-auto flex max-w-7xl items-center gap-2 text-slate-400">
+      <a href="/" class="hover:text-white transition">Home</a>
+      <span>/</span>
+      <a href="blog.html" class="hover:text-white transition">Blog</a>
+      <span>/</span>
+      <span class="text-accent font-medium truncate">Audit SaaS Stack to Reduce Costs</span>
+    </div>
+  </nav>
+
+  <!-- ARTICLE HEADER HERO -->
+  <section class="relative px-4 pb-12 pt-12 sm:px-6 lg:px-8 lg:pt-16">
+    <div class="mx-auto max-w-4xl text-center">
+      
+      <!-- Category Badge -->
+      <div class="inline-flex items-center gap-2 rounded-full border border-rose-500/30 bg-rose-500/10 px-4 py-1.5 text-xs font-bold text-rose-400">
+        <span class="h-1.5 w-1.5 rounded-full bg-rose-400"></span>
+        CFO & REVOPS COST OPTIMIZATION (2026)
+      </div>
+
+      <!-- H1 Headline -->
+      <h1 class="mt-6 font-display text-3xl font-extrabold tracking-tight text-white sm:text-4xl lg:text-5xl lg:leading-[1.15]">
+        How to Audit Your Company's <span class="text-accent">SaaS Stack</span> to Reduce Costs
+      </h1>
+
+      <!-- Subtitle -->
+      <p class="mt-6 text-base leading-relaxed text-slate-300 sm:text-lg sm:leading-relaxed">
+        Companies routinely waste 28% to 35% of annual software budgets on forgotten licenses, duplicate apps, and unmonitored auto-renewals. Here is the operational audit framework to reclaim thousands in cash flow.
+      </p>
+
+      <!-- Author Metadata Strip -->
+      <div class="mt-8 flex flex-wrap items-center justify-center gap-6 border-y border-white/10 py-4 text-xs text-slate-400 sm:text-sm">
+        <div class="flex items-center gap-3">
+          <img 
+            src="assets/ui/author.jpg" 
+            alt="Leonardo Puertas" 
+            width="38" 
+            height="38" 
+            class="h-9 w-9 rounded-full object-cover ring-1 ring-accent"
+          >
+          <div class="text-left">
+            <span class="block font-bold text-white">By <a href="author-leonardo-puertas.html" class="hover:text-accent transition">Leonardo Puertas</a></span>
+            <span class="text-[11px] text-slate-400">Lead Enterprise Software Analyst & Founder</span>
+          </div>
+        </div>
+        <div class="h-4 w-px bg-white/10"></div>
+        <div>
+          <span class="block text-[11px] uppercase tracking-wider text-slate-500">Updated</span>
+          <time datetime="2026-11-24" class="font-semibold text-slate-200">November 24, 2026</time>
+        </div>
+        <div class="h-4 w-px bg-white/10"></div>
+        <div>
+          <span class="block text-[11px] uppercase tracking-wider text-slate-500">Read Time</span>
+          <span class="font-semibold text-accent">16 min read</span>
+        </div>
+        <div class="h-4 w-px bg-white/10"></div>
+        <div>
+          <span class="block text-[11px] uppercase tracking-wider text-slate-500">Target Savings</span>
+          <span class="font-semibold text-emerald-400">25% - 35% Spend</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- MAIN ARTICLE LAYOUT -->
+  <main id="main-content" class="mx-auto max-w-7xl px-4 pb-24 sm:px-6 lg:px-8">
+    <div class="grid grid-cols-1 gap-12 lg:grid-cols-12">
+
+      <!-- STICKY TABLE OF CONTENTS (DESKTOP) -->
+      <aside class="hidden lg:col-span-3 lg:block">
+        <div class="sticky top-28 rounded-2xl glass-card p-6">
+          <h3 class="font-display text-xs font-bold uppercase tracking-wider text-accent">Article Navigation</h3>
+          <nav class="mt-4 flex flex-col gap-2.5 text-xs font-medium text-slate-300" aria-label="Table of Contents">
+            <a href="#anatomy-of-saas-waste" class="hover:text-accent transition">1. The Anatomy of SaaS Waste</a>
+            <a href="#interactive-auditor" class="hover:text-accent transition">2. Interactive Bloat & Savings Auditor</a>
+            <a href="#five-step-audit" class="hover:text-accent transition">3. The 5-Step Operational Blueprint</a>
+            <a href="#core-metrics" class="hover:text-accent transition">4. Quantitative Audit Metrics</a>
+            <a href="#keep-cut-combine" class="hover:text-accent transition">5. The Keep, Cut, or Combine Framework</a>
+            <a href="#faq" class="hover:text-accent transition">6. Frequently Asked Questions</a>
+          </nav>
+
+          <div class="mt-8 border-t border-white/10 pt-6">
+            <span class="text-[11px] font-bold uppercase tracking-wider text-slate-400">Related Stack Blueprints</span>
+            <ul class="mt-3 space-y-2 text-xs">
+              <li>
+                <a href="blog-b2b-saas-consolidation-replace-bloat.html" class="text-slate-300 hover:text-accent transition">
+                  → B2B SaaS Software Consolidation
+                </a>
+              </li>
+              <li>
+                <a href="blog-ai-saas-tech-stack-solo-founders.html" class="text-slate-300 hover:text-accent transition">
+                  → AI SaaS Stack for Solo Founders
+                </a>
+              </li>
+              <li>
+                <a href="blog-must-have-marketing-automation-tools-smb.html" class="text-slate-300 hover:text-accent transition">
+                  → Must-Have SMB Marketing Automation
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </aside>
+
+      <!-- ARTICLE CONTENT -->
+      <article class="lg:col-span-9 max-w-none text-slate-300">
+
+        <!-- INTRO CALLOUT -->
+        <div class="glass-card mb-10 rounded-2xl p-6 border-l-4 border-l-rose-500 shadow-neon-sm">
+          <div class="flex items-start gap-4">
+            <div class="rounded-xl bg-rose-500/20 p-2 text-rose-400 shrink-0">
+              <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+            </div>
+            <div>
+              <h4 class="font-display text-sm font-bold text-white uppercase tracking-wider">CFO Benchmark Alert: The Auto-Renewal Trap</h4>
+              <p class="mt-1 text-xs sm:text-sm leading-relaxed text-slate-300">
+                Over 72% of SaaS vendors deploy "evergreen" contracts with strict 60 or 90-day opt-out clauses. If your finance team fails to deliver written cancellation notice within that exact window, your company is legally committed to another 12 months of unused seats. Proactive audit cadences protect your cash runway.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- SECTION 1 -->
+        <section id="anatomy-of-saas-waste" class="mb-12">
+          <h2 class="font-display text-2xl font-bold tracking-tight text-white sm:text-3xl">
+            1. The Anatomy of SaaS Waste: Where Enterprise Capital Leaks
+          </h2>
+          <p class="mt-4 text-sm sm:text-base leading-relaxed text-slate-300">
+            During periods of rapid company expansion, managers purchase software on corporate credit cards to solve immediate friction. Three years later, the enterprise is paying for:
+          </p>
+          <ul class="mt-4 space-y-2 list-disc list-inside text-xs sm:text-sm text-slate-300">
+            <li><strong>Zombie Licenses:</strong> Paid seats assigned to departed employees or team members who have not logged in for 90+ days.</li>
+            <li><strong>Functional Redundancy:</strong> Marketing using Asana, Product using Jira, and Sales using Monday.com—paying three separate annual enterprise contracts for identical project tracking.</li>
+            <li><strong>Shadow IT:</strong> Department heads subscribing to generative AI wrappers and video tools without IT, security, or procurement oversight.</li>
+          </ul>
+        </section>
+
+        <!-- SECTION 2: INTERACTIVE AUDITOR CALCULATOR -->
+        <section id="interactive-auditor" class="mb-16">
+          <div class="flex items-center justify-between">
+            <h2 class="font-display text-2xl font-bold tracking-tight text-white sm:text-3xl">
+              2. Interactive SaaS Stack Bloat & Savings Auditor
+            </h2>
+            <span class="rounded bg-accent/15 px-3 py-1 font-mono text-xs font-bold text-accent">REVOPS CALCULATOR</span>
+          </div>
+
+          <p class="mt-4 text-sm sm:text-base leading-relaxed text-slate-300">
+            Use this interactive tool to quantify hidden software waste. Adjust your active subscriptions, total team seats, and average monthly spend per user to discover how much recurring cash flow an audit can unlock:
+          </p>
+
+          <!-- CALCULATOR UI -->
+          <div class="mt-8 rounded-2xl glass-card p-6 sm:p-8 border border-white/10 shadow-glass">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+              
+              <!-- Inputs Column -->
+              <div class="space-y-6">
+                <div>
+                  <div class="flex justify-between text-xs font-semibold text-slate-300 mb-2">
+                    <label for="total-apps">Total Active SaaS Subscriptions</label>
+                    <span id="apps-val" class="font-mono text-accent">35 apps</span>
+                  </div>
+                  <input type="range" id="total-apps" min="5" max="150" step="5" value="35" class="w-full h-2 bg-slate-800 rounded-lg cursor-pointer">
+                  <span class="text-[11px] text-slate-500">Discovered across all departments</span>
+                </div>
+
+                <div>
+                  <div class="flex justify-between text-xs font-semibold text-slate-300 mb-2">
+                    <label for="total-seats">Total Paid Employee Seats / Users</label>
+                    <span id="seats-val" class="font-mono text-sky-400">45 users</span>
+                  </div>
+                  <input type="range" id="total-seats" min="5" max="500" step="5" value="45" class="w-full h-2 bg-slate-800 rounded-lg cursor-pointer">
+                  <span class="text-[11px] text-slate-500">Full-time employees and contractors</span>
+                </div>
+
+                <div>
+                  <div class="flex justify-between text-xs font-semibold text-slate-300 mb-2">
+                    <label for="monthly-spend-seat">Average Monthly Software Spend Per Seat ($)</label>
+                    <span id="spend-val" class="font-mono text-white">$140 / mo</span>
+                  </div>
+                  <input type="range" id="monthly-spend-seat" min="30" max="400" step="10" value="140" class="w-full h-2 bg-slate-800 rounded-lg cursor-pointer">
+                  <span class="text-[11px] text-slate-500">Blended SaaS cost across engineering, sales & marketing</span>
+                </div>
+              </div>
+
+              <!-- Outputs Column -->
+              <div class="flex flex-col justify-between rounded-xl border border-white/10 bg-slate-900/70 p-6">
+                <div>
+                  <h4 class="font-display text-xs font-bold uppercase tracking-wider text-accent">Audit Waste Projection</h4>
+                  
+                  <div class="mt-6 space-y-4">
+                    <div class="flex items-center justify-between border-b border-white/5 pb-2 text-xs">
+                      <span class="text-slate-400">Total Annual SaaS Expenditure:</span>
+                      <span id="total-annual-spend" class="font-mono font-bold text-white">$75,600 / yr</span>
+                    </div>
+
+                    <div class="flex items-center justify-between border-b border-white/5 pb-2 text-xs">
+                      <span class="text-slate-400">Projected Idle & Redundant Waste (28%):</span>
+                      <span id="annual-waste" class="font-mono font-bold text-rose-400">$21,168 / yr</span>
+                    </div>
+
+                    <div class="flex items-center justify-between border-b border-white/5 pb-2 text-xs">
+                      <span class="text-slate-400">Shadow IT Exposure Risk (30% apps):</span>
+                      <span id="shadow-risk" class="font-mono font-bold text-amber-400">~10 unmanaged apps</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="mt-6 pt-4 border-t border-white/10">
+                  <div class="rounded-xl border border-accent/40 bg-accent/10 p-4 shadow-neon-sm">
+                    <span class="text-xs block font-semibold text-accent">3-Year Compounded Valuation Upside (6.5x Multiple):</span>
+                    <span id="valuation-gain" class="font-mono text-2xl font-black text-white">+$137,592</span>
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+        </section>
+
+        <!-- SECTION 3: THE 5-STEP AUDIT BLUEPRINT -->
+        <section id="five-step-audit" class="mb-16">
+          <h2 class="font-display text-2xl font-bold tracking-tight text-white sm:text-3xl">
+            3. The 5-Step Operational SaaS Audit Blueprint
+          </h2>
+
+          <div class="mt-8 space-y-4">
+            
+            <div class="rounded-xl border border-white/10 glass-card p-5">
+              <div class="flex items-center gap-3">
+                <span class="rounded-lg bg-accent/20 px-2 py-1 font-mono text-xs font-bold text-accent">Step 1</span>
+                <h4 class="font-display text-sm font-bold text-white">Accounts Payable & Credit Card Reconciliation</h4>
+              </div>
+              <p class="mt-2 text-xs sm:text-sm text-slate-300">
+                Export 12 months of general ledger data and credit card transactions. Tag all recurring subscription vendors. This catches sneaky $49/mo expense-report subscriptions that never passed through formal IT procurement.
+              </p>
+            </div>
+
+            <div class="rounded-xl border border-white/10 glass-card p-5">
+              <div class="flex items-center gap-3">
+                <span class="rounded-lg bg-sky-500/20 px-2 py-1 font-mono text-xs font-bold text-sky-400">Step 2</span>
+                <h4 class="font-display text-sm font-bold text-white">Identity Provider (IdP) OAuth Token Audit</h4>
+              </div>
+              <p class="mt-2 text-xs sm:text-sm text-slate-300">
+                Log into Google Workspace Admin or Okta. Export the third-party connected apps list to identify every tool granted access to corporate email, drive data, or user profiles. Revoke orphaned tokens immediately.
+              </p>
+            </div>
+
+            <div class="rounded-xl border border-white/10 glass-card p-5">
+              <div class="flex items-center gap-3">
+                <span class="rounded-lg bg-emerald-500/20 px-2 py-1 font-mono text-xs font-bold text-emerald-400">Step 3</span>
+                <h4 class="font-display text-sm font-bold text-white">Calculate License Utilization Ratios</h4>
+              </div>
+              <p class="mt-2 text-xs sm:text-sm text-slate-300">
+                For major seats (<a href="#salesforce-review" class="text-accent underline font-semibold hover:text-accent-hover">Salesforce</a>, <a href="#hubspot-review" class="text-accent underline font-semibold hover:text-accent-hover">HubSpot</a>, Figma), pull 30-day login activity. If an employee has not opened the app in 30 days, reassign or de-provision the seat.
+              </p>
+            </div>
+
+            <div class="rounded-xl border border-white/10 glass-card p-5">
+              <div class="flex items-center gap-3">
+                <span class="rounded-lg bg-purple-500/20 px-2 py-1 font-mono text-xs font-bold text-purple-400">Step 4</span>
+                <h4 class="font-display text-sm font-bold text-white">Contract Renewal Calendar Mapping</h4>
+              </div>
+              <p class="mt-2 text-xs sm:text-sm text-slate-300">
+                Record end-dates for all annual agreements. Set automated calendar alerts 75 days in advance so procurement has leverage to renegotiate or cancel before the evergreen clause binds you.
+              </p>
+            </div>
+
+            <div class="rounded-xl border border-white/10 glass-card p-5">
+              <div class="flex items-center gap-3">
+                <span class="rounded-lg bg-rose-500/20 px-2 py-1 font-mono text-xs font-bold text-rose-400">Step 5</span>
+                <h4 class="font-display text-sm font-bold text-white">Consolidate onto Modular AI Stacks</h4>
+              </div>
+              <p class="mt-2 text-xs sm:text-sm text-slate-300">
+                Replace bloated, specialized point tools with lean AI orchestrators like <a href="#make-review" class="text-accent underline font-semibold hover:text-accent-hover">Make</a> and unified databases. Read our guide on <a href="blog-b2b-saas-consolidation-replace-bloat.html" class="text-accent font-semibold hover:underline">B2B SaaS software consolidation</a>.
+              </p>
+            </div>
+
+          </div>
+        </section>
+
+        <!-- SECTION 4: QUANTITATIVE AUDIT METRICS -->
+        <section id="core-metrics" class="mb-16">
+          <h2 class="font-display text-2xl font-bold tracking-tight text-white sm:text-3xl">
+            4. Quantitative Metrics Every Operations Leader Must Track
+          </h2>
+          <div class="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs sm:text-sm">
+            <div class="rounded-xl glass-card p-4 border border-white/10">
+              <span class="font-bold text-accent font-mono">1. License Utilization Rate:</span>
+              <p class="text-slate-300 mt-1 font-mono">(Active 30d Logins ÷ Total Purchased Seats) × 100</p>
+              <span class="text-slate-400 text-xs block mt-1">Benchmark: Must exceed 75%. Below 65% indicates severe over-licensing.</span>
+            </div>
+            <div class="rounded-xl glass-card p-4 border border-white/10">
+              <span class="font-bold text-sky-400 font-mono">2. Cost Per Active User (CPAU):</span>
+              <p class="text-slate-300 mt-1 font-mono">Total Annual Tool Cost ÷ Real Monthly Active Users</p>
+              <span class="text-slate-400 text-xs block mt-1">Uncovers bloated enterprise tools where only 2 people use the full suite.</span>
+            </div>
+          </div>
+        </section>
+
+        <!-- SECTION 5: THE KEEP, CUT, COMBINE FRAMEWORK -->
+        <section id="keep-cut-combine" class="mb-16">
+          <h2 class="font-display text-2xl font-bold tracking-tight text-white sm:text-3xl">
+            5. The "Keep, Cut, or Combine" Decision Framework
+          </h2>
+
+          <div class="mt-8 overflow-x-auto rounded-2xl glass-card border border-white/10">
+            <table class="w-full text-left text-xs sm:text-sm">
+              <thead class="border-b border-white/10 bg-white/5 font-display text-slate-200">
+                <tr>
+                  <th class="p-4">Action</th>
+                  <th class="p-4">Qualification Criteria</th>
+                  <th class="p-4">Immediate Operational Execution</th>
+                </tr>
+              </thead>
+              <tbody class="divide-y divide-white/5 text-slate-300">
+                <tr class="hover:bg-white/[0.02] transition">
+                  <td class="p-4 font-bold text-rose-400">CUT</td>
+                  <td class="p-4">&lt; 30% Utilization, zero clear owner, or unvetted shadow IT.</td>
+                  <td class="p-4 text-slate-300">Issue written cancellation; reassign idle seats immediately.</td>
+                </tr>
+                <tr class="hover:bg-white/[0.02] transition">
+                  <td class="p-4 font-bold text-amber-400">COMBINE</td>
+                  <td class="p-4">Multiple overlapping tools performing identical functions across departments.</td>
+                  <td class="p-4 text-slate-300">Standardize company-wide on a single vendor to unlock bulk tier discounts.</td>
+                </tr>
+                <tr class="hover:bg-white/[0.02] transition">
+                  <td class="p-4 font-bold text-emerald-400">KEEP</td>
+                  <td class="p-4">Core revenue drivers, mission-critical infrastructure, or compliance platforms.</td>
+                  <td class="p-4 text-slate-300">Renegotiate multi-year terms; downsize seat commitments to match active reality.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <!-- SECTION 6: FAQ ACCORDION -->
+        <section id="faq" class="mb-16">
+          <h2 class="font-display text-2xl font-bold tracking-tight text-white sm:text-3xl">
+            Frequently Asked Questions: SaaS Stack Auditing
+          </h2>
+          <p class="mt-2 text-sm text-slate-400">
+            Guidance for CFOs, controllers, and RevOps managers executing cost rationalization.
+          </p>
+
+          <div class="mt-8 space-y-4">
+            
+            <details data-faq class="group rounded-2xl glass-card border border-white/10 p-5 transition hover:border-white/20">
+              <summary class="flex cursor-pointer items-center justify-between font-display text-sm font-bold text-white">
+                What percentage of software spend is typically wasted in mid-market companies?
+                <span class="ml-4 font-mono text-accent transition-transform duration-300 group-open:rotate-45">+</span>
+              </summary>
+              <p class="mt-3 text-xs sm:text-sm leading-relaxed text-slate-300">
+                Industry procurement audits consistently show that 25% to 35% of total SaaS expenditure is pure waste. This stems from three primary sources: unassigned or idle user seats (employees who left or never log in), shadow IT applications purchased on department credit cards, and overlapping tool functionality across teams.
+              </p>
+            </details>
+
+            <details data-faq class="group rounded-2xl glass-card border border-white/10 p-5 transition hover:border-white/20">
+              <summary class="flex cursor-pointer items-center justify-between font-display text-sm font-bold text-white">
+                How do you calculate the License Utilization Rate for a SaaS application?
+                <span class="ml-4 font-mono text-accent transition-transform duration-300 group-open:rotate-45">+</span>
+              </summary>
+              <p class="mt-3 text-xs sm:text-sm leading-relaxed text-slate-300">
+                License Utilization Rate is calculated with the formula: (Active Users who logged in during the last 30 days ÷ Total Purchased Paid Licenses) × 100. If an application exhibits a utilization rate below 70%, your organization is over-licensed and should immediately downgrade seat tiers before the next renewal window.
+              </p>
+            </details>
+
+            <details data-faq class="group rounded-2xl glass-card border border-white/10 p-5 transition hover:border-white/20">
+              <summary class="flex cursor-pointer items-center justify-between font-display text-sm font-bold text-white">
+                How does an Identity Provider (IdP) audit uncover Shadow IT?
+                <span class="ml-4 font-mono text-accent transition-transform duration-300 group-open:rotate-45">+</span>
+              </summary>
+              <p class="mt-3 text-xs sm:text-sm leading-relaxed text-slate-300">
+                By exporting active OAuth grants and Single Sign-On (SSO) authorizations from your identity platform (such as Google Workspace Admin, Okta, or Microsoft Entra ID), IT administrators can inspect every third-party application employees have connected to corporate accounts without formal procurement approval.
+              </p>
+            </details>
+
+            <details data-faq class="group rounded-2xl glass-card border border-white/10 p-5 transition hover:border-white/20">
+              <summary class="flex cursor-pointer items-center justify-between font-display text-sm font-bold text-white">
+                What is the 'Auto-Renewal Notice Window' in enterprise software contracts?
+                <span class="ml-4 font-mono text-accent transition-transform duration-300 group-open:rotate-45">+</span>
+              </summary>
+              <p class="mt-3 text-xs sm:text-sm leading-relaxed text-slate-300">
+                Most B2B SaaS contracts contain evergreen clauses that automatically renew the agreement for another 12-month term unless written cancellation notice is delivered 30, 60, or 90 days before the renewal date. Missing this deadline locks the company into paying for unneeded software for another full year.
+              </p>
+            </details>
+
+            <details data-faq class="group rounded-2xl glass-card border border-white/10 p-5 transition hover:border-white/20">
+              <summary class="flex cursor-pointer items-center justify-between font-display text-sm font-bold text-white">
+                What is the 'Keep, Cut, or Combine' framework?
+                <span class="ml-4 font-mono text-accent transition-transform duration-300 group-open:rotate-45">+</span>
+              </summary>
+              <p class="mt-3 text-xs sm:text-sm leading-relaxed text-slate-300">
+                It is an operational triage method where every software application is categorized: 1) CUT (Zero usage, unowned orphans, or dangerous shadow IT), 2) COMBINE (Consolidating overlapping tools like multiple project managers or video platforms onto a single standardized vendor), and 3) KEEP (Mission-critical core platforms with renegotiated seat counts).
+              </p>
+            </details>
+
+          </div>
+        </section>
+
+        <!-- AUTHOR BIO SECTION -->
+        <div class="rounded-2xl border border-white/10 glass-card p-6 sm:p-8">
+          <div class="flex flex-col sm:flex-row items-center sm:items-start gap-6">
+            <img 
+              src="assets/ui/author.jpg" 
+              alt="Leonardo Puertas" 
+              width="80" 
+              height="80" 
+              class="h-20 w-20 rounded-2xl object-cover ring-2 ring-accent shrink-0"
+            >
+            <div>
+              <div class="flex flex-wrap items-center justify-between gap-2">
+                <div>
+                  <h3 class="font-display text-lg font-bold text-white">Leonardo Puertas</h3>
+                  <span class="text-xs text-accent font-medium">Lead Enterprise Software Analyst & Founder</span>
+                </div>
+                <a href="author-leonardo-puertas.html" class="rounded-lg border border-accent/40 bg-accent/10 px-3 py-1 text-xs font-bold text-accent hover:bg-accent hover:text-slate-950 transition">
+                  View Author Profile →
+                </a>
+              </div>
+              <p class="mt-3 text-xs sm:text-sm leading-relaxed text-slate-300">
+                Leonardo advises CFOs, venture capital portfolio operations, and growth-stage enterprise leaders on SaaS procurement audits, software spend rationalization, and license governance. He has audited millions in recurring software contracts to help operators maximize runway and eliminate license waste.
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </article>
+
+    </div>
+  </main>
+
+  <!-- GLOBAL FOOTER -->
+  <footer class="border-t border-white/10 bg-[#070A12] px-4 pb-12 pt-16 sm:px-6 lg:px-8">
+    <div class="mx-auto max-w-7xl">
+      <div class="grid grid-cols-1 gap-10 md:grid-cols-12 lg:gap-8">
+        
+        <!-- Brand Info -->
+        <div class="md:col-span-4">
+          <a href="/" class="flex items-center gap-3" aria-label="Detailed Review Footer Homepage">
+            <img 
+              src="assets/ui/logo.jpg" 
+              alt="Detailed Review Logo" 
+              width="40" 
+              height="40" 
+              class="h-10 w-10 rounded-xl object-cover ring-1 ring-white/20"
+              loading="lazy"
+            >
+            <span class="font-display text-lg font-black tracking-tight text-white">
+              DETAILED<span class="text-accent">REVIEW</span>
+            </span>
+          </a>
+          <p class="mt-4 max-w-sm text-xs leading-relaxed text-slate-400">
+            Independent evaluations, empirical benchmarks, and ROI audits of enterprise B2B SaaS and Artificial Intelligence software. Empowering business leaders to make high-conviction software investments.
+          </p>
+          <div class="mt-4 flex items-center gap-2 text-xs font-semibold text-accent">
+            <span class="h-2 w-2 rounded-full bg-accent"></span>
+            100% Editorial Independence Guaranteed
+          </div>
+        </div>
+
+        <!-- Column 2: Categories -->
+        <nav class="md:col-span-3" aria-label="Software Categories Links">
+          <h4 class="font-display text-sm font-bold uppercase tracking-wider text-white">Categories</h4>
+          <ul class="mt-4 space-y-2.5 text-xs text-slate-400">
+            <li><a href="/#rankings" class="transition hover:text-accent">AI Workflow & Automation</a></li>
+            <li><a href="/#rankings" class="transition hover:text-accent">AI Writing & SEO Intelligence</a></li>
+            <li><a href="/#rankings" class="transition hover:text-accent">B2B CRM & Revenue Platforms</a></li>
+            <li><a href="/#rankings" class="transition hover:text-accent">AI Video & Synthetic Avatars</a></li>
+          </ul>
+        </nav>
+
+        <!-- Column 3: Resources -->
+        <nav class="md:col-span-2" aria-label="Interactive Hubs & Tools">
+          <h4 class="font-display text-sm font-bold uppercase tracking-wider text-white">Resources</h4>
+          <ul class="mt-4 space-y-2.5 text-xs text-slate-400">
+            <li><a href="/#rankings" class="transition hover:text-accent">2026 Rankings</a></li>
+            <li><a href="blog.html" class="transition hover:text-accent">Blog & Playbooks</a></li>
+            <li><a href="methodology.html" class="transition hover:text-accent">Testing Methodology</a></li>
+            <li><a href="author-leonardo-puertas.html" class="transition hover:text-accent">Editorial Team</a></li>
+          </ul>
+        </nav>
+
+        <!-- Column 4: Institutional -->
+        <nav class="md:col-span-3" aria-label="Legal & Company Links">
+          <h4 class="font-display text-sm font-bold uppercase tracking-wider text-white">Detailed Review</h4>
+          <ul class="mt-4 space-y-2.5 text-xs text-slate-400">
+            <li><a href="about.html" class="transition hover:text-accent">About Detailed Review</a></li>
+            <li><a href="contact.html" class="transition hover:text-accent">Contact Our Analysts</a></li>
+            <li><a href="affiliate-disclosure.html" class="transition hover:text-accent">Affiliate Disclosure</a></li>
+            <li><a href="privacy-policy.html" class="transition hover:text-accent">Privacy Policy</a></li>
+            <li><a href="terms-of-service.html" class="transition hover:text-accent">Terms of Service</a></li>
+          </ul>
+        </nav>
+
+      </div>
+
+      <div class="mt-12 flex flex-col items-center justify-between gap-4 border-t border-white/10 pt-8 sm:flex-row text-xs text-slate-500">
+        <p>© 2026 Detailed Review (detailed-review.com). All rights reserved.</p>
+        <p class="text-[11px]">Architected for CFOs, Corporate Controllers, and RevOps Directors.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- INTERACTIVE SIMULATOR SCRIPT -->
+  <script>
+    // Mobile Drawer Toggle
+    document.getElementById('mobile-menu-btn')?.addEventListener('click', function() {
+      const drawer = document.getElementById('mobile-drawer');
+      const expanded = this.getAttribute('aria-expanded') === 'true';
+      this.setAttribute('aria-expanded', !expanded);
+      drawer.classList.toggle('hidden');
+    });
+
+    // SaaS Bloat Calculator Logic
+    function calculateSaaSWaste() {
+      const apps = parseInt(document.getElementById('total-apps').value, 10);
+      const seats = parseInt(document.getElementById('total-seats').value, 10);
+      const spendPerSeat = parseInt(document.getElementById('monthly-spend-seat').value, 10);
+
+      // Display inputs
+      document.getElementById('apps-val').textContent = apps + ' apps';
+      document.getElementById('seats-val').textContent = seats + ' users';
+      document.getElementById('spend-val').textContent = '$' + spendPerSeat + ' / mo';
+
+      // Calculations
+      const totalAnnualSpend = seats * spendPerSeat * 12;
+      const annualWaste = totalAnnualSpend * 0.28; // 28% industry waste benchmark
+      const shadowApps = Math.round(apps * 0.30); // ~30% unmanaged shadow IT
+      const valuationGain = annualWaste * 6.5; // 6.5x SaaS ARR multiple
+
+      // Update outputs
+      document.getElementById('total-annual-spend').textContent = '$' + totalAnnualSpend.toLocaleString() + ' / yr';
+      document.getElementById('annual-waste').textContent = '$' + Math.round(annualWaste).toLocaleString() + ' / yr';
+      document.getElementById('shadow-risk').textContent = '~' + shadowApps + ' unmanaged apps';
+      document.getElementById('valuation-gain').textContent = '+$' + Math.round(valuationGain).toLocaleString();
+    }
+
+    // Attach listeners
+    ['total-apps', 'total-seats', 'monthly-spend-seat'].forEach(id => {
+      document.getElementById(id)?.addEventListener('input', calculateSaaSWaste);
+    });
+
+    // Initial calculation
+    calculateSaaSWaste();
+  </script>
+</body>
+</html>

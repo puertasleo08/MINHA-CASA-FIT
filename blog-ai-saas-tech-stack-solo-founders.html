@@ -1,0 +1,841 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Primary Meta Tags -->
+  <title>The Ultimate AI SaaS Tech Stack for Solo Founders (2026 Blueprint) | Detailed Review</title>
+  <meta name="title" content="The Ultimate AI SaaS Tech Stack for Solo Founders (2026 Blueprint) | Detailed Review">
+  <meta name="description" content="The production-ready, zero-DevOps AI SaaS tech stack for solo founders in 2026. Explore Cursor, Next.js, Supabase pgvector, Vercel, Stripe, and n8n workflows.">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+  <link rel="canonical" href="https://detailed-review.com/blog-ai-saas-tech-stack-solo-founders.html">
+  <meta name="theme-color" content="#0B0F19">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="article">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:site_name" content="Detailed Review">
+  <meta property="og:url" content="https://detailed-review.com/blog-ai-saas-tech-stack-solo-founders.html">
+  <meta property="og:title" content="The Ultimate AI SaaS Tech Stack for Solo Founders (2026 Blueprint)">
+  <meta property="og:description" content="How solo founders build, launch, and scale multi-million dollar AI SaaS products with zero engineering hires. Detailed 4-layer architecture diagram and cost breakdown.">
+  <meta property="og:image" content="https://detailed-review.com/assets/ui/logo.jpg">
+  <meta property="og:image:width" content="1024">
+  <meta property="og:image:height" content="1024">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://detailed-review.com/blog-ai-saas-tech-stack-solo-founders.html">
+  <meta name="twitter:title" content="The Ultimate AI SaaS Tech Stack for Solo Founders (2026 Blueprint)">
+  <meta name="twitter:description" content="Ship in days, not quarters. Discover the exact 2026 tech stack powering high-leverage solo AI founders: Cursor, Claude 3.5, Supabase, Vercel, and Make.">
+  <meta name="twitter:image" content="https://detailed-review.com/assets/ui/logo.jpg">
+
+  <!-- Favicon & Icons -->
+  <link rel="icon" type="image/jpeg" href="assets/ui/favicon.jpg">
+  <link rel="apple-touch-icon" href="assets/ui/favicon.jpg">
+
+  <!-- Google Fonts Preconnect -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS CDN Engine -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              dark: '#0B0F19',
+              slate: '#0F172A',
+              card: 'rgba(255, 255, 255, 0.035)',
+              border: 'rgba(255, 255, 255, 0.08)',
+              hover: 'rgba(255, 255, 255, 0.06)',
+              muted: '#94A3B8',
+              dim: '#64748B'
+            },
+            accent: {
+              DEFAULT: '#C0FF00',
+              hover: '#AEE600',
+              glow: 'rgba(192, 255, 0, 0.35)'
+            }
+          },
+          fontFamily: {
+            sans: ['Inter', 'system-ui', 'sans-serif'],
+            display: ['"Plus Jakarta Sans"', 'Inter', 'system-ui', 'sans-serif'],
+            mono: ['"JetBrains Mono"', 'monospace']
+          },
+          boxShadow: {
+            'neon': '0 0 25px -4px rgba(192, 255, 0, 0.45)',
+            'neon-sm': '0 0 14px -2px rgba(192, 255, 0, 0.35)',
+            'glass': '0 8px 32px 0 rgba(0, 0, 0, 0.45)',
+            'card': '0 10px 30px -10px rgba(0, 0, 0, 0.6)'
+          }
+        }
+      }
+    };
+  </script>
+
+  <!-- Custom High-Tech Dark Styles -->
+  <style>
+    body {
+      background-color: #0B0F19;
+      background-image: 
+        radial-gradient(ellipse 75% 55% at 50% -20%, rgba(192, 255, 0, 0.07), transparent 70%),
+        radial-gradient(ellipse 45% 35% at 95% 15%, rgba(56, 189, 248, 0.05), transparent 60%),
+        radial-gradient(ellipse 45% 45% at 5% 55%, rgba(192, 255, 0, 0.04), transparent 65%),
+        linear-gradient(rgba(255, 255, 255, 0.018) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.018) 1px, transparent 1px);
+      background-size: 100% 100%, 100% 100%, 100% 100%, 48px 48px, 48px 48px;
+    }
+    .glass-card {
+      background: rgba(255, 255, 255, 0.035);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+    }
+  </style>
+
+  <!-- Schema.org JSON-LD (Graph) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Article",
+        "@id": "https://detailed-review.com/blog-ai-saas-tech-stack-solo-founders.html#article",
+        "isPartOf": {
+          "@type": "WebPage",
+          "@id": "https://detailed-review.com/blog-ai-saas-tech-stack-solo-founders.html"
+        },
+        "headline": "The Ultimate AI SaaS Tech Stack for Solo Founders (2026 Blueprint)",
+        "description": "Architectural breakdown of the modern AI SaaS stack for solo entrepreneurs: Cursor, Claude 3.5, Supabase pgvector, Vercel edge deployment, Stripe billing, and n8n orchestration.",
+        "image": "https://detailed-review.com/assets/ui/logo.jpg",
+        "datePublished": "2026-11-24T08:00:00+00:00",
+        "dateModified": "2026-11-24T08:00:00+00:00",
+        "author": {
+          "@type": "Person",
+          "name": "Leonardo Puertas",
+          "jobTitle": "Lead Enterprise Software Analyst & Founder",
+          "url": "https://detailed-review.com/author-leonardo-puertas.html",
+          "sameAs": [
+            "https://www.linkedin.com/in/leonardo-puertas",
+            "https://twitter.com/leonardopuertas"
+          ]
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Detailed Review",
+          "url": "https://detailed-review.com",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://detailed-review.com/assets/ui/logo.jpg"
+          }
+        },
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https://detailed-review.com/blog-ai-saas-tech-stack-solo-founders.html"
+        },
+        "keywords": [
+          "AI SaaS tech stack",
+          "solo founder tech stack",
+          "Cursor IDE",
+          "Supabase pgvector",
+          "Vercel Next.js",
+          "n8n automation",
+          "micro-SaaS architecture",
+          "zero-DevOps stack"
+        ]
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://detailed-review.com/blog-ai-saas-tech-stack-solo-founders.html#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://detailed-review.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Blog & Insights",
+            "item": "https://detailed-review.com/blog.html"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "AI SaaS Tech Stack for Solo Founders",
+            "item": "https://detailed-review.com/blog-ai-saas-tech-stack-solo-founders.html"
+          }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://detailed-review.com/blog-ai-saas-tech-stack-solo-founders.html#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is the total monthly operating cost of this solo AI SaaS tech stack?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A solo founder can operate a production-ready AI SaaS for approximately $120 to $180 per month during initial traction: Cursor Pro ($20/mo), Vercel Pro ($20/mo), Supabase Pro ($25/mo), Resend ($20/mo), Anthropic/OpenAI API usage ($30-$80/mo based on usage), and Stripe fees (pay-as-you-go 2.9% + 30¢). This eliminates hundreds of thousands in upfront engineering and infrastructure overhead."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Why is Supabase preferred over MongoDB or standalone vector databases for AI SaaS?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Supabase provides an all-in-one backend: relational PostgreSQL, built-in vector search via the pgvector extension, user authentication, row-level security (RLS), and automated edge functions in a single managed system. Using pgvector eliminates the latency, cost, and sync headaches of maintaining a separate dedicated vector database like Pinecone alongside a primary database."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How does Cursor and 'vibe coding' alter the solo founder development lifecycle?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Cursor enables AI-first software engineering by indexing your entire codebase and allowing developers to execute complex multi-file refactors, generate full UI modules, and debug API schemas via natural language prompts and model pairing (Claude 3.5 Sonnet). Solo founders can achieve the feature velocity of a 4-person engineering squad while maintaining total code ownership."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Should a solo founder build custom integrations or use workflow automation tools?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Solo founders should never write custom code for internal plumbing, webhooks, or marketing triggers. Tools like Make or n8n provide visual scenario builders that connect Stripe billing, onboarding emails, CRM records, and Slack alerts in minutes. Writing bespoke backend code for non-core workflows creates immense maintenance debt that slows down product iteration."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the 'One Tool Per Function' architectural principle?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The 'One Tool Per Function' rule mandates that a solo founder must maintain strictly one canonical platform for each business domain: one for hosting (Vercel), one for database/auth (Supabase), one for billing (Stripe), one for analytics (PostHog), and one for automation (Make/n8n). Tool fragmentation introduces fatal context-switching and mental fatigue."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+<body class="bg-brand-dark text-slate-100 font-sans antialiased selection:bg-accent selection:text-slate-950">
+
+  <!-- ACCESSIBILITY SKIP LINK -->
+  <a href="#main-content" class="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-50 focus:px-4 focus:py-2 focus:bg-accent focus:text-slate-950 focus:font-bold focus:rounded-lg">
+    Skip to main content
+  </a>
+
+  <!-- GLOBAL SITE HEADER -->
+  <header class="sticky top-0 z-40 w-full border-b border-white/10 bg-[#0B0F19]/85 backdrop-blur-xl">
+    <div class="mx-auto flex h-20 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
+      
+      <!-- Brand Logo -->
+      <a href="/" class="flex items-center gap-3 group" aria-label="Detailed Review Homepage">
+        <img 
+          src="assets/ui/logo.jpg" 
+          alt="Detailed Review Logo" 
+          width="42" 
+          height="42" 
+          class="h-10 w-10 rounded-xl object-cover ring-1 ring-white/20 transition-transform duration-300 group-hover:scale-105"
+          loading="eager"
+        >
+        <span class="font-display text-xl font-black tracking-tight text-white">
+          DETAILED<span class="text-accent">REVIEW</span>
+        </span>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="hidden md:flex items-center gap-8 text-sm font-semibold text-slate-300" aria-label="Main Navigation">
+        <a href="/#categories" class="hover:text-accent transition">Categories</a>
+        <a href="/#rankings" class="hover:text-accent transition">Rankings</a>
+        <a href="blog.html" class="text-accent font-bold transition">Blog & Playbooks</a>
+        <a href="methodology.html" class="hover:text-accent transition">Methodology</a>
+        <a href="about.html" class="hover:text-accent transition">About</a>
+      </nav>
+
+      <!-- CTA Button -->
+      <div class="hidden md:flex items-center gap-4">
+        <a 
+          href="/#roi-calculator" 
+          class="inline-flex items-center justify-center rounded-xl bg-accent px-5 py-2.5 text-xs font-black uppercase tracking-wider text-slate-950 shadow-neon-sm transition hover:bg-accent-hover hover:shadow-neon"
+        >
+          Find Software
+        </a>
+      </div>
+
+      <!-- Mobile Menu Toggle -->
+      <button 
+        type="button" 
+        id="mobile-menu-btn"
+        class="flex h-10 w-10 items-center justify-center rounded-lg border border-white/10 bg-white/5 text-slate-300 hover:text-white md:hidden"
+        aria-label="Toggle mobile menu"
+        aria-expanded="false"
+      >
+        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+        </svg>
+      </button>
+    </div>
+
+    <!-- Mobile Drawer Nav -->
+    <div id="mobile-drawer" class="hidden border-b border-white/10 bg-[#0B0F19]/95 px-6 py-6 backdrop-blur-2xl md:hidden">
+      <nav class="flex flex-col gap-4 text-base font-semibold text-slate-200">
+        <a href="/#categories" class="hover:text-accent">Categories</a>
+        <a href="/#rankings" class="hover:text-accent">Rankings</a>
+        <a href="blog.html" class="text-accent font-bold">Blog & Playbooks</a>
+        <a href="methodology.html" class="hover:text-accent">Methodology</a>
+        <a href="about.html" class="hover:text-accent">About</a>
+        <a href="/#roi-calculator" class="mt-2 text-center rounded-xl bg-accent py-3 text-xs font-extrabold uppercase text-slate-950">Find Software</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- BREADCRUMBS -->
+  <nav class="border-b border-white/5 bg-slate-950/40 px-4 py-3 text-xs sm:px-6 lg:px-8" aria-label="Breadcrumbs">
+    <div class="mx-auto flex max-w-7xl items-center gap-2 text-slate-400">
+      <a href="/" class="hover:text-white transition">Home</a>
+      <span>/</span>
+      <a href="blog.html" class="hover:text-white transition">Blog</a>
+      <span>/</span>
+      <span class="text-accent font-medium truncate">AI SaaS Tech Stack (Solo Founders)</span>
+    </div>
+  </nav>
+
+  <!-- ARTICLE HEADER HERO -->
+  <section class="relative px-4 pb-12 pt-12 sm:px-6 lg:px-8 lg:pt-16">
+    <div class="mx-auto max-w-4xl text-center">
+      
+      <!-- Cluster Badge -->
+      <div class="inline-flex items-center gap-2 rounded-full border border-accent/30 bg-accent/10 px-4 py-1.5 text-xs font-bold text-accent">
+        <span class="h-1.5 w-1.5 rounded-full bg-accent"></span>
+        ARCHITECTURE & LEAN TECH STACKS (2026)
+      </div>
+
+      <!-- H1 Headline -->
+      <h1 class="mt-6 font-display text-3xl font-extrabold tracking-tight text-white sm:text-4xl lg:text-5xl lg:leading-[1.15]">
+        The Ultimate <span class="text-accent">AI SaaS Tech Stack</span> for Solo Founders (2026)
+      </h1>
+
+      <!-- Subtitle -->
+      <p class="mt-6 text-base leading-relaxed text-slate-300 sm:text-lg sm:leading-relaxed">
+        The bottleneck in building software has collapsed from engineering code to operational focus. Here is the exact zero-DevOps, high-leverage 4-layer architecture powering one-person multi-million dollar SaaS businesses.
+      </p>
+
+      <!-- Author Metadata Strip -->
+      <div class="mt-8 flex flex-wrap items-center justify-center gap-6 border-y border-white/10 py-4 text-xs text-slate-400 sm:text-sm">
+        <div class="flex items-center gap-3">
+          <img 
+            src="assets/ui/author.jpg" 
+            alt="Leonardo Puertas" 
+            width="38" 
+            height="38" 
+            class="h-9 w-9 rounded-full object-cover ring-1 ring-accent"
+          >
+          <div class="text-left">
+            <span class="block font-bold text-white">By <a href="author-leonardo-puertas.html" class="hover:text-accent transition">Leonardo Puertas</a></span>
+            <span class="text-[11px] text-slate-400">Lead Enterprise Software Analyst & Founder</span>
+          </div>
+        </div>
+        <div class="h-4 w-px bg-white/10"></div>
+        <div>
+          <span class="block text-[11px] uppercase tracking-wider text-slate-500">Updated</span>
+          <time datetime="2026-11-24" class="font-semibold text-slate-200">November 24, 2026</time>
+        </div>
+        <div class="h-4 w-px bg-white/10"></div>
+        <div>
+          <span class="block text-[11px] uppercase tracking-wider text-slate-500">Read Time</span>
+          <span class="font-semibold text-accent">16 min read</span>
+        </div>
+        <div class="h-4 w-px bg-white/10"></div>
+        <div>
+          <span class="block text-[11px] uppercase tracking-wider text-slate-500">Target Stack Cost</span>
+          <span class="font-semibold text-emerald-400">&lt; $150 / mo</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- MAIN ARTICLE LAYOUT -->
+  <main id="main-content" class="mx-auto max-w-7xl px-4 pb-24 sm:px-6 lg:px-8">
+    <div class="grid grid-cols-1 gap-12 lg:grid-cols-12">
+
+      <!-- STICKY TABLE OF CONTENTS (DESKTOP) -->
+      <aside class="hidden lg:col-span-3 lg:block">
+        <div class="sticky top-28 rounded-2xl glass-card p-6">
+          <h3 class="font-display text-xs font-bold uppercase tracking-wider text-accent">Article Navigation</h3>
+          <nav class="mt-4 flex flex-col gap-2.5 text-xs font-medium text-slate-300" aria-label="Table of Contents">
+            <a href="#collapse-of-boilerplate" class="hover:text-accent transition">1. The Collapse of Boilerplate</a>
+            <a href="#architecture-diagram" class="hover:text-accent transition">2. 4-Layer Architecture Diagram</a>
+            <a href="#layer-1-acquisition" class="hover:text-accent transition">3. Layer 1: Acquisition & SEO</a>
+            <a href="#layer-2-automation" class="hover:text-accent transition">4. Layer 2: Automation & APIs</a>
+            <a href="#layer-3-revenue" class="hover:text-accent transition">5. Layer 3: CRM & Revenue</a>
+            <a href="#layer-4-infrastructure" class="hover:text-accent transition">6. Layer 4: Full-Stack & Edge</a>
+            <a href="#faq" class="hover:text-accent transition">7. Frequently Asked Questions</a>
+          </nav>
+
+          <div class="mt-8 border-t border-white/10 pt-6">
+            <span class="text-[11px] font-bold uppercase tracking-wider text-slate-400">Related Stack Blueprints</span>
+            <ul class="mt-3 space-y-2 text-xs">
+              <li>
+                <a href="blog-must-have-marketing-automation-tools-smb.html" class="text-slate-300 hover:text-accent transition">
+                  → Must-Have SMB Marketing Automation
+                </a>
+              </li>
+              <li>
+                <a href="blog-audit-saas-stack-reduce-costs.html" class="text-slate-300 hover:text-accent transition">
+                  → How to Audit SaaS Stacks & Cut Waste
+                </a>
+              </li>
+              <li>
+                <a href="blog-b2b-saas-consolidation-replace-bloat.html" class="text-slate-300 hover:text-accent transition">
+                  → B2B SaaS Software Consolidation
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </aside>
+
+      <!-- ARTICLE CONTENT -->
+      <article class="lg:col-span-9 max-w-none text-slate-300">
+
+        <!-- INTRO BENCHMARK NOTE -->
+        <div class="glass-card mb-10 rounded-2xl p-6 border-l-4 border-l-accent shadow-neon-sm">
+          <div class="flex items-start gap-4">
+            <div class="rounded-xl bg-accent/20 p-2 text-accent shrink-0">
+              <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+              </svg>
+            </div>
+            <div>
+              <h4 class="font-display text-sm font-bold text-white uppercase tracking-wider">Architecture Blueprint Note: The Single Responsibility Rule</h4>
+              <p class="mt-1 text-xs sm:text-sm leading-relaxed text-slate-300">
+                In 2026, solo founders fail not because they cannot build features, but because they drown in <strong>architectural cognitive overhead</strong>. If your stack requires managing Kubernetes clusters, provisioning complex VPC subnets, or stitching together six fragmented marketing dashboards, you will burn out before achieving product-market fit. The golden rule: <em>one canonical tool per domain, zero DevOps, and 100% serverless elasticity</em>.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- SECTION 1 -->
+        <section id="collapse-of-boilerplate" class="mb-12">
+          <h2 class="font-display text-2xl font-bold tracking-tight text-white sm:text-3xl">
+            1. The Collapse of Boilerplate: How AI Transformed Solo Engineering
+          </h2>
+          <p class="mt-4 text-sm sm:text-base leading-relaxed text-slate-300">
+            Until recently, launching an enterprise SaaS application required a multidisciplinary team: a frontend engineer to build the React components, a backend engineer to handle API endpoints and database migrations, a DevOps specialist to maintain AWS ECS containers, and an outbound SDR to prospect customers.
+          </p>
+          <p class="mt-4 text-sm sm:text-base leading-relaxed text-slate-300">
+            That paradigm is obsolete. The rise of AI-first IDEs like Cursor paired with frontier models (Claude 3.5 Sonnet) has turned natural language specifications into production-grade TypeScript in seconds. A solo founder can now build, test, and ship full-stack web applications at the speed of thought. However, raw coding speed is useless if your infrastructure breaks under real traffic. You need an airtight architectural blueprint.
+          </p>
+        </section>
+
+        <!-- SECTION 2: HTML/CSS VISUAL ARCHITECTURE BLUEPRINT -->
+        <section id="architecture-diagram" class="mb-16">
+          <div class="flex items-center justify-between">
+            <h2 class="font-display text-2xl font-bold tracking-tight text-white sm:text-3xl">
+              2. The 4-Layer Lean AI SaaS Architecture Blueprint
+            </h2>
+            <span class="rounded bg-accent/15 px-3 py-1 font-mono text-xs font-bold text-accent">PRODUCTION TOPOLOGY</span>
+          </div>
+
+          <p class="mt-4 text-sm sm:text-base leading-relaxed text-slate-300">
+            Below is the comprehensive visual architecture of a modern AI-native SaaS. Each layer is strictly decoupled, communicating via typed APIs, webhooks, and asynchronous message brokers:
+          </p>
+
+          <!-- MODERN VISUAL ARCHITECTURE DIAGRAM -->
+          <div class="mt-8 rounded-2xl glass-card p-6 sm:p-8 border border-white/10">
+            
+            <div class="space-y-6">
+
+              <!-- LAYER 1: ACQUISITION & SEO -->
+              <div class="rounded-xl border border-sky-500/30 bg-sky-500/5 p-5 transition hover:border-sky-500/50">
+                <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-white/10 pb-3">
+                  <div class="flex items-center gap-3">
+                    <span class="flex h-7 w-7 items-center justify-center rounded-lg bg-sky-500/20 font-mono text-xs font-bold text-sky-400">L1</span>
+                    <h3 class="font-display text-sm font-bold text-white">Acquisition & Organic SEO Engine</h3>
+                  </div>
+                  <span class="font-mono text-xs text-sky-400">DEMAND GENERATION & AUTHORITY</span>
+                </div>
+                <div class="mt-4 grid grid-cols-1 sm:grid-cols-3 gap-4 text-xs">
+                  <div class="rounded-lg bg-white/5 p-3">
+                    <span class="text-slate-400 block font-semibold">Semantic Entity SEO:</span>
+                    <p class="text-slate-200 mt-1 font-mono">NeuronWriter / Surfer</p>
+                    <span class="text-[11px] text-slate-400 block mt-1">Topic cluster mapping & NLP optimization.</span>
+                  </div>
+                  <div class="rounded-lg bg-white/5 p-3">
+                    <span class="text-slate-400 block font-semibold">Outbound Cold Outreach:</span>
+                    <p class="text-slate-200 mt-1 font-mono">Instantly / Smartlead</p>
+                    <span class="text-[11px] text-slate-400 block mt-1">Multi-domain mailbox warming & rotation.</span>
+                  </div>
+                  <div class="rounded-lg bg-white/5 p-3">
+                    <span class="text-slate-400 block font-semibold">B2B Lead Enrichment:</span>
+                    <p class="text-slate-200 mt-1 font-mono">Apollo.io / Clay</p>
+                    <span class="text-[11px] text-slate-400 block mt-1">Real-time technographic & intent filters.</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Connector Arrow -->
+              <div class="flex justify-center -my-3 text-accent/60">
+                <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+                </svg>
+              </div>
+
+              <!-- LAYER 2: WORKFLOW AUTOMATION -->
+              <div class="rounded-xl border border-accent/40 bg-accent/5 p-5 shadow-neon-sm transition hover:border-accent">
+                <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-white/10 pb-3">
+                  <div class="flex items-center gap-3">
+                    <span class="flex h-7 w-7 items-center justify-center rounded-lg bg-accent font-mono text-xs font-bold text-slate-950">L2</span>
+                    <h3 class="font-display text-sm font-bold text-white">Workflow Automation & Integration Mesh</h3>
+                  </div>
+                  <span class="font-mono text-xs text-accent">ZERO-CODE PLUMBING & APIS</span>
+                </div>
+                <div class="mt-4 grid grid-cols-1 sm:grid-cols-3 gap-4 text-xs">
+                  <div class="rounded-lg bg-white/5 p-3">
+                    <span class="text-slate-400 block font-semibold">Visual Scenario Orchestrator:</span>
+                    <p class="text-slate-200 mt-1 font-mono">Make.com (Integromat)</p>
+                    <span class="text-[11px] text-slate-400 block mt-1">Instant webhook routing & error handling.</span>
+                  </div>
+                  <div class="rounded-lg bg-white/5 p-3">
+                    <span class="text-slate-400 block font-semibold">Self-Hosted AI Agents:</span>
+                    <p class="text-slate-200 mt-1 font-mono">n8n (Docker / Cloud)</p>
+                    <span class="text-[11px] text-slate-400 block mt-1">Complex multi-node LLM evaluation loops.</span>
+                  </div>
+                  <div class="rounded-lg bg-white/5 p-3">
+                    <span class="text-slate-400 block font-semibold">Transactional Message Bus:</span>
+                    <p class="text-slate-200 mt-1 font-mono">Resend / Loops.so</p>
+                    <span class="text-[11px] text-slate-400 block mt-1">Developer-first magic links & alerts.</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Connector Arrow -->
+              <div class="flex justify-center -my-3 text-accent/60">
+                <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+                </svg>
+              </div>
+
+              <!-- LAYER 3: CRM & REVENUE -->
+              <div class="rounded-xl border border-emerald-500/30 bg-emerald-500/5 p-5 transition hover:border-emerald-500/50">
+                <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-white/10 pb-3">
+                  <div class="flex items-center gap-3">
+                    <span class="flex h-7 w-7 items-center justify-center rounded-lg bg-emerald-500/20 font-mono text-xs font-bold text-emerald-400">L3</span>
+                    <h3 class="font-display text-sm font-bold text-white">CRM, Revenue & Customer Retention</h3>
+                  </div>
+                  <span class="font-mono text-xs text-emerald-400">CASHFLOW & RETENTION</span>
+                </div>
+                <div class="mt-4 grid grid-cols-1 sm:grid-cols-3 gap-4 text-xs">
+                  <div class="rounded-lg bg-white/5 p-3">
+                    <span class="text-slate-400 block font-semibold">Lean Sales CRM:</span>
+                    <p class="text-slate-200 mt-1 font-mono">HubSpot Starter / Pipedrive</p>
+                    <span class="text-[11px] text-slate-400 block mt-1">Buyer-centric stage exit gates & tracking.</span>
+                  </div>
+                  <div class="rounded-lg bg-white/5 p-3">
+                    <span class="text-slate-400 block font-semibold">Subscription Billing:</span>
+                    <p class="text-slate-200 mt-1 font-mono">Stripe Billing + Tax</p>
+                    <span class="text-[11px] text-slate-400 block mt-1">Automated proration, portal, and churn recovery.</span>
+                  </div>
+                  <div class="rounded-lg bg-white/5 p-3">
+                    <span class="text-slate-400 block font-semibold">Product Telemetry & Analytics:</span>
+                    <p class="text-slate-200 mt-1 font-mono">PostHog</p>
+                    <span class="text-[11px] text-slate-400 block mt-1">Session replays, feature flags, and health alerts.</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Connector Arrow -->
+              <div class="flex justify-center -my-3 text-accent/60">
+                <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+                </svg>
+              </div>
+
+              <!-- LAYER 4: FULL-STACK & EDGE -->
+              <div class="rounded-xl border border-purple-500/30 bg-purple-500/5 p-5 transition hover:border-purple-500/50">
+                <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-white/10 pb-3">
+                  <div class="flex items-center gap-3">
+                    <span class="flex h-7 w-7 items-center justify-center rounded-lg bg-purple-500/20 font-mono text-xs font-bold text-purple-400">L4</span>
+                    <h3 class="font-display text-sm font-bold text-white">Full-Stack & Edge Infrastructure</h3>
+                  </div>
+                  <span class="font-mono text-xs text-purple-400">SERVERLESS & VECTOR RUNTIME</span>
+                </div>
+                <div class="mt-4 grid grid-cols-1 sm:grid-cols-3 gap-4 text-xs">
+                  <div class="rounded-lg bg-white/5 p-3">
+                    <span class="text-slate-400 block font-semibold">Frontend & Edge Runtime:</span>
+                    <p class="text-slate-200 mt-1 font-mono">Next.js + Vercel</p>
+                    <span class="text-[11px] text-slate-400 block mt-1">Instant global CDN & preview branches.</span>
+                  </div>
+                  <div class="rounded-lg bg-white/5 p-3">
+                    <span class="text-slate-400 block font-semibold">Backend, Auth & Vector DB:</span>
+                    <p class="text-slate-200 mt-1 font-mono">Supabase (PostgreSQL + pgvector)</p>
+                    <span class="text-[11px] text-slate-400 block mt-1">Row-level security, auth & native RAG vectors.</span>
+                  </div>
+                  <div class="rounded-lg bg-white/5 p-3">
+                    <span class="text-slate-400 block font-semibold">Frontier Model Orchestration:</span>
+                    <p class="text-slate-200 mt-1 font-mono">Anthropic Claude / OpenAI</p>
+                    <span class="text-[11px] text-slate-400 block mt-1">Direct SDK calls with structured JSON output.</span>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+        </section>
+
+        <!-- SECTION 3: LAYER 1 DEEP DIVE -->
+        <section id="layer-1-acquisition" class="mb-12">
+          <h2 class="font-display text-2xl font-bold tracking-tight text-white sm:text-3xl">
+            3. Layer 1: Acquisition & SEO (Organic Traffic at Scale)
+          </h2>
+          <p class="mt-4 text-sm sm:text-base leading-relaxed text-slate-300">
+            A software application with zero traffic generates zero revenue. For solo founders, spending $50,000 on paid Google Search Ads is not an option. Your primary growth flywheel must be <strong>semantic topical authority and targeted cold outreach</strong>.
+          </p>
+          <p class="mt-4 text-sm sm:text-base leading-relaxed text-slate-300">
+            Rather than writing random blog posts, solo founders deploy topical authority silos. By mapping entity relationships and optimizing for Information Gain, a one-person brand can outrank public corporate competitors. Master this by reading our foundational guide on <a href="blog-build-topical-authority-ai.html" class="text-accent font-semibold hover:underline">how to build topical authority using AI writing tools</a>.
+          </p>
+          <p class="mt-3 text-sm sm:text-base leading-relaxed text-slate-300">
+            Simultaneously, automate your outbound sales pipeline. Connect secondary lookalike domains using Instantly or Smartlead (see our comparison of the <a href="blog-best-ai-cold-email-tools.html" class="text-accent font-semibold hover:underline">best AI tools for cold email outreach and deliverability</a>) to engage high-intent B2B accounts on autopilot.
+          </p>
+        </section>
+
+        <!-- SECTION 4: LAYER 2 DEEP DIVE -->
+        <section id="layer-2-automation" class="mb-12">
+          <h2 class="font-display text-2xl font-bold tracking-tight text-white sm:text-3xl">
+            4. Layer 2: Workflow Automation & Integration Mesh
+          </h2>
+          <p class="mt-4 text-sm sm:text-base leading-relaxed text-slate-300">
+            The fatal trap for technical founders is writing bespoke Python microservices for routine business processes. If a customer fills out a contact form, pays an invoice on Stripe, or requests a demo, you should not be maintaining custom server code to send an alert or update a database.
+          </p>
+          <p class="mt-4 text-sm sm:text-base leading-relaxed text-slate-300">
+            Deploy an visual integration layer using <a href="#make-review" class="text-accent underline font-semibold hover:text-accent-hover">Make.com</a> or self-hosted n8n. These tools handle API rate limits, exponential backoff retries, and data transformations visually. To understand the exact tipping point where visual no-code beats custom code, review our analysis of <a href="blog-nocode-vs-api-integrations.html" class="text-accent font-semibold hover:underline">no-code automation vs custom API integrations</a>.
+          </p>
+        </section>
+
+        <!-- SECTION 5: LAYER 3 DEEP DIVE -->
+        <section id="layer-3-revenue" class="mb-12">
+          <h2 class="font-display text-2xl font-bold tracking-tight text-white sm:text-3xl">
+            5. Layer 3: CRM, Revenue & Retention Operations
+          </h2>
+          <p class="mt-4 text-sm sm:text-base leading-relaxed text-slate-300">
+            As a solo founder, you cannot manually shepherd every opportunity through a 6-month sales cycle. You need an automated sales pipeline that enforces strict buyer verification gates so you only spend time on deals ready to close. Follow our step-by-step blueprint on <a href="blog-setup-b2b-sales-pipeline.html" class="text-accent font-semibold hover:underline">how to set up a B2B sales pipeline from scratch</a>.
+          </p>
+          <p class="mt-4 text-sm sm:text-base leading-relaxed text-slate-300">
+            Once revenue is booked, protecting Net Revenue Retention (NRR) becomes paramount. A 2% monthly churn rate will quietly kill your growth. Connect product usage telemetry to your CRM to automatically trigger save-plays when user logins drop, as detailed in our guide to <a href="blog-sales-automation-reduce-churn.html" class="text-accent font-semibold hover:underline">sales automation workflows to reduce customer churn</a>.
+          </p>
+        </section>
+
+        <!-- SECTION 6: LAYER 4 DEEP DIVE -->
+        <section id="layer-4-infrastructure" class="mb-16">
+          <h2 class="font-display text-2xl font-bold tracking-tight text-white sm:text-3xl">
+            6. Layer 4: Full-Stack & Edge Infrastructure
+          </h2>
+          <p class="mt-4 text-sm sm:text-base leading-relaxed text-slate-300">
+            Avoid AWS console complexity. In 2026, the undisputed stack for solo builders is <strong>Next.js + Supabase + Vercel</strong>:
+          </p>
+
+          <div class="mt-6 space-y-4 font-mono text-xs">
+            <div class="rounded-xl border border-white/10 bg-slate-900/80 p-4">
+              <span class="text-accent font-bold">1. Frontend & Edge Compute: Next.js + Vercel</span>
+              <p class="text-slate-300 mt-1">Automatic code splitting, global edge caching, and zero-downtime git-push deployments. Every pull request receives an isolated preview URL.</p>
+            </div>
+
+            <div class="rounded-xl border border-white/10 bg-slate-900/80 p-4">
+              <span class="text-sky-400 font-bold">2. Database, Auth & Vectors: Supabase (PostgreSQL)</span>
+              <p class="text-slate-300 mt-1">Relational SQL with Row-Level Security (RLS) ensures tenant isolation. The native <code>pgvector</code> extension allows high-speed cosine similarity search directly inside your existing database.</p>
+            </div>
+
+            <div class="rounded-xl border border-white/10 bg-slate-900/80 p-4">
+              <span class="text-emerald-400 font-bold">3. Frontier AI Orchestration: Direct API Integration</span>
+              <p class="text-slate-300 mt-1">Skip complex, brittle framework wrappers like LangChain for basic workflows. Make direct async calls to the Anthropic Claude or OpenAI SDK using structured JSON schema response enforcement.</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- SECTION 7: FAQ ACCORDION -->
+        <section id="faq" class="mb-16">
+          <h2 class="font-display text-2xl font-bold tracking-tight text-white sm:text-3xl">
+            Frequently Asked Questions: Solo Founder AI Stacks
+          </h2>
+          <p class="mt-2 text-sm text-slate-400">
+            Tactical answers on software budgeting, developer leverage, and architecture design.
+          </p>
+
+          <div class="mt-8 space-y-4">
+            
+            <details data-faq class="group rounded-2xl glass-card border border-white/10 p-5 transition hover:border-white/20">
+              <summary class="flex cursor-pointer items-center justify-between font-display text-sm font-bold text-white">
+                What is the total monthly operating cost of this solo AI SaaS tech stack?
+                <span class="ml-4 font-mono text-accent transition-transform duration-300 group-open:rotate-45">+</span>
+              </summary>
+              <p class="mt-3 text-xs sm:text-sm leading-relaxed text-slate-300">
+                A solo founder can operate a production-ready AI SaaS for approximately $120 to $180 per month during initial traction: Cursor Pro ($20/mo), Vercel Pro ($20/mo), Supabase Pro ($25/mo), Resend ($20/mo), Anthropic/OpenAI API usage ($30-$80/mo based on usage), and Stripe fees (pay-as-you-go 2.9% + 30¢). This eliminates hundreds of thousands in upfront engineering and infrastructure overhead.
+              </p>
+            </details>
+
+            <details data-faq class="group rounded-2xl glass-card border border-white/10 p-5 transition hover:border-white/20">
+              <summary class="flex cursor-pointer items-center justify-between font-display text-sm font-bold text-white">
+                Why is Supabase preferred over MongoDB or standalone vector databases for AI SaaS?
+                <span class="ml-4 font-mono text-accent transition-transform duration-300 group-open:rotate-45">+</span>
+              </summary>
+              <p class="mt-3 text-xs sm:text-sm leading-relaxed text-slate-300">
+                Supabase provides an all-in-one backend: relational PostgreSQL, built-in vector search via the pgvector extension, user authentication, row-level security (RLS), and automated edge functions in a single managed system. Using pgvector eliminates the latency, cost, and sync headaches of maintaining a separate dedicated vector database like Pinecone alongside a primary database.
+              </p>
+            </details>
+
+            <details data-faq class="group rounded-2xl glass-card border border-white/10 p-5 transition hover:border-white/20">
+              <summary class="flex cursor-pointer items-center justify-between font-display text-sm font-bold text-white">
+                How does Cursor and 'vibe coding' alter the solo founder development lifecycle?
+                <span class="ml-4 font-mono text-accent transition-transform duration-300 group-open:rotate-45">+</span>
+              </summary>
+              <p class="mt-3 text-xs sm:text-sm leading-relaxed text-slate-300">
+                Cursor enables AI-first software engineering by indexing your entire codebase and allowing developers to execute complex multi-file refactors, generate full UI modules, and debug API schemas via natural language prompts and model pairing (Claude 3.5 Sonnet). Solo founders can achieve the feature velocity of a 4-person engineering squad while maintaining total code ownership.
+              </p>
+            </details>
+
+            <details data-faq class="group rounded-2xl glass-card border border-white/10 p-5 transition hover:border-white/20">
+              <summary class="flex cursor-pointer items-center justify-between font-display text-sm font-bold text-white">
+                Should a solo founder build custom integrations or use workflow automation tools?
+                <span class="ml-4 font-mono text-accent transition-transform duration-300 group-open:rotate-45">+</span>
+              </summary>
+              <p class="mt-3 text-xs sm:text-sm leading-relaxed text-slate-300">
+                Solo founders should never write custom code for internal plumbing, webhooks, or marketing triggers. Tools like Make or n8n provide visual scenario builders that connect Stripe billing, onboarding emails, CRM records, and Slack alerts in minutes. Writing bespoke backend code for non-core workflows creates immense maintenance debt that slows down product iteration.
+              </p>
+            </details>
+
+            <details data-faq class="group rounded-2xl glass-card border border-white/10 p-5 transition hover:border-white/20">
+              <summary class="flex cursor-pointer items-center justify-between font-display text-sm font-bold text-white">
+                What is the 'One Tool Per Function' architectural principle?
+                <span class="ml-4 font-mono text-accent transition-transform duration-300 group-open:rotate-45">+</span>
+              </summary>
+              <p class="mt-3 text-xs sm:text-sm leading-relaxed text-slate-300">
+                The 'One Tool Per Function' rule mandates that a solo founder must maintain strictly one canonical platform for each business domain: one for hosting (Vercel), one for database/auth (Supabase), one for billing (Stripe), one for analytics (PostHog), and one for automation (Make/n8n). Tool fragmentation introduces fatal context-switching and mental fatigue.
+              </p>
+            </details>
+
+          </div>
+        </section>
+
+        <!-- AUTHOR BIO SECTION -->
+        <div class="rounded-2xl border border-white/10 glass-card p-6 sm:p-8">
+          <div class="flex flex-col sm:flex-row items-center sm:items-start gap-6">
+            <img 
+              src="assets/ui/author.jpg" 
+              alt="Leonardo Puertas" 
+              width="80" 
+              height="80" 
+              class="h-20 w-20 rounded-2xl object-cover ring-2 ring-accent shrink-0"
+            >
+            <div>
+              <div class="flex flex-wrap items-center justify-between gap-2">
+                <div>
+                  <h3 class="font-display text-lg font-bold text-white">Leonardo Puertas</h3>
+                  <span class="text-xs text-accent font-medium">Lead Enterprise Software Analyst & Founder</span>
+                </div>
+                <a href="author-leonardo-puertas.html" class="rounded-lg border border-accent/40 bg-accent/10 px-3 py-1 text-xs font-bold text-accent hover:bg-accent hover:text-slate-950 transition">
+                  View Author Profile →
+                </a>
+              </div>
+              <p class="mt-3 text-xs sm:text-sm leading-relaxed text-slate-300">
+                Leonardo advises venture-backed and bootstrapped software founders on architecture consolidation, API design, and automated revenue operations. He builds and stress-tests modern AI stacks to help technical entrepreneurs maximize enterprise leverage and achieve rapid profitability.
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </article>
+
+    </div>
+  </main>
+
+  <!-- GLOBAL FOOTER -->
+  <footer class="border-t border-white/10 bg-[#070A12] px-4 pb-12 pt-16 sm:px-6 lg:px-8">
+    <div class="mx-auto max-w-7xl">
+      <div class="grid grid-cols-1 gap-10 md:grid-cols-12 lg:gap-8">
+        
+        <!-- Brand Info -->
+        <div class="md:col-span-4">
+          <a href="/" class="flex items-center gap-3" aria-label="Detailed Review Footer Homepage">
+            <img 
+              src="assets/ui/logo.jpg" 
+              alt="Detailed Review Logo" 
+              width="40" 
+              height="40" 
+              class="h-10 w-10 rounded-xl object-cover ring-1 ring-white/20"
+              loading="lazy"
+            >
+            <span class="font-display text-lg font-black tracking-tight text-white">
+              DETAILED<span class="text-accent">REVIEW</span>
+            </span>
+          </a>
+          <p class="mt-4 max-w-sm text-xs leading-relaxed text-slate-400">
+            Independent evaluations, empirical benchmarks, and ROI audits of enterprise B2B SaaS and Artificial Intelligence software. Empowering business leaders to make high-conviction software investments.
+          </p>
+          <div class="mt-4 flex items-center gap-2 text-xs font-semibold text-accent">
+            <span class="h-2 w-2 rounded-full bg-accent"></span>
+            100% Editorial Independence Guaranteed
+          </div>
+        </div>
+
+        <!-- Column 2: Categories -->
+        <nav class="md:col-span-3" aria-label="Software Categories Links">
+          <h4 class="font-display text-sm font-bold uppercase tracking-wider text-white">Categories</h4>
+          <ul class="mt-4 space-y-2.5 text-xs text-slate-400">
+            <li><a href="/#rankings" class="transition hover:text-accent">AI Workflow & Automation</a></li>
+            <li><a href="/#rankings" class="transition hover:text-accent">AI Writing & SEO Intelligence</a></li>
+            <li><a href="/#rankings" class="transition hover:text-accent">B2B CRM & Revenue Platforms</a></li>
+            <li><a href="/#rankings" class="transition hover:text-accent">AI Video & Synthetic Avatars</a></li>
+          </ul>
+        </nav>
+
+        <!-- Column 3: Resources -->
+        <nav class="md:col-span-2" aria-label="Interactive Hubs & Tools">
+          <h4 class="font-display text-sm font-bold uppercase tracking-wider text-white">Resources</h4>
+          <ul class="mt-4 space-y-2.5 text-xs text-slate-400">
+            <li><a href="/#rankings" class="transition hover:text-accent">2026 Rankings</a></li>
+            <li><a href="blog.html" class="transition hover:text-accent">Blog & Playbooks</a></li>
+            <li><a href="methodology.html" class="transition hover:text-accent">Testing Methodology</a></li>
+            <li><a href="author-leonardo-puertas.html" class="transition hover:text-accent">Editorial Team</a></li>
+          </ul>
+        </nav>
+
+        <!-- Column 4: Institutional -->
+        <nav class="md:col-span-3" aria-label="Legal & Company Links">
+          <h4 class="font-display text-sm font-bold uppercase tracking-wider text-white">Detailed Review</h4>
+          <ul class="mt-4 space-y-2.5 text-xs text-slate-400">
+            <li><a href="about.html" class="transition hover:text-accent">About Detailed Review</a></li>
+            <li><a href="contact.html" class="transition hover:text-accent">Contact Our Analysts</a></li>
+            <li><a href="affiliate-disclosure.html" class="transition hover:text-accent">Affiliate Disclosure</a></li>
+            <li><a href="privacy-policy.html" class="transition hover:text-accent">Privacy Policy</a></li>
+            <li><a href="terms-of-service.html" class="transition hover:text-accent">Terms of Service</a></li>
+          </ul>
+        </nav>
+
+      </div>
+
+      <div class="mt-12 flex flex-col items-center justify-between gap-4 border-t border-white/10 pt-8 sm:flex-row text-xs text-slate-500">
+        <p>© 2026 Detailed Review (detailed-review.com). All rights reserved.</p>
+        <p class="text-[11px]">Engineered for Solo Founders, Technical Operators, and Lean Builders.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- MOBILE DRAWER SCRIPT -->
+  <script>
+    document.getElementById('mobile-menu-btn')?.addEventListener('click', function() {
+      const drawer = document.getElementById('mobile-drawer');
+      const expanded = this.getAttribute('aria-expanded') === 'true';
+      this.setAttribute('aria-expanded', !expanded);
+      drawer.classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>

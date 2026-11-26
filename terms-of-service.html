@@ -19,63 +19,28 @@
   <meta property="og:url" content="https://detailed-review.com/terms-of-service">
   <meta property="og:title" content="Terms of Service | Detailed Review">
   <meta property="og:description" content="Detailed Review Terms of Service. Understand the terms governing our independent software evaluations, interactive ROI calculators, and website usage.">
-  <meta property="og:image" content="https://detailed-review.com/assets/ui/logo.jpg">
-  <meta property="og:image:width" content="1024">
-  <meta property="og:image:height" content="1024">
+  <meta property="og:image" content="https://detailed-review.com/assets/ui/og-default.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:url" content="https://detailed-review.com/terms-of-service">
   <meta name="twitter:title" content="Terms of Service | Detailed Review">
   <meta name="twitter:description" content="Detailed Review Terms of Service. Understand the terms governing our independent software evaluations, interactive ROI calculators, and website usage.">
-  <meta name="twitter:image" content="https://detailed-review.com/assets/ui/logo.jpg">
+  <meta name="twitter:image" content="https://detailed-review.com/assets/ui/og-default.jpg">
 
   <!-- Favicon & Icons -->
-  <link rel="icon" type="image/jpeg" href="assets/ui/favicon.jpg">
-  <link rel="apple-touch-icon" href="assets/ui/favicon.jpg">
+  <link rel="icon" type="image/jpeg" href="/assets/ui/favicon.jpg">
+  <link rel="apple-touch-icon" href="/assets/ui/favicon.jpg">
 
   <!-- Google Fonts Preconnect -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@600;700;800;900&display=swap" rel="stylesheet">
 
-  <!-- Tailwind CSS CDN Engine -->
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      darkMode: 'class',
-      theme: {
-        extend: {
-          colors: {
-            brand: {
-              dark: '#0B0F19',
-              slate: '#0F172A',
-              card: 'rgba(255, 255, 255, 0.035)',
-              border: 'rgba(255, 255, 255, 0.08)',
-              hover: 'rgba(255, 255, 255, 0.06)',
-              muted: '#94A3B8',
-              dim: '#64748B'
-            },
-            accent: {
-              DEFAULT: '#C0FF00',
-              hover: '#AEE600',
-              glow: 'rgba(192, 255, 0, 0.35)'
-            }
-          },
-          fontFamily: {
-            sans: ['Inter', 'system-ui', 'sans-serif'],
-            display: ['"Plus Jakarta Sans"', 'Inter', 'system-ui', 'sans-serif']
-          },
-          boxShadow: {
-            'neon': '0 0 25px -4px rgba(192, 255, 0, 0.45)',
-            'neon-sm': '0 0 14px -2px rgba(192, 255, 0, 0.35)',
-            'glass': '0 8px 32px 0 rgba(0, 0, 0, 0.45)',
-            'card': '0 10px 30px -10px rgba(0, 0, 0, 0.6)'
-          }
-        }
-      }
-    };
-  </script>
+  <!-- Compiled Production Tailwind CSS -->
+  <link rel="stylesheet" href="/assets/css/styles.css">
 
   <!-- Custom High-Tech Dark Styles -->
   <style>
@@ -101,38 +66,42 @@
 
   <!-- Technical SEO: Schema.org Structured Data (JSON-LD) -->
   <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "Organization",
-        "@id": "https://detailed-review.com/#organization",
-        "name": "Detailed Review",
-        "url": "https://detailed-review.com/",
-        "logo": {
-          "@type": "ImageObject",
-          "url": "https://detailed-review.com/assets/ui/logo.jpg"
-        }
-      },
-      {
-        "@type": "WebSite",
-        "@id": "https://detailed-review.com/#website",
-        "name": "Detailed Review",
-        "url": "https://detailed-review.com/",
-        "inLanguage": "en-US",
-        "publisher": { "@id": "https://detailed-review.com/#organization" }
-      },
-      {
-        "@type": "WebPage",
-        "@id": "https://detailed-review.com/terms-of-service#webpage",
-        "url": "https://detailed-review.com/terms-of-service",
-        "name": "Terms of Service | Detailed Review",
-        "description": "Detailed Review Terms of Service. Understand the terms governing our independent software evaluations, interactive ROI calculators, and website usage.",
-        "inLanguage": "en-US",
-        "isPartOf": { "@id": "https://detailed-review.com/#website" }
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://detailed-review.com/#organization",
+      "name": "Detailed Review",
+      "url": "https://detailed-review.com/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://detailed-review.com/assets/ui/logo.jpg"
       }
-    ]
-  }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://detailed-review.com/#website",
+      "name": "Detailed Review",
+      "url": "https://detailed-review.com/",
+      "inLanguage": "en-US",
+      "publisher": {
+        "@id": "https://detailed-review.com/#organization"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://detailed-review.com/terms-of-service#webpage",
+      "url": "https://detailed-review.com/terms-of-service",
+      "name": "Terms of Service | Detailed Review",
+      "description": "Detailed Review Terms of Service. Understand the terms governing our independent software evaluations, interactive ROI calculators, and website usage.",
+      "inLanguage": "en-US",
+      "isPartOf": {
+        "@id": "https://detailed-review.com/#website"
+      }
+    }
+  ]
+}
   </script>
 </head>
 <body class="bg-brand-dark font-sans text-slate-300 antialiased selection:bg-accent selection:text-slate-950">
@@ -149,7 +118,7 @@
       <!-- Brand Logo -->
       <a href="/" class="flex shrink-0 items-center gap-3.5 transition hover:opacity-90" aria-label="Detailed Review — Homepage">
         <img 
-          src="assets/ui/logo.jpg" 
+          src="/assets/ui/logo.jpg" 
           alt="Detailed Review Logo" 
           width="44" 
           height="44" 
@@ -170,9 +139,9 @@
       <nav class="hidden items-center gap-8 text-sm font-semibold text-slate-300 md:flex" aria-label="Primary Navigation">
         <a href="/#categories" class="transition hover:text-accent">Categories</a>
         <a href="/#rankings" class="transition hover:text-accent">Top Rankings</a>
-        <a href="blog.html" class="transition hover:text-accent">Blog & Insights</a>
-        <a href="methodology.html" class="transition hover:text-accent">Methodology</a>
-        <a href="about.html" class="transition hover:text-accent">About</a>
+        <a href="/blog" class="transition hover:text-accent">Blog & Insights</a>
+        <a href="/methodology" class="transition hover:text-accent">Methodology</a>
+        <a href="/about" class="transition hover:text-accent">About</a>
       </nav>
 
       <!-- Header CTA -->
@@ -207,10 +176,10 @@
       <nav class="flex flex-col gap-1 text-base font-semibold" aria-label="Mobile Navigation">
         <a href="/#categories" class="rounded-lg px-3 py-3 text-slate-200 hover:bg-white/5 hover:text-accent">Categories</a>
         <a href="/#rankings" class="rounded-lg px-3 py-3 text-slate-200 hover:bg-white/5 hover:text-accent">Top Rankings</a>
-        <a href="blog.html" class="rounded-lg px-3 py-3 text-slate-200 hover:bg-white/5 hover:text-accent">Blog & Insights</a>
-        <a href="methodology.html" class="rounded-lg px-3 py-3 text-slate-200 hover:bg-white/5 hover:text-accent">Methodology</a>
-        <a href="about.html" class="rounded-lg px-3 py-3 text-slate-200 hover:bg-white/5 hover:text-accent">About Us</a>
-        <a href="contact.html" class="rounded-lg px-3 py-3 text-slate-200 hover:bg-white/5 hover:text-accent">Contact</a>
+        <a href="/blog" class="rounded-lg px-3 py-3 text-slate-200 hover:bg-white/5 hover:text-accent">Blog & Insights</a>
+        <a href="/methodology" class="rounded-lg px-3 py-3 text-slate-200 hover:bg-white/5 hover:text-accent">Methodology</a>
+        <a href="/about" class="rounded-lg px-3 py-3 text-slate-200 hover:bg-white/5 hover:text-accent">About Us</a>
+        <a href="/contact" class="rounded-lg px-3 py-3 text-slate-200 hover:bg-white/5 hover:text-accent">Contact</a>
       </nav>
       <div class="mt-4 border-t border-white/10 pt-4">
         <a href="/#roi-calculator" class="inline-flex h-12 w-full items-center justify-center gap-2 rounded-xl bg-accent font-extrabold text-slate-950 shadow-neon-sm">
@@ -353,7 +322,7 @@
         <div class="md:col-span-4">
           <a href="/" class="flex items-center gap-3" aria-label="Detailed Review Footer Homepage">
             <img 
-              src="assets/ui/logo.jpg" 
+              src="/assets/ui/logo.jpg" 
               alt="Detailed Review Logo" 
               width="40" 
               height="40" 
@@ -390,8 +359,8 @@
           <ul class="mt-4 space-y-2.5 text-xs text-slate-400">
             <li><a href="/#rankings" class="transition hover:text-accent">2026 Rankings</a></li>
             <li><a href="/#roi-calculator" class="transition hover:text-accent">SaaS ROI Calculator</a></li>
-            <li><a href="methodology.html" class="transition hover:text-accent">Testing Methodology</a></li>
-            <li><a href="blog.html" class="transition hover:text-accent">Blog & Insights</a></li>
+            <li><a href="/methodology" class="transition hover:text-accent">Testing Methodology</a></li>
+            <li><a href="/blog" class="transition hover:text-accent">Blog & Insights</a></li>
           </ul>
         </nav>
 
@@ -399,12 +368,12 @@
         <nav class="md:col-span-3" aria-label="Institutional Links">
           <h3 class="font-display text-sm font-bold uppercase tracking-wider text-white">Editorial & Legal</h3>
           <ul class="mt-4 space-y-2.5 text-xs text-slate-400">
-            <li><a href="author-leonardo-puertas.html" class="transition hover:text-accent">Leonardo Puertas (Lead Analyst)</a></li>
-            <li><a href="about.html" class="transition hover:text-accent">About Detailed Review</a></li>
-            <li><a href="affiliate-disclosure.html" class="transition hover:text-accent">Affiliate Disclosure Policy</a></li>
-            <li><a href="privacy-policy.html" class="transition hover:text-accent">Privacy Policy</a></li>
-            <li><a href="terms-of-service.html" class="text-accent font-semibold">Terms of Service</a></li>
-            <li><a href="contact.html" class="transition hover:text-accent">Contact & Inquiries</a></li>
+            <li><a href="/author-leonardo-puertas" class="transition hover:text-accent">Leonardo Puertas (Lead Analyst)</a></li>
+            <li><a href="/about" class="transition hover:text-accent">About Detailed Review</a></li>
+            <li><a href="/affiliate-disclosure" class="transition hover:text-accent">Affiliate Disclosure Policy</a></li>
+            <li><a href="/privacy-policy" class="transition hover:text-accent">Privacy Policy</a></li>
+            <li><a href="/terms-of-service" class="text-accent font-semibold">Terms of Service</a></li>
+            <li><a href="/contact" class="transition hover:text-accent">Contact & Inquiries</a></li>
           </ul>
         </nav>
 
@@ -423,6 +392,6 @@
     </div>
   </footer>
 
-  <script src="assets/js/site.js" defer></script>
+  <script src="/assets/js/site.js" defer></script>
 </body>
 </html>

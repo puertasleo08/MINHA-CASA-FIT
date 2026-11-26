@@ -19,63 +19,28 @@
   <meta property="og:url" content="https://detailed-review.com/blog">
   <meta property="og:title" content="B2B SaaS Growth & AI Insights | Detailed Review Blog">
   <meta property="og:description" content="Technical tutorials, B2B software procurement playbooks, and empirical AI benchmarks to scale your enterprise operations with confidence.">
-  <meta property="og:image" content="https://detailed-review.com/assets/ui/logo.jpg">
-  <meta property="og:image:width" content="1024">
-  <meta property="og:image:height" content="1024">
+  <meta property="og:image" content="https://detailed-review.com/assets/ui/og-default.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:url" content="https://detailed-review.com/blog">
   <meta name="twitter:title" content="B2B SaaS Growth & AI Insights | Detailed Review Blog">
   <meta name="twitter:description" content="Technical tutorials, B2B software procurement playbooks, and empirical AI benchmarks to scale your enterprise operations with confidence.">
-  <meta name="twitter:image" content="https://detailed-review.com/assets/ui/logo.jpg">
+  <meta name="twitter:image" content="https://detailed-review.com/assets/ui/og-default.jpg">
 
   <!-- Favicon & Icons -->
-  <link rel="icon" type="image/jpeg" href="assets/ui/favicon.jpg">
-  <link rel="apple-touch-icon" href="assets/ui/favicon.jpg">
+  <link rel="icon" type="image/jpeg" href="/assets/ui/favicon.jpg">
+  <link rel="apple-touch-icon" href="/assets/ui/favicon.jpg">
 
   <!-- Google Fonts Preconnect -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@600;700;800;900&display=swap" rel="stylesheet">
 
-  <!-- Tailwind CSS CDN Engine -->
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      darkMode: 'class',
-      theme: {
-        extend: {
-          colors: {
-            brand: {
-              dark: '#0B0F19',
-              slate: '#0F172A',
-              card: 'rgba(255, 255, 255, 0.035)',
-              border: 'rgba(255, 255, 255, 0.08)',
-              hover: 'rgba(255, 255, 255, 0.06)',
-              muted: '#94A3B8',
-              dim: '#64748B'
-            },
-            accent: {
-              DEFAULT: '#C0FF00',
-              hover: '#AEE600',
-              glow: 'rgba(192, 255, 0, 0.35)'
-            }
-          },
-          fontFamily: {
-            sans: ['Inter', 'system-ui', 'sans-serif'],
-            display: ['"Plus Jakarta Sans"', 'Inter', 'system-ui', 'sans-serif']
-          },
-          boxShadow: {
-            'neon': '0 0 25px -4px rgba(192, 255, 0, 0.45)',
-            'neon-sm': '0 0 14px -2px rgba(192, 255, 0, 0.35)',
-            'glass': '0 8px 32px 0 rgba(0, 0, 0, 0.45)',
-            'card': '0 10px 30px -10px rgba(0, 0, 0, 0.6)'
-          }
-        }
-      }
-    };
-  </script>
+  <!-- Compiled Production Tailwind CSS -->
+  <link rel="stylesheet" href="/assets/css/styles.css">
 
   <!-- Custom High-Tech Dark Styles -->
   <style>
@@ -105,39 +70,45 @@
 
   <!-- Technical SEO: Schema.org Structured Data (JSON-LD) -->
   <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "Organization",
-        "@id": "https://detailed-review.com/#organization",
-        "name": "Detailed Review",
-        "url": "https://detailed-review.com/",
-        "logo": {
-          "@type": "ImageObject",
-          "url": "https://detailed-review.com/assets/ui/logo.jpg"
-        }
-      },
-      {
-        "@type": "WebSite",
-        "@id": "https://detailed-review.com/#website",
-        "name": "Detailed Review",
-        "url": "https://detailed-review.com/",
-        "inLanguage": "en-US",
-        "publisher": { "@id": "https://detailed-review.com/#organization" }
-      },
-      {
-        "@type": "CollectionPage",
-        "@id": "https://detailed-review.com/blog#webpage",
-        "url": "https://detailed-review.com/blog",
-        "name": "B2B SaaS Growth & AI Insights | Detailed Review Blog",
-        "description": "Technical tutorials, B2B software procurement playbooks, and empirical AI benchmarks to scale your enterprise operations with confidence.",
-        "inLanguage": "en-US",
-        "isPartOf": { "@id": "https://detailed-review.com/#website" },
-        "about": { "@id": "https://detailed-review.com/#organization" }
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://detailed-review.com/#organization",
+      "name": "Detailed Review",
+      "url": "https://detailed-review.com/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://detailed-review.com/assets/ui/logo.jpg"
       }
-    ]
-  }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://detailed-review.com/#website",
+      "name": "Detailed Review",
+      "url": "https://detailed-review.com/",
+      "inLanguage": "en-US",
+      "publisher": {
+        "@id": "https://detailed-review.com/#organization"
+      }
+    },
+    {
+      "@type": "CollectionPage",
+      "@id": "https://detailed-review.com/blog#webpage",
+      "url": "https://detailed-review.com/blog",
+      "name": "B2B SaaS Growth & AI Insights | Detailed Review Blog",
+      "description": "Technical tutorials, B2B software procurement playbooks, and empirical AI benchmarks to scale your enterprise operations with confidence.",
+      "inLanguage": "en-US",
+      "isPartOf": {
+        "@id": "https://detailed-review.com/#website"
+      },
+      "about": {
+        "@id": "https://detailed-review.com/#organization"
+      }
+    }
+  ]
+}
   </script>
 </head>
 <body class="bg-brand-dark font-sans text-slate-300 antialiased selection:bg-accent selection:text-slate-950">
@@ -154,7 +125,7 @@
       <!-- Brand Logo -->
       <a href="/" class="flex shrink-0 items-center gap-3.5 transition hover:opacity-90" aria-label="Detailed Review — Homepage">
         <img 
-          src="assets/ui/logo.jpg" 
+          src="/assets/ui/logo.jpg" 
           alt="Detailed Review Logo" 
           width="44" 
           height="44" 
@@ -175,9 +146,9 @@
       <nav class="hidden items-center gap-8 text-sm font-semibold text-slate-300 md:flex" aria-label="Primary Navigation">
         <a href="/#categories" class="transition hover:text-accent">Categories</a>
         <a href="/#rankings" class="transition hover:text-accent">Top Rankings</a>
-        <a href="blog.html" class="text-accent font-bold">Blog & Insights</a>
-        <a href="methodology.html" class="transition hover:text-accent">Methodology</a>
-        <a href="about.html" class="transition hover:text-accent">About</a>
+        <a href="/blog" class="text-accent font-bold">Blog & Insights</a>
+        <a href="/methodology" class="transition hover:text-accent">Methodology</a>
+        <a href="/about" class="transition hover:text-accent">About</a>
       </nav>
 
       <!-- Header CTA -->
@@ -212,10 +183,10 @@
       <nav class="flex flex-col gap-1 text-base font-semibold" aria-label="Mobile Navigation">
         <a href="/#categories" class="rounded-lg px-3 py-3 text-slate-200 hover:bg-white/5 hover:text-accent">Categories</a>
         <a href="/#rankings" class="rounded-lg px-3 py-3 text-slate-200 hover:bg-white/5 hover:text-accent">Top Rankings</a>
-        <a href="blog.html" class="rounded-lg px-3 py-3 text-accent bg-white/5 font-bold">Blog & Insights</a>
-        <a href="methodology.html" class="rounded-lg px-3 py-3 text-slate-200 hover:bg-white/5 hover:text-accent">Methodology</a>
-        <a href="about.html" class="rounded-lg px-3 py-3 text-slate-200 hover:bg-white/5 hover:text-accent">About Us</a>
-        <a href="contact.html" class="rounded-lg px-3 py-3 text-slate-200 hover:bg-white/5 hover:text-accent">Contact</a>
+        <a href="/blog" class="rounded-lg px-3 py-3 text-accent bg-white/5 font-bold">Blog & Insights</a>
+        <a href="/methodology" class="rounded-lg px-3 py-3 text-slate-200 hover:bg-white/5 hover:text-accent">Methodology</a>
+        <a href="/about" class="rounded-lg px-3 py-3 text-slate-200 hover:bg-white/5 hover:text-accent">About Us</a>
+        <a href="/contact" class="rounded-lg px-3 py-3 text-slate-200 hover:bg-white/5 hover:text-accent">Contact</a>
       </nav>
       <div class="mt-4 border-t border-white/10 pt-4">
         <a href="/#roi-calculator" class="inline-flex h-12 w-full items-center justify-center gap-2 rounded-xl bg-accent font-extrabold text-slate-950 shadow-neon-sm">
@@ -294,7 +265,7 @@
           
           <!-- Article 1 -->
           <article class="glass-card group flex flex-col justify-between overflow-hidden rounded-2xl">
-            <a href="blog-automate-b2b-lead-gen.html" class="block">
+            <a href="/blog/automate-b2b-lead-gen" class="block">
               <div class="relative aspect-[16/10] w-full overflow-hidden bg-slate-900 border-b border-white/10 flex items-center justify-center p-6">
                 <div class="absolute inset-0 bg-gradient-to-tr from-accent/15 via-transparent to-sky-500/10"></div>
                 <div class="relative z-10 text-center">
@@ -317,13 +288,13 @@
             </a>
             <div class="border-t border-white/10 p-6 pt-4 flex items-center justify-between text-xs">
               <span class="text-slate-400">14 min read</span>
-              <a href="blog-automate-b2b-lead-gen.html" class="font-bold text-accent group-hover:underline">Read B2B Lead Gen Guide →</a>
+              <a href="/blog/automate-b2b-lead-gen" class="font-bold text-accent group-hover:underline">Read B2B Lead Gen Guide →</a>
             </div>
           </article>
 
           <!-- Article 2 -->
           <article class="glass-card group flex flex-col justify-between overflow-hidden rounded-2xl">
-            <a href="blog-best-ai-workflow-tools-agencies.html" class="block">
+            <a href="/blog/best-ai-workflow-tools-agencies" class="block">
               <div class="relative aspect-[16/10] w-full overflow-hidden bg-slate-900 border-b border-white/10 flex items-center justify-center p-6">
                 <div class="absolute inset-0 bg-gradient-to-tr from-sky-500/15 via-transparent to-purple-500/10"></div>
                 <div class="relative z-10 text-center">
@@ -346,13 +317,13 @@
             </a>
             <div class="border-t border-white/10 p-6 pt-4 flex items-center justify-between text-xs">
               <span class="text-slate-400">16 min read</span>
-              <a href="blog-best-ai-workflow-tools-agencies.html" class="font-bold text-accent group-hover:underline">Read Agency Tool Benchmark →</a>
+              <a href="/blog/best-ai-workflow-tools-agencies" class="font-bold text-accent group-hover:underline">Read Agency Tool Benchmark →</a>
             </div>
           </article>
 
           <!-- Article 3 -->
           <article class="glass-card group flex flex-col justify-between overflow-hidden rounded-2xl">
-            <a href="blog-nocode-vs-api-integrations.html" class="block">
+            <a href="/blog/nocode-vs-api-integrations" class="block">
               <div class="relative aspect-[16/10] w-full overflow-hidden bg-slate-900 border-b border-white/10 flex items-center justify-center p-6">
                 <div class="absolute inset-0 bg-gradient-to-tr from-purple-500/15 via-transparent to-accent/10"></div>
                 <div class="relative z-10 text-center">
@@ -375,13 +346,13 @@
             </a>
             <div class="border-t border-white/10 p-6 pt-4 flex items-center justify-between text-xs">
               <span class="text-slate-400">15 min read</span>
-              <a href="blog-nocode-vs-api-integrations.html" class="font-bold text-accent group-hover:underline">Read Architecture Teardown →</a>
+              <a href="/blog/nocode-vs-api-integrations" class="font-bold text-accent group-hover:underline">Read Architecture Teardown →</a>
             </div>
           </article>
 
           <!-- Article 4 -->
           <article class="glass-card group flex flex-col justify-between overflow-hidden rounded-2xl">
-            <a href="blog-automated-sales-pipeline-examples.html" class="block">
+            <a href="/blog/automated-sales-pipeline-examples" class="block">
               <div class="relative aspect-[16/10] w-full overflow-hidden bg-slate-900 border-b border-white/10 flex items-center justify-center p-6">
                 <div class="absolute inset-0 bg-gradient-to-tr from-emerald-500/15 via-transparent to-sky-500/10"></div>
                 <div class="relative z-10 text-center">
@@ -404,13 +375,13 @@
             </a>
             <div class="border-t border-white/10 p-6 pt-4 flex items-center justify-between text-xs">
               <span class="text-slate-400">15 min read</span>
-              <a href="blog-automated-sales-pipeline-examples.html" class="font-bold text-accent group-hover:underline">Read Pipeline Examples Guide →</a>
+              <a href="/blog/automated-sales-pipeline-examples" class="font-bold text-accent group-hover:underline">Read Pipeline Examples Guide →</a>
             </div>
           </article>
 
           <!-- Article 5: Cluster 2 - Topical Authority -->
           <article class="glass-card group flex flex-col justify-between overflow-hidden rounded-2xl">
-            <a href="blog-build-topical-authority-ai.html" class="block">
+            <a href="/blog/build-topical-authority-ai" class="block">
               <div class="relative aspect-[16/10] w-full overflow-hidden bg-slate-900 border-b border-white/10 flex items-center justify-center p-6">
                 <div class="absolute inset-0 bg-gradient-to-tr from-accent/15 via-transparent to-purple-500/10"></div>
                 <div class="relative z-10 text-center">
@@ -433,13 +404,13 @@
             </a>
             <div class="border-t border-white/10 p-6 pt-4 flex items-center justify-between text-xs">
               <span class="text-slate-400">14 min read</span>
-              <a href="blog-build-topical-authority-ai.html" class="font-bold text-accent group-hover:underline">Read Topical Authority Silo Blueprint →</a>
+              <a href="/blog/build-topical-authority-ai" class="font-bold text-accent group-hover:underline">Read Topical Authority Silo Blueprint →</a>
             </div>
           </article>
 
           <!-- Article 6: Cluster 2 - AI Content Workflows -->
           <article class="glass-card group flex flex-col justify-between overflow-hidden rounded-2xl">
-            <a href="blog-ai-content-creation-workflows.html" class="block">
+            <a href="/blog/ai-content-creation-workflows" class="block">
               <div class="relative aspect-[16/10] w-full overflow-hidden bg-slate-900 border-b border-white/10 flex items-center justify-center p-6">
                 <div class="absolute inset-0 bg-gradient-to-tr from-emerald-500/15 via-transparent to-accent/15"></div>
                 <div class="relative z-10 text-center">
@@ -462,13 +433,13 @@
             </a>
             <div class="border-t border-white/10 p-6 pt-4 flex items-center justify-between text-xs">
               <span class="text-slate-400">16 min read</span>
-              <a href="blog-ai-content-creation-workflows.html" class="font-bold text-accent group-hover:underline">Explore AI Content Workflows Playbook →</a>
+              <a href="/blog/ai-content-creation-workflows" class="font-bold text-accent group-hover:underline">Explore AI Content Workflows Playbook →</a>
             </div>
           </article>
 
           <!-- Article 7: Cluster 2 - Best Optimization Software -->
           <article class="glass-card group flex flex-col justify-between overflow-hidden rounded-2xl">
-            <a href="blog-best-seo-content-optimization-software.html" class="block">
+            <a href="/blog/best-seo-content-optimization-software" class="block">
               <div class="relative aspect-[16/10] w-full overflow-hidden bg-slate-900 border-b border-white/10 flex items-center justify-center p-6">
                 <div class="absolute inset-0 bg-gradient-to-tr from-sky-500/15 via-transparent to-indigo-500/15"></div>
                 <div class="relative z-10 text-center">
@@ -491,13 +462,13 @@
             </a>
             <div class="border-t border-white/10 p-6 pt-4 flex items-center justify-between text-xs">
               <span class="text-slate-400">18 min read</span>
-              <a href="blog-best-seo-content-optimization-software.html" class="font-bold text-accent group-hover:underline">Compare Best SEO Optimization Software →</a>
+              <a href="/blog/best-seo-content-optimization-software" class="font-bold text-accent group-hover:underline">Compare Best SEO Optimization Software →</a>
             </div>
           </article>
 
           <!-- Article 8: Cluster 2 - Scale Long-Form Content -->
           <article class="glass-card group flex flex-col justify-between overflow-hidden rounded-2xl">
-            <a href="blog-scale-long-form-seo-content.html" class="block">
+            <a href="/blog/scaling-long-form-seo-content" class="block">
               <div class="relative aspect-[16/10] w-full overflow-hidden bg-slate-900 border-b border-white/10 flex items-center justify-center p-6">
                 <div class="absolute inset-0 bg-gradient-to-tr from-amber-500/15 via-transparent to-rose-500/15"></div>
                 <div class="relative z-10 text-center">
@@ -520,13 +491,13 @@
             </a>
             <div class="border-t border-white/10 p-6 pt-4 flex items-center justify-between text-xs">
               <span class="text-slate-400">15 min read</span>
-              <a href="blog-scale-long-form-seo-content.html" class="font-bold text-accent group-hover:underline">Read Long-Form Scaling Framework →</a>
+              <a href="/blog/scaling-long-form-seo-content" class="font-bold text-accent group-hover:underline">Read Long-Form Scaling Framework →</a>
             </div>
           </article>
 
           <!-- Article 9: Cluster 3 - Set Up Sales Pipeline -->
           <article class="glass-card group flex flex-col justify-between overflow-hidden rounded-2xl">
-            <a href="blog-setup-b2b-sales-pipeline.html" class="block">
+            <a href="/blog/setup-b2b-sales-pipeline" class="block">
               <div class="relative aspect-[16/10] w-full overflow-hidden bg-slate-900 border-b border-white/10 flex items-center justify-center p-6">
                 <div class="absolute inset-0 bg-gradient-to-tr from-accent/20 via-transparent to-sky-500/15"></div>
                 <div class="relative z-10 text-center">
@@ -549,13 +520,13 @@
             </a>
             <div class="border-t border-white/10 p-6 pt-4 flex items-center justify-between text-xs">
               <span class="text-slate-400">16 min read</span>
-              <a href="blog-setup-b2b-sales-pipeline.html" class="font-bold text-accent group-hover:underline">Read Sales Pipeline Setup Guide →</a>
+              <a href="/blog/setup-b2b-sales-pipeline" class="font-bold text-accent group-hover:underline">Read Sales Pipeline Setup Guide →</a>
             </div>
           </article>
 
           <!-- Article 10: Cluster 3 - Best Cold Email Tools -->
           <article class="glass-card group flex flex-col justify-between overflow-hidden rounded-2xl">
-            <a href="blog-best-ai-cold-email-tools.html" class="block">
+            <a href="/blog/best-ai-cold-email-tools" class="block">
               <div class="relative aspect-[16/10] w-full overflow-hidden bg-slate-900 border-b border-white/10 flex items-center justify-center p-6">
                 <div class="absolute inset-0 bg-gradient-to-tr from-sky-500/20 via-transparent to-purple-500/15"></div>
                 <div class="relative z-10 text-center">
@@ -578,13 +549,13 @@
             </a>
             <div class="border-t border-white/10 p-6 pt-4 flex items-center justify-between text-xs">
               <span class="text-slate-400">17 min read</span>
-              <a href="blog-best-ai-cold-email-tools.html" class="font-bold text-accent group-hover:underline">Compare Best AI Cold Email Tools →</a>
+              <a href="/blog/best-ai-cold-email-tools" class="font-bold text-accent group-hover:underline">Compare Best AI Cold Email Tools →</a>
             </div>
           </article>
 
           <!-- Article 11: Cluster 3 - Reduce Churn Workflows -->
           <article class="glass-card group flex flex-col justify-between overflow-hidden rounded-2xl">
-            <a href="blog-sales-automation-reduce-churn.html" class="block">
+            <a href="/blog/sales-automation-reduce-churn" class="block">
               <div class="relative aspect-[16/10] w-full overflow-hidden bg-slate-900 border-b border-white/10 flex items-center justify-center p-6">
                 <div class="absolute inset-0 bg-gradient-to-tr from-purple-500/20 via-transparent to-emerald-500/15"></div>
                 <div class="relative z-10 text-center">
@@ -607,13 +578,13 @@
             </a>
             <div class="border-t border-white/10 p-6 pt-4 flex items-center justify-between text-xs">
               <span class="text-slate-400">15 min read</span>
-              <a href="blog-sales-automation-reduce-churn.html" class="font-bold text-accent group-hover:underline">Explore Churn Reduction Workflows →</a>
+              <a href="/blog/sales-automation-reduce-churn" class="font-bold text-accent group-hover:underline">Explore Churn Reduction Workflows →</a>
             </div>
           </article>
 
           <!-- Article 12: Cluster 3 - AI Lead Scoring Models -->
           <article class="glass-card group flex flex-col justify-between overflow-hidden rounded-2xl">
-            <a href="blog-ai-lead-scoring-models.html" class="block">
+            <a href="/blog/ai-lead-scoring-models" class="block">
               <div class="relative aspect-[16/10] w-full overflow-hidden bg-slate-900 border-b border-white/10 flex items-center justify-center p-6">
                 <div class="absolute inset-0 bg-gradient-to-tr from-emerald-500/20 via-transparent to-accent/20"></div>
                 <div class="relative z-10 text-center">
@@ -636,13 +607,13 @@
             </a>
             <div class="border-t border-white/10 p-6 pt-4 flex items-center justify-between text-xs">
               <span class="text-slate-400">16 min read</span>
-              <a href="blog-ai-lead-scoring-models.html" class="font-bold text-accent group-hover:underline">Read Predictive Lead Scoring Guide →</a>
+              <a href="/blog/ai-lead-scoring-models" class="font-bold text-accent group-hover:underline">Read Predictive Lead Scoring Guide →</a>
             </div>
           </article>
 
           <!-- Article 13: Cluster 4 - Solo Founder AI SaaS Stack -->
           <article class="glass-card group flex flex-col justify-between overflow-hidden rounded-2xl">
-            <a href="blog-ai-saas-tech-stack-solo-founders.html" class="block">
+            <a href="/blog/ai-saas-tech-stack-solo-founders" class="block">
               <div class="relative aspect-[16/10] w-full overflow-hidden bg-slate-900 border-b border-white/10 flex items-center justify-center p-6">
                 <div class="absolute inset-0 bg-gradient-to-tr from-accent/20 via-transparent to-purple-500/15"></div>
                 <div class="relative z-10 text-center">
@@ -665,13 +636,13 @@
             </a>
             <div class="border-t border-white/10 p-6 pt-4 flex items-center justify-between text-xs">
               <span class="text-slate-400">16 min read</span>
-              <a href="blog-ai-saas-tech-stack-solo-founders.html" class="font-bold text-accent group-hover:underline">Read Solo Founder Stack Guide →</a>
+              <a href="/blog/ai-saas-tech-stack-solo-founders" class="font-bold text-accent group-hover:underline">Read Solo Founder Stack Guide →</a>
             </div>
           </article>
 
           <!-- Article 14: Cluster 4 - SMB Marketing Automation -->
           <article class="glass-card group flex flex-col justify-between overflow-hidden rounded-2xl">
-            <a href="blog-must-have-marketing-automation-tools-smb.html" class="block">
+            <a href="/blog/must-have-marketing-automation-tools-smb" class="block">
               <div class="relative aspect-[16/10] w-full overflow-hidden bg-slate-900 border-b border-white/10 flex items-center justify-center p-6">
                 <div class="absolute inset-0 bg-gradient-to-tr from-sky-500/20 via-transparent to-accent/15"></div>
                 <div class="relative z-10 text-center">
@@ -694,13 +665,13 @@
             </a>
             <div class="border-t border-white/10 p-6 pt-4 flex items-center justify-between text-xs">
               <span class="text-slate-400">15 min read</span>
-              <a href="blog-must-have-marketing-automation-tools-smb.html" class="font-bold text-accent group-hover:underline">Compare SMB Marketing Tools →</a>
+              <a href="/blog/must-have-marketing-automation-tools-smb" class="font-bold text-accent group-hover:underline">Compare SMB Marketing Tools →</a>
             </div>
           </article>
 
           <!-- Article 15: Cluster 4 - Audit SaaS Stack -->
           <article class="glass-card group flex flex-col justify-between overflow-hidden rounded-2xl">
-            <a href="blog-audit-saas-stack-reduce-costs.html" class="block">
+            <a href="/blog/audit-saas-stack-reduce-costs" class="block">
               <div class="relative aspect-[16/10] w-full overflow-hidden bg-slate-900 border-b border-white/10 flex items-center justify-center p-6">
                 <div class="absolute inset-0 bg-gradient-to-tr from-rose-500/20 via-transparent to-amber-500/15"></div>
                 <div class="relative z-10 text-center">
@@ -723,13 +694,13 @@
             </a>
             <div class="border-t border-white/10 p-6 pt-4 flex items-center justify-between text-xs">
               <span class="text-slate-400">16 min read</span>
-              <a href="blog-audit-saas-stack-reduce-costs.html" class="font-bold text-accent group-hover:underline">Explore SaaS Stack Audit Guide →</a>
+              <a href="/blog/audit-saas-stack-reduce-costs" class="font-bold text-accent group-hover:underline">Explore SaaS Stack Audit Guide →</a>
             </div>
           </article>
 
           <!-- Article 16: Cluster 4 - B2B SaaS Consolidation -->
           <article class="glass-card group flex flex-col justify-between overflow-hidden rounded-2xl">
-            <a href="blog-b2b-saas-consolidation-replace-bloat.html" class="block">
+            <a href="/blog/b2b-saas-consolidation-replace-bloat" class="block">
               <div class="relative aspect-[16/10] w-full overflow-hidden bg-slate-900 border-b border-white/10 flex items-center justify-center p-6">
                 <div class="absolute inset-0 bg-gradient-to-tr from-emerald-500/20 via-transparent to-sky-500/15"></div>
                 <div class="relative z-10 text-center">
@@ -752,7 +723,7 @@
             </a>
             <div class="border-t border-white/10 p-6 pt-4 flex items-center justify-between text-xs">
               <span class="text-slate-400">17 min read</span>
-              <a href="blog-b2b-saas-consolidation-replace-bloat.html" class="font-bold text-accent group-hover:underline">Read SaaS Consolidation Playbook →</a>
+              <a href="/blog/b2b-saas-consolidation-replace-bloat" class="font-bold text-accent group-hover:underline">Read SaaS Consolidation Playbook →</a>
             </div>
           </article>
 
@@ -772,7 +743,7 @@
         <div class="md:col-span-4">
           <a href="/" class="flex items-center gap-3" aria-label="Detailed Review Footer Homepage">
             <img 
-              src="assets/ui/logo.jpg" 
+              src="/assets/ui/logo.jpg" 
               alt="Detailed Review Logo" 
               width="40" 
               height="40" 
@@ -809,8 +780,8 @@
           <ul class="mt-4 space-y-2.5 text-xs text-slate-400">
             <li><a href="/#rankings" class="transition hover:text-accent">2026 Rankings</a></li>
             <li><a href="/#roi-calculator" class="transition hover:text-accent">SaaS ROI Calculator</a></li>
-            <li><a href="methodology.html" class="transition hover:text-accent">Testing Methodology</a></li>
-            <li><a href="blog.html" class="text-accent font-semibold">Blog & Insights</a></li>
+            <li><a href="/methodology" class="transition hover:text-accent">Testing Methodology</a></li>
+            <li><a href="/blog" class="text-accent font-semibold">Blog & Insights</a></li>
           </ul>
         </nav>
 
@@ -818,12 +789,12 @@
         <nav class="md:col-span-3" aria-label="Institutional Links">
           <h3 class="font-display text-sm font-bold uppercase tracking-wider text-white">Editorial & Legal</h3>
           <ul class="mt-4 space-y-2.5 text-xs text-slate-400">
-            <li><a href="author-leonardo-puertas.html" class="transition hover:text-accent">Leonardo Puertas (Lead Analyst)</a></li>
-            <li><a href="about.html" class="transition hover:text-accent">About Detailed Review</a></li>
-            <li><a href="affiliate-disclosure.html" class="transition hover:text-accent">Affiliate Disclosure Policy</a></li>
-            <li><a href="privacy-policy.html" class="transition hover:text-accent">Privacy Policy</a></li>
-            <li><a href="terms-of-service.html" class="transition hover:text-accent">Terms of Service</a></li>
-            <li><a href="contact.html" class="transition hover:text-accent">Contact & Inquiries</a></li>
+            <li><a href="/author-leonardo-puertas" class="transition hover:text-accent">Leonardo Puertas (Lead Analyst)</a></li>
+            <li><a href="/about" class="transition hover:text-accent">About Detailed Review</a></li>
+            <li><a href="/affiliate-disclosure" class="transition hover:text-accent">Affiliate Disclosure Policy</a></li>
+            <li><a href="/privacy-policy" class="transition hover:text-accent">Privacy Policy</a></li>
+            <li><a href="/terms-of-service" class="transition hover:text-accent">Terms of Service</a></li>
+            <li><a href="/contact" class="transition hover:text-accent">Contact & Inquiries</a></li>
           </ul>
         </nav>
 
@@ -842,6 +813,6 @@
     </div>
   </footer>
 
-  <script src="assets/js/site.js" defer></script>
+  <script src="/assets/js/site.js" defer></script>
 </body>
 </html>

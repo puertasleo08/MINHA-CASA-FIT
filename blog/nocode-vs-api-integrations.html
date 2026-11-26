@@ -9,74 +9,38 @@
   <meta name="title" content="No-Code Automation vs Custom API Integrations: Which Is Better for B2B Scale? | Detailed Review">
   <meta name="description" content="Architectural breakdown of no-code workflow platforms (Make, Zapier) vs custom API microservices. Compare idempotency, concurrency caps, dead-letter queues, and TCO scaling curves.">
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
-  <link rel="canonical" href="https://detailed-review.com/blog-nocode-vs-api-integrations.html">
+  <link rel="canonical" href="https://detailed-review.com/blog/nocode-vs-api-integrations">
   <meta name="theme-color" content="#0B0F19">
 
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="article">
   <meta property="og:locale" content="en_US">
   <meta property="og:site_name" content="Detailed Review">
-  <meta property="og:url" content="https://detailed-review.com/blog-nocode-vs-api-integrations.html">
+  <meta property="og:url" content="https://detailed-review.com/blog/nocode-vs-api-integrations">
   <meta property="og:title" content="No-Code Automation vs Custom API Integrations: Which Is Better for B2B Scale?">
   <meta property="og:description" content="Engineering audit for CTOs and RevOps architects: evaluate execution latency, failure recovery, data residency, and the 50k-operation TCO inflection point.">
-  <meta property="og:image" content="https://detailed-review.com/assets/ui/logo.jpg">
-  <meta property="og:image:width" content="1024">
-  <meta property="og:image:height" content="1024">
+  <meta property="og:image" content="https://detailed-review.com/assets/ui/og-default.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:url" content="https://detailed-review.com/blog-nocode-vs-api-integrations.html">
+  <meta name="twitter:url" content="https://detailed-review.com/blog/nocode-vs-api-integrations">
   <meta name="twitter:title" content="No-Code Automation vs Custom API Integrations: Which Is Better for B2B Scale?">
   <meta name="twitter:description" content="Compare no-code automation platforms with custom API integrations across latency, security, idempotency, and long-term TCO.">
-  <meta name="twitter:image" content="https://detailed-review.com/assets/ui/logo.jpg">
+  <meta name="twitter:image" content="https://detailed-review.com/assets/ui/og-default.jpg">
 
   <!-- Favicon & Icons -->
-  <link rel="icon" type="image/jpeg" href="assets/ui/favicon.jpg">
-  <link rel="apple-touch-icon" href="assets/ui/favicon.jpg">
+  <link rel="icon" type="image/jpeg" href="/assets/ui/favicon.jpg">
+  <link rel="apple-touch-icon" href="/assets/ui/favicon.jpg">
 
   <!-- Google Fonts Preconnect -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 
-  <!-- Tailwind CSS CDN Engine -->
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      darkMode: 'class',
-      theme: {
-        extend: {
-          colors: {
-            brand: {
-              dark: '#0B0F19',
-              slate: '#0F172A',
-              card: 'rgba(255, 255, 255, 0.035)',
-              border: 'rgba(255, 255, 255, 0.08)',
-              hover: 'rgba(255, 255, 255, 0.06)',
-              muted: '#94A3B8',
-              dim: '#64748B'
-            },
-            accent: {
-              DEFAULT: '#C0FF00',
-              hover: '#AEE600',
-              glow: 'rgba(192, 255, 0, 0.35)'
-            }
-          },
-          fontFamily: {
-            sans: ['Inter', 'system-ui', 'sans-serif'],
-            display: ['"Plus Jakarta Sans"', 'Inter', 'system-ui', 'sans-serif'],
-            mono: ['"JetBrains Mono"', 'monospace']
-          },
-          boxShadow: {
-            'neon': '0 0 25px -4px rgba(192, 255, 0, 0.45)',
-            'neon-sm': '0 0 14px -2px rgba(192, 255, 0, 0.35)',
-            'glass': '0 8px 32px 0 rgba(0, 0, 0, 0.45)',
-            'card': '0 10px 30px -10px rgba(0, 0, 0, 0.6)'
-          }
-        }
-      }
-    };
-  </script>
+  <!-- Compiled Production Tailwind CSS -->
+  <link rel="stylesheet" href="/assets/css/styles.css">
 
   <!-- Custom High-Tech Dark Styles -->
   <style>
@@ -114,129 +78,140 @@
 
   <!-- Technical SEO: Schema.org Structured Data (JSON-LD) -->
   <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "Organization",
-        "@id": "https://detailed-review.com/#organization",
-        "name": "Detailed Review",
-        "url": "https://detailed-review.com/",
-        "logo": {
-          "@type": "ImageObject",
-          "url": "https://detailed-review.com/assets/ui/logo.jpg"
-        }
-      },
-      {
-        "@type": "WebSite",
-        "@id": "https://detailed-review.com/#website",
-        "name": "Detailed Review",
-        "url": "https://detailed-review.com/",
-        "inLanguage": "en-US",
-        "publisher": { "@id": "https://detailed-review.com/#organization" }
-      },
-      {
-        "@type": "WebPage",
-        "@id": "https://detailed-review.com/blog-nocode-vs-api-integrations.html#webpage",
-        "url": "https://detailed-review.com/blog-nocode-vs-api-integrations.html",
-        "name": "No-Code Automation vs Custom API Integrations: Which Is Better for B2B Scale?",
-        "description": "Architectural breakdown of no-code workflow platforms (Make, Zapier) vs custom API microservices. Compare idempotency, concurrency caps, dead-letter queues, and TCO scaling curves.",
-        "inLanguage": "en-US",
-        "isPartOf": { "@id": "https://detailed-review.com/#website" }
-      },
-      {
-        "@type": "BreadcrumbList",
-        "@id": "https://detailed-review.com/blog-nocode-vs-api-integrations.html#breadcrumb",
-        "itemListElement": [
-          {
-            "@type": "ListItem",
-            "position": 1,
-            "name": "Home",
-            "item": "https://detailed-review.com/"
-          },
-          {
-            "@type": "ListItem",
-            "position": 2,
-            "name": "Blog & Insights",
-            "item": "https://detailed-review.com/blog.html"
-          },
-          {
-            "@type": "ListItem",
-            "position": 3,
-            "name": "No-Code vs Custom API Integrations",
-            "item": "https://detailed-review.com/blog-nocode-vs-api-integrations.html"
-          }
-        ]
-      },
-      {
-        "@type": "Article",
-        "@id": "https://detailed-review.com/blog-nocode-vs-api-integrations.html#article",
-        "isPartOf": { "@id": "https://detailed-review.com/blog-nocode-vs-api-integrations.html#webpage" },
-        "headline": "No-Code Automation vs Custom API Integrations: Which Is Better for B2B Scale?",
-        "description": "A deep architectural analysis comparing no-code iPaaS platforms with custom code-first API integrations for B2B scale, examining idempotency, rate limits, latency, and TCO inflection points.",
-        "inLanguage": "en-US",
-        "mainEntityOfPage": "https://detailed-review.com/blog-nocode-vs-api-integrations.html",
-        "datePublished": "2026-11-18T12:00:00+00:00",
-        "dateModified": "2026-11-18T18:50:00+00:00",
-        "author": {
-          "@type": "Person",
-          "name": "Leonardo Puertas",
-          "url": "https://detailed-review.com/author-leonardo-puertas.html",
-          "jobTitle": "Lead Enterprise Software Analyst & Founder"
-        },
-        "publisher": { "@id": "https://detailed-review.com/#organization" },
-        "image": "https://detailed-review.com/assets/ui/logo.jpg",
-        "articleSection": "AI Workflow & Automation",
-        "keywords": "no-code vs custom API, iPaaS vs custom integrations, webhook architecture, idempotency keys, dead letter queues, enterprise automation TCO"
-      },
-      {
-        "@type": "FAQPage",
-        "@id": "https://detailed-review.com/blog-nocode-vs-api-integrations.html#faq",
-        "mainEntity": [
-          {
-            "@type": "Question",
-            "name": "What is the primary difference between no-code automation and custom API integrations?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "No-code automation (such as Make or Zapier) utilizes visual drag-and-drop connectors on multitenant cloud servers managed by a third party, optimizing for rapid deployment and non-technical maintainability. Custom API integrations utilize code-first microservices (Node.js, Python, Go) deployed on private infrastructure, providing unbounded logic, custom idempotency, and sub-second execution."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "At what event volume does custom API integration become cheaper than no-code?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "The typical TCO inflection point occurs between 50,000 and 100,000 monthly operations. Below 50k events, no-code SaaS subscriptions ($50-$150/mo) are significantly cheaper than developer salaries. Above 100k events, no-code linear task markups can exceed $1,500/mo, whereas a custom serverless function on AWS Lambda costs less than $25/mo in compute."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Why is idempotency critical when building automated B2B webhooks?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Webhooks can fail due to temporary network timeouts, causing sender servers to retry the payload multiple times. Without idempotency keys stored in an atomic cache like Redis, duplicate webhook executions will create duplicate CRM leads, charge customers twice, or fire duplicate cold email sequences."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "How does data compliance (GDPR, SOC 2, HIPAA) impact the choice between no-code and custom code?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Custom API integrations allow complete data residency control because payloads never leave your private Virtual Private Cloud (VPC) or encrypted databases. With no-code platforms, payloads traverse third-party multitenant worker environments, which may require Business Associate Agreements (BAAs) or fail strict zero-trust audit requirements."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "What is the Enterprise Hybrid Integration Architecture?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "The Hybrid model combines both approaches: no-code tools are deployed on the 'periphery' for lightweight notifications, non-technical marketing forms, and rapid prototypes, while core transactional synchronization, high-volume billing pipelines, and sensitive customer data are routed through hardened custom API microservices."
-            }
-          }
-        ]
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://detailed-review.com/#organization",
+      "name": "Detailed Review",
+      "url": "https://detailed-review.com/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://detailed-review.com/assets/ui/logo.jpg"
       }
-    ]
-  }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://detailed-review.com/#website",
+      "name": "Detailed Review",
+      "url": "https://detailed-review.com/",
+      "inLanguage": "en-US",
+      "publisher": {
+        "@id": "https://detailed-review.com/#organization"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://detailed-review.com/blog/nocode-vs-api-integrations#webpage",
+      "url": "https://detailed-review.com/blog/nocode-vs-api-integrations",
+      "name": "No-Code Automation vs Custom API Integrations: Which Is Better for B2B Scale?",
+      "description": "Architectural breakdown of no-code workflow platforms (Make, Zapier) vs custom API microservices. Compare idempotency, concurrency caps, dead-letter queues, and TCO scaling curves.",
+      "inLanguage": "en-US",
+      "isPartOf": {
+        "@id": "https://detailed-review.com/#website"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://detailed-review.com/blog/nocode-vs-api-integrations#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://detailed-review.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blog & Insights",
+          "item": "https://detailed-review.com/blog"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "No-Code vs Custom API Integrations",
+          "item": "https://detailed-review.com/blog/nocode-vs-api-integrations"
+        }
+      ]
+    },
+    {
+      "@type": "Article",
+      "@id": "https://detailed-review.com/blog/nocode-vs-api-integrations#article",
+      "isPartOf": {
+        "@id": "https://detailed-review.com/blog/nocode-vs-api-integrations#webpage"
+      },
+      "headline": "No-Code Automation vs Custom API Integrations: Which Is Better for B2B Scale?",
+      "description": "A deep architectural analysis comparing no-code iPaaS platforms with custom code-first API integrations for B2B scale, examining idempotency, rate limits, latency, and TCO inflection points.",
+      "inLanguage": "en-US",
+      "mainEntityOfPage": "https://detailed-review.com/blog/nocode-vs-api-integrations",
+      "datePublished": "2026-11-18T12:00:00+00:00",
+      "dateModified": "2026-11-18T18:50:00+00:00",
+      "author": {
+        "@type": "Person",
+        "name": "Leonardo Puertas",
+        "url": "https://detailed-review.com/author-leonardo-puertas",
+        "jobTitle": "Lead Enterprise Software Analyst & Founder",
+        "sameAs": [
+          "https://www.linkedin.com/in/leonardo-puertas-033545444/"
+        ]
+      },
+      "publisher": {
+        "@id": "https://detailed-review.com/#organization"
+      },
+      "image": "https://detailed-review.com/assets/ui/logo.jpg",
+      "articleSection": "AI Workflow & Automation",
+      "keywords": "no-code vs custom API, iPaaS vs custom integrations, webhook architecture, idempotency keys, dead letter queues, enterprise automation TCO"
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://detailed-review.com/blog/nocode-vs-api-integrations#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is the primary difference between no-code automation and custom API integrations?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No-code automation (such as Make or Zapier) utilizes visual drag-and-drop connectors on multitenant cloud servers managed by a third party, optimizing for rapid deployment and non-technical maintainability. Custom API integrations utilize code-first microservices (Node.js, Python, Go) deployed on private infrastructure, providing unbounded logic, custom idempotency, and sub-second execution."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "At what event volume does custom API integration become cheaper than no-code?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The typical TCO inflection point occurs between 50,000 and 100,000 monthly operations. Below 50k events, no-code SaaS subscriptions ($50-$150/mo) are significantly cheaper than developer salaries. Above 100k events, no-code linear task markups can exceed $1,500/mo, whereas a custom serverless function on AWS Lambda costs less than $25/mo in compute."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why is idempotency critical when building automated B2B webhooks?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Webhooks can fail due to temporary network timeouts, causing sender servers to retry the payload multiple times. Without idempotency keys stored in an atomic cache like Redis, duplicate webhook executions will create duplicate CRM leads, charge customers twice, or fire duplicate cold email sequences."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How does data compliance (GDPR, SOC 2, HIPAA) impact the choice between no-code and custom code?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Custom API integrations allow complete data residency control because payloads never leave your private Virtual Private Cloud (VPC) or encrypted databases. With no-code platforms, payloads traverse third-party multitenant worker environments, which may require Business Associate Agreements (BAAs) or fail strict zero-trust audit requirements."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the Enterprise Hybrid Integration Architecture?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The Hybrid model combines both approaches: no-code tools are deployed on the 'periphery' for lightweight notifications, non-technical marketing forms, and rapid prototypes, while core transactional synchronization, high-volume billing pipelines, and sensitive customer data are routed through hardened custom API microservices."
+          }
+        }
+      ]
+    }
+  ]
+}
   </script>
 </head>
 <body class="bg-brand-dark font-sans text-slate-300 antialiased selection:bg-accent selection:text-slate-950">
@@ -253,7 +228,7 @@
       <!-- Brand Logo -->
       <a href="/" class="flex shrink-0 items-center gap-3.5 transition hover:opacity-90" aria-label="Detailed Review — Homepage">
         <img 
-          src="assets/ui/logo.jpg" 
+          src="/assets/ui/logo.jpg" 
           alt="Detailed Review Logo" 
           width="44" 
           height="44" 
@@ -274,9 +249,9 @@
       <nav class="hidden items-center gap-8 text-sm font-semibold text-slate-300 md:flex" aria-label="Primary Navigation">
         <a href="/#categories" class="transition hover:text-accent">Categories</a>
         <a href="/#rankings" class="transition hover:text-accent">Top Rankings</a>
-        <a href="blog.html" class="text-accent font-bold">Blog & Insights</a>
-        <a href="methodology.html" class="transition hover:text-accent">Methodology</a>
-        <a href="about.html" class="transition hover:text-accent">About</a>
+        <a href="/blog" class="text-accent font-bold">Blog & Insights</a>
+        <a href="/methodology" class="transition hover:text-accent">Methodology</a>
+        <a href="/about" class="transition hover:text-accent">About</a>
       </nav>
 
       <!-- Header CTA -->
@@ -311,10 +286,10 @@
       <nav class="flex flex-col gap-1 text-base font-semibold" aria-label="Mobile Navigation">
         <a href="/#categories" class="rounded-lg px-3 py-3 text-slate-200 hover:bg-white/5 hover:text-accent">Categories</a>
         <a href="/#rankings" class="rounded-lg px-3 py-3 text-slate-200 hover:bg-white/5 hover:text-accent">Top Rankings</a>
-        <a href="blog.html" class="rounded-lg px-3 py-3 text-accent bg-white/5 font-bold">Blog & Insights</a>
-        <a href="methodology.html" class="rounded-lg px-3 py-3 text-slate-200 hover:bg-white/5 hover:text-accent">Methodology</a>
-        <a href="about.html" class="rounded-lg px-3 py-3 text-slate-200 hover:bg-white/5 hover:text-accent">About Us</a>
-        <a href="contact.html" class="rounded-lg px-3 py-3 text-slate-200 hover:bg-white/5 hover:text-accent">Contact</a>
+        <a href="/blog" class="rounded-lg px-3 py-3 text-accent bg-white/5 font-bold">Blog & Insights</a>
+        <a href="/methodology" class="rounded-lg px-3 py-3 text-slate-200 hover:bg-white/5 hover:text-accent">Methodology</a>
+        <a href="/about" class="rounded-lg px-3 py-3 text-slate-200 hover:bg-white/5 hover:text-accent">About Us</a>
+        <a href="/contact" class="rounded-lg px-3 py-3 text-slate-200 hover:bg-white/5 hover:text-accent">Contact</a>
       </nav>
       <div class="mt-4 border-t border-white/10 pt-4">
         <a href="/#roi-calculator" class="inline-flex h-12 w-full items-center justify-center gap-2 rounded-xl bg-accent font-extrabold text-slate-950 shadow-neon-sm">
@@ -332,7 +307,7 @@
       <div class="mx-auto flex max-w-5xl items-center gap-2 text-xs text-slate-400">
         <a href="/" class="transition hover:text-accent">Home</a>
         <span class="text-slate-600">/</span>
-        <a href="blog.html" class="transition hover:text-accent">Blog & Insights</a>
+        <a href="/blog" class="transition hover:text-accent">Blog & Insights</a>
         <span class="text-slate-600">/</span>
         <span class="text-slate-200 font-medium truncate">No-Code vs Custom API Integrations</span>
       </div>
@@ -360,13 +335,13 @@
         <div class="mt-8 flex flex-wrap items-center justify-center gap-4 border-y border-white/10 py-4 text-xs text-slate-400">
           <div class="flex items-center gap-2.5">
             <img 
-              src="assets/ui/logo.jpg" 
+              src="/assets/ui/logo.jpg" 
               alt="Leonardo Puertas" 
               width="32" 
               height="32" 
               class="h-8 w-8 rounded-full object-cover ring-1 ring-accent"
             >
-            <span class="text-white font-semibold">By <a href="author-leonardo-puertas.html" class="hover:text-accent transition">Leonardo Puertas</a></span>
+            <span class="text-white font-semibold">By <a href="/author-leonardo-puertas" class="hover:text-accent transition">Leonardo Puertas</a></span>
           </div>
           <span class="text-slate-600">•</span>
           <span>Lead Enterprise Software Analyst</span>
@@ -767,24 +742,24 @@ if (!acquired) {
             <div class="glass-card rounded-xl p-5 border border-white/10 hover:border-accent/40 transition">
               <span class="text-xs font-mono font-bold text-accent uppercase">Lead Generation Workflows</span>
               <h3 class="mt-2 text-base font-bold text-white">
-                <a href="blog-automate-b2b-lead-gen.html" class="hover:text-accent transition">
+                <a href="/blog/automate-b2b-lead-gen" class="hover:text-accent transition">
                   How to Automate B2B Lead Generation with AI: The 2026 RevOps Blueprint →
                 </a>
               </h3>
               <p class="mt-2 text-xs text-slate-400 leading-relaxed">
-                See how high-performing revenue teams connect no-code enrichment triggers with AI intent scoring in our complete guide on <a href="blog-automate-b2b-lead-gen.html" class="text-accent underline font-semibold">automating B2B lead generation with AI</a>.
+                See how high-performing revenue teams connect no-code enrichment triggers with AI intent scoring in our complete guide on <a href="/blog/automate-b2b-lead-gen" class="text-accent underline font-semibold">automating B2B lead generation with AI</a>.
               </p>
             </div>
 
             <div class="glass-card rounded-xl p-5 border border-white/10 hover:border-sky-400/40 transition">
               <span class="text-xs font-mono font-bold text-sky-400 uppercase">Agency Operations</span>
               <h3 class="mt-2 text-base font-bold text-white">
-                <a href="blog-best-ai-workflow-tools-agencies.html" class="hover:text-sky-400 transition">
+                <a href="/blog/best-ai-workflow-tools-agencies" class="hover:text-sky-400 transition">
                   Best AI Workflow Automation Tools for Marketing Agencies →
                 </a>
               </h3>
               <p class="mt-2 text-xs text-slate-400 leading-relaxed">
-                Evaluating self-hosted engines like n8n against Make.com to protect agency margins? Review our empirical audit of the <a href="blog-best-ai-workflow-tools-agencies.html" class="text-sky-400 underline font-semibold">best AI workflow automation tools for agencies</a>.
+                Evaluating self-hosted engines like n8n against Make.com to protect agency margins? Review our empirical audit of the <a href="/blog/best-ai-workflow-tools-agencies" class="text-sky-400 underline font-semibold">best AI workflow automation tools for agencies</a>.
               </p>
             </div>
 
@@ -793,20 +768,20 @@ if (!acquired) {
                 <div>
                   <span class="text-xs font-mono font-bold text-purple-400 uppercase">Startup Revenue Architecture</span>
                   <h3 class="mt-1 text-base font-bold text-white">
-                    <a href="blog-automated-sales-pipeline-examples.html" class="hover:text-purple-400 transition">
+                    <a href="/blog/automated-sales-pipeline-examples" class="hover:text-purple-400 transition">
                       Examples of Automated Sales Pipelines for Startups →
                     </a>
                   </h3>
                   <p class="mt-1 text-xs text-slate-400">
-                    Examine production schemas where webhook payloads trigger automated deal creation in our <a href="blog-automated-sales-pipeline-examples.html" class="text-purple-400 underline font-semibold">automated sales pipelines for high-growth startups</a>.
+                    Examine production schemas where webhook payloads trigger automated deal creation in our <a href="/blog/automated-sales-pipeline-examples" class="text-purple-400 underline font-semibold">automated sales pipelines for high-growth startups</a>.
                   </p>
                 </div>
                 <div class="shrink-0 flex items-center gap-2">
-                  <a href="#make-review" class="inline-flex items-center gap-1.5 rounded-lg border border-white/20 bg-white/5 px-3 py-1.5 text-xs font-bold text-slate-300 hover:text-white transition">
+                  <a href="/blog/best-ai-workflow-tools-agencies" class="inline-flex items-center gap-1.5 rounded-lg border border-white/20 bg-white/5 px-3 py-1.5 text-xs font-bold text-slate-300 hover:text-white transition">
                     <span>Make Review</span>
                     <span class="rounded bg-accent/20 px-1 py-0.5 text-[9px] font-extrabold uppercase text-accent">Soon</span>
                   </a>
-                  <a href="#zapier-review" class="inline-flex items-center gap-1.5 rounded-lg border border-white/20 bg-white/5 px-3 py-1.5 text-xs font-bold text-slate-300 hover:text-white transition">
+                  <a href="/blog/nocode-vs-api-integrations" class="inline-flex items-center gap-1.5 rounded-lg border border-white/20 bg-white/5 px-3 py-1.5 text-xs font-bold text-slate-300 hover:text-white transition">
                     <span>Zapier Review</span>
                     <span class="rounded bg-amber-400/20 px-1 py-0.5 text-[9px] font-extrabold uppercase text-amber-400">Soon</span>
                   </a>
@@ -909,7 +884,7 @@ if (!acquired) {
       <section class="mt-16 glass-card rounded-2xl p-6 sm:p-8 border border-white/10">
         <div class="flex flex-col sm:flex-row items-center sm:items-start gap-6 text-center sm:text-left">
           <img 
-            src="assets/ui/logo.jpg" 
+            src="/assets/ui/logo.jpg" 
             alt="Leonardo Puertas" 
             width="80" 
             height="80" 
@@ -924,11 +899,11 @@ if (!acquired) {
               Leonardo Puertas is the Founder and Lead Analyst at Detailed Review. With over a decade of hands-on experience in enterprise software procurement, RevOps data architecture, and algorithmic SEO modeling, he specializes in empirical stress-testing of AI workflow engines and SaaS Total Cost of Ownership (TCO).
             </p>
             <div class="pt-2 flex items-center justify-center sm:justify-start gap-4 text-xs">
-              <a href="author-leonardo-puertas.html" class="font-bold text-accent hover:underline flex items-center gap-1">
+              <a href="/author-leonardo-puertas" class="font-bold text-accent hover:underline flex items-center gap-1">
                 View Full Bio & Credentials →
               </a>
               <span class="text-slate-600">•</span>
-              <a href="methodology.html" class="text-slate-400 hover:text-white transition">Testing Methodology</a>
+              <a href="/methodology" class="text-slate-400 hover:text-white transition">Testing Methodology</a>
             </div>
           </div>
         </div>
@@ -941,7 +916,7 @@ if (!acquired) {
             <span class="font-mono text-xs font-bold text-accent uppercase tracking-wider">Topical Cluster: AI Automation</span>
             <h2 id="related-heading" class="font-display text-xl sm:text-2xl font-bold text-white mt-1">Recommended MOFU Guides in This Series</h2>
           </div>
-          <a href="blog.html" class="hidden sm:inline-flex text-xs font-bold text-accent hover:underline">
+          <a href="/blog" class="hidden sm:inline-flex text-xs font-bold text-accent hover:underline">
             View All Insights →
           </a>
         </div>
@@ -949,7 +924,7 @@ if (!acquired) {
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
           
           <!-- Card 1 -->
-          <a href="blog-automate-b2b-lead-gen.html" class="glass-card group flex flex-col justify-between rounded-xl p-5 border border-white/10 hover:border-accent/40 transition">
+          <a href="/blog/automate-b2b-lead-gen" class="glass-card group flex flex-col justify-between rounded-xl p-5 border border-white/10 hover:border-accent/40 transition">
             <div>
               <span class="text-[10px] font-mono text-accent uppercase font-bold">RevOps Strategy</span>
               <h3 class="mt-2 text-sm font-bold text-white group-hover:text-accent transition">
@@ -963,7 +938,7 @@ if (!acquired) {
           </a>
 
           <!-- Card 2 -->
-          <a href="blog-best-ai-workflow-tools-agencies.html" class="glass-card group flex flex-col justify-between rounded-xl p-5 border border-white/10 hover:border-accent/40 transition">
+          <a href="/blog/best-ai-workflow-tools-agencies" class="glass-card group flex flex-col justify-between rounded-xl p-5 border border-white/10 hover:border-accent/40 transition">
             <div>
               <span class="text-[10px] font-mono text-sky-400 uppercase font-bold">Agency Operations</span>
               <h3 class="mt-2 text-sm font-bold text-white group-hover:text-accent transition">
@@ -977,7 +952,7 @@ if (!acquired) {
           </a>
 
           <!-- Card 3 -->
-          <a href="blog-automated-sales-pipeline-examples.html" class="glass-card group flex flex-col justify-between rounded-xl p-5 border border-white/10 hover:border-accent/40 transition">
+          <a href="/blog/automated-sales-pipeline-examples" class="glass-card group flex flex-col justify-between rounded-xl p-5 border border-white/10 hover:border-accent/40 transition">
             <div>
               <span class="text-[10px] font-mono text-purple-400 uppercase font-bold">Startup RevOps</span>
               <h3 class="mt-2 text-sm font-bold text-white group-hover:text-accent transition">
@@ -1005,7 +980,7 @@ if (!acquired) {
         <div class="md:col-span-4">
           <a href="/" class="flex items-center gap-3" aria-label="Detailed Review Footer Homepage">
             <img 
-              src="assets/ui/logo.jpg" 
+              src="/assets/ui/logo.jpg" 
               alt="Detailed Review Logo" 
               width="40" 
               height="40" 
@@ -1042,8 +1017,8 @@ if (!acquired) {
           <ul class="mt-4 space-y-2.5 text-xs text-slate-400">
             <li><a href="/#rankings" class="transition hover:text-accent">2026 Rankings</a></li>
             <li><a href="/#roi-calculator" class="transition hover:text-accent">SaaS ROI Calculator</a></li>
-            <li><a href="methodology.html" class="transition hover:text-accent">Testing Methodology</a></li>
-            <li><a href="blog.html" class="text-accent font-semibold">Blog & Insights</a></li>
+            <li><a href="/methodology" class="transition hover:text-accent">Testing Methodology</a></li>
+            <li><a href="/blog" class="text-accent font-semibold">Blog & Insights</a></li>
           </ul>
         </nav>
 
@@ -1051,12 +1026,12 @@ if (!acquired) {
         <nav class="md:col-span-3" aria-label="Institutional Links">
           <h3 class="font-display text-sm font-bold uppercase tracking-wider text-white">Editorial & Legal</h3>
           <ul class="mt-4 space-y-2.5 text-xs text-slate-400">
-            <li><a href="author-leonardo-puertas.html" class="transition hover:text-accent">Leonardo Puertas (Lead Analyst)</a></li>
-            <li><a href="about.html" class="transition hover:text-accent">About Detailed Review</a></li>
-            <li><a href="affiliate-disclosure.html" class="transition hover:text-accent">Affiliate Disclosure Policy</a></li>
-            <li><a href="privacy-policy.html" class="transition hover:text-accent">Privacy Policy</a></li>
-            <li><a href="terms-of-service.html" class="transition hover:text-accent">Terms of Service</a></li>
-            <li><a href="contact.html" class="transition hover:text-accent">Contact & Inquiries</a></li>
+            <li><a href="/author-leonardo-puertas" class="transition hover:text-accent">Leonardo Puertas (Lead Analyst)</a></li>
+            <li><a href="/about" class="transition hover:text-accent">About Detailed Review</a></li>
+            <li><a href="/affiliate-disclosure" class="transition hover:text-accent">Affiliate Disclosure Policy</a></li>
+            <li><a href="/privacy-policy" class="transition hover:text-accent">Privacy Policy</a></li>
+            <li><a href="/terms-of-service" class="transition hover:text-accent">Terms of Service</a></li>
+            <li><a href="/contact" class="transition hover:text-accent">Contact & Inquiries</a></li>
           </ul>
         </nav>
 

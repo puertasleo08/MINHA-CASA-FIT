@@ -9,74 +9,38 @@
   <meta name="title" content="AI Lead Scoring Models: How to Prioritize High-Intent B2B Buyers | Detailed Review">
   <meta name="description" content="Technical guide to predictive AI lead scoring vs legacy rule-based heuristics. Discover machine learning models, buying committee intent, and dynamic SLA routing.">
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
-  <link rel="canonical" href="https://detailed-review.com/blog-ai-lead-scoring-models.html">
+  <link rel="canonical" href="https://detailed-review.com/blog/ai-lead-scoring-models">
   <meta name="theme-color" content="#0B0F19">
 
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="article">
   <meta property="og:locale" content="en_US">
   <meta property="og:site_name" content="Detailed Review">
-  <meta property="og:url" content="https://detailed-review.com/blog-ai-lead-scoring-models.html">
+  <meta property="og:url" content="https://detailed-review.com/blog/ai-lead-scoring-models">
   <meta property="og:title" content="AI Lead Scoring Models: How to Prioritize High-Intent B2B Buyers">
   <meta property="og:description" content="Eliminate false positives and SDR burnout. Learn how machine learning algorithms (XGBoost, Random Forests) replace arbitrary points with predictive buyer conversion probability.">
-  <meta property="og:image" content="https://detailed-review.com/assets/ui/logo.jpg">
-  <meta property="og:image:width" content="1024">
-  <meta property="og:image:height" content="1024">
+  <meta property="og:image" content="https://detailed-review.com/assets/ui/og-default.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:url" content="https://detailed-review.com/blog-ai-lead-scoring-models.html">
+  <meta name="twitter:url" content="https://detailed-review.com/blog/ai-lead-scoring-models">
   <meta name="twitter:title" content="AI Lead Scoring Models: How to Prioritize High-Intent B2B Buyers">
   <meta name="twitter:description" content="Rule-based scoring is dead. Discover how RevOps deploys predictive AI models to calculate true B2B purchase intent. Includes interactive capacity optimizer.">
-  <meta name="twitter:image" content="https://detailed-review.com/assets/ui/logo.jpg">
+  <meta name="twitter:image" content="https://detailed-review.com/assets/ui/og-default.jpg">
 
   <!-- Favicon & Icons -->
-  <link rel="icon" type="image/jpeg" href="assets/ui/favicon.jpg">
-  <link rel="apple-touch-icon" href="assets/ui/favicon.jpg">
+  <link rel="icon" type="image/jpeg" href="/assets/ui/favicon.jpg">
+  <link rel="apple-touch-icon" href="/assets/ui/favicon.jpg">
 
   <!-- Google Fonts Preconnect -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 
-  <!-- Tailwind CSS CDN Engine -->
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      darkMode: 'class',
-      theme: {
-        extend: {
-          colors: {
-            brand: {
-              dark: '#0B0F19',
-              slate: '#0F172A',
-              card: 'rgba(255, 255, 255, 0.035)',
-              border: 'rgba(255, 255, 255, 0.08)',
-              hover: 'rgba(255, 255, 255, 0.06)',
-              muted: '#94A3B8',
-              dim: '#64748B'
-            },
-            accent: {
-              DEFAULT: '#C0FF00',
-              hover: '#AEE600',
-              glow: 'rgba(192, 255, 0, 0.35)'
-            }
-          },
-          fontFamily: {
-            sans: ['Inter', 'system-ui', 'sans-serif'],
-            display: ['"Plus Jakarta Sans"', 'Inter', 'system-ui', 'sans-serif'],
-            mono: ['"JetBrains Mono"', 'monospace']
-          },
-          boxShadow: {
-            'neon': '0 0 25px -4px rgba(192, 255, 0, 0.45)',
-            'neon-sm': '0 0 14px -2px rgba(192, 255, 0, 0.35)',
-            'glass': '0 8px 32px 0 rgba(0, 0, 0, 0.45)',
-            'card': '0 10px 30px -10px rgba(0, 0, 0, 0.6)'
-          }
-        }
-      }
-    };
-  </script>
+  <!-- Compiled Production Tailwind CSS -->
+  <link rel="stylesheet" href="/assets/css/styles.css">
 
   <!-- Custom High-Tech Dark Styles -->
   <style>
@@ -103,127 +67,127 @@
 
   <!-- Schema.org JSON-LD (Graph) -->
   <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "Article",
-        "@id": "https://detailed-review.com/blog-ai-lead-scoring-models.html#article",
-        "isPartOf": {
-          "@type": "WebPage",
-          "@id": "https://detailed-review.com/blog-ai-lead-scoring-models.html"
-        },
-        "headline": "AI Lead Scoring Models: How to Prioritize High-Intent B2B Buyers",
-        "description": "Architectural RevOps guide comparing rule-based point scoring against predictive machine learning models. Covers algorithmic classification, time-decay functions, third-party intent ingestion, and interactive capacity optimization.",
-        "image": "https://detailed-review.com/assets/ui/logo.jpg",
-        "datePublished": "2026-11-22T11:00:00+00:00",
-        "dateModified": "2026-11-22T11:00:00+00:00",
-        "author": {
-          "@type": "Person",
-          "name": "Leonardo Puertas",
-          "jobTitle": "Lead Enterprise Software Analyst & Founder",
-          "url": "https://detailed-review.com/author-leonardo-puertas.html",
-          "sameAs": [
-            "https://www.linkedin.com/in/leonardo-puertas",
-            "https://twitter.com/leonardopuertas"
-          ]
-        },
-        "publisher": {
-          "@type": "Organization",
-          "name": "Detailed Review",
-          "url": "https://detailed-review.com",
-          "logo": {
-            "@type": "ImageObject",
-            "url": "https://detailed-review.com/assets/ui/logo.jpg"
-          }
-        },
-        "mainEntityOfPage": {
-          "@type": "WebPage",
-          "@id": "https://detailed-review.com/blog-ai-lead-scoring-models.html"
-        },
-        "keywords": [
-          "AI lead scoring models",
-          "predictive lead scoring",
-          "B2B buyer intent",
-          "rule-based vs predictive scoring",
-          "machine learning lead scoring",
-          "account-level intent scoring",
-          "RevOps lead routing SLA",
-          "sales capacity optimization"
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "@id": "https://detailed-review.com/blog/ai-lead-scoring-models#article",
+      "isPartOf": {
+        "@type": "WebPage",
+        "@id": "https://detailed-review.com/blog/ai-lead-scoring-models"
+      },
+      "headline": "AI Lead Scoring Models: How to Prioritize High-Intent B2B Buyers",
+      "description": "Architectural RevOps guide comparing rule-based point scoring against predictive machine learning models. Covers algorithmic classification, time-decay functions, third-party intent ingestion, and interactive capacity optimization.",
+      "image": "https://detailed-review.com/assets/ui/logo.jpg",
+      "datePublished": "2026-11-22T11:00:00+00:00",
+      "dateModified": "2026-11-22T11:00:00+00:00",
+      "author": {
+        "@type": "Person",
+        "name": "Leonardo Puertas",
+        "jobTitle": "Lead Enterprise Software Analyst & Founder",
+        "url": "https://detailed-review.com/author-leonardo-puertas",
+        "sameAs": [
+          "https://www.linkedin.com/in/leonardo-puertas-033545444/",
+          "https://twitter.com/leonardopuertas"
         ]
       },
-      {
-        "@type": "BreadcrumbList",
-        "@id": "https://detailed-review.com/blog-ai-lead-scoring-models.html#breadcrumb",
-        "itemListElement": [
-          {
-            "@type": "ListItem",
-            "position": 1,
-            "name": "Home",
-            "item": "https://detailed-review.com/"
-          },
-          {
-            "@type": "ListItem",
-            "position": 2,
-            "name": "Blog & Insights",
-            "item": "https://detailed-review.com/blog.html"
-          },
-          {
-            "@type": "ListItem",
-            "position": 3,
-            "name": "AI Lead Scoring Models",
-            "item": "https://detailed-review.com/blog-ai-lead-scoring-models.html"
-          }
-        ]
+      "publisher": {
+        "@type": "Organization",
+        "name": "Detailed Review",
+        "url": "https://detailed-review.com",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://detailed-review.com/assets/ui/logo.jpg"
+        }
       },
-      {
-        "@type": "FAQPage",
-        "@id": "https://detailed-review.com/blog-ai-lead-scoring-models.html#faq",
-        "mainEntity": [
-          {
-            "@type": "Question",
-            "name": "Why do traditional rule-based lead scoring models fail in modern B2B sales?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Rule-based models assign static points (+10 for an eBook, +20 for visiting pricing) that accumulate linearly. They confuse activity with intent, generating massive false positives (such as students, interns, or job seekers triggering MQL thresholds) while missing stealth C-suite buyers who read technical API documentation without submitting a form."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "How do machine learning algorithms calculate predictive lead scores?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Machine learning models (like XGBoost, Random Forest, or Logistic Regression) analyze hundreds of historic CRM closed-won and closed-lost opportunities. The model assigns statistical weights to firmographic fit, behavioral velocity, recency time-decay, and third-party intent data to calculate an exact conversion probability score between 0.00 and 1.00."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "How much historical data is required before deploying an AI lead scoring model?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "For predictive machine learning algorithms to achieve statistical significance, an organization typically needs at least 500 to 1,000 historical closed opportunities (both won and lost) and a minimum of 12 months of clean CRM activity logs. Startups with lower data volume should start with a hybrid model combining firmographic filters with intent velocity."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "What is the difference between contact-level scoring and account-level intent scoring?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Contact-level scoring tracks the actions of an isolated individual. In B2B enterprise sales, buying decisions involve 6 to 10 stakeholders. Account-level intent scoring aggregates engagement signals across multiple corporate email addresses at the same company domain, revealing coordinated organizational evaluation."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "What are the recommended RevOps SLA routing tiers for AI lead scores?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "RevOps best practice establishes three dynamic action tiers: Tier 1 (Predictive Score > 0.85): Instant Slack/SMS notification to enterprise AEs with a mandatory 15-minute response SLA; Tier 2 (Score 0.50–0.84): Automated behavioral email nurturing via marketing automation; Tier 3 (Score < 0.50): Kept in low-touch educational content tracks."
-            }
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://detailed-review.com/blog/ai-lead-scoring-models"
+      },
+      "keywords": [
+        "AI lead scoring models",
+        "predictive lead scoring",
+        "B2B buyer intent",
+        "rule-based vs predictive scoring",
+        "machine learning lead scoring",
+        "account-level intent scoring",
+        "RevOps lead routing SLA",
+        "sales capacity optimization"
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://detailed-review.com/blog/ai-lead-scoring-models#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://detailed-review.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blog & Insights",
+          "item": "https://detailed-review.com/blog"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "AI Lead Scoring Models",
+          "item": "https://detailed-review.com/blog/ai-lead-scoring-models"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://detailed-review.com/blog/ai-lead-scoring-models#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Why do traditional rule-based lead scoring models fail in modern B2B sales?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Rule-based models assign static points (+10 for an eBook, +20 for visiting pricing) that accumulate linearly. They confuse activity with intent, generating massive false positives (such as students, interns, or job seekers triggering MQL thresholds) while missing stealth C-suite buyers who read technical API documentation without submitting a form."
           }
-        ]
-      }
-    ]
-  }
+        },
+        {
+          "@type": "Question",
+          "name": "How do machine learning algorithms calculate predictive lead scores?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Machine learning models (like XGBoost, Random Forest, or Logistic Regression) analyze hundreds of historic CRM closed-won and closed-lost opportunities. The model assigns statistical weights to firmographic fit, behavioral velocity, recency time-decay, and third-party intent data to calculate an exact conversion probability score between 0.00 and 1.00."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much historical data is required before deploying an AI lead scoring model?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "For predictive machine learning algorithms to achieve statistical significance, an organization typically needs at least 500 to 1,000 historical closed opportunities (both won and lost) and a minimum of 12 months of clean CRM activity logs. Startups with lower data volume should start with a hybrid model combining firmographic filters with intent velocity."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the difference between contact-level scoring and account-level intent scoring?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Contact-level scoring tracks the actions of an isolated individual. In B2B enterprise sales, buying decisions involve 6 to 10 stakeholders. Account-level intent scoring aggregates engagement signals across multiple corporate email addresses at the same company domain, revealing coordinated organizational evaluation."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are the recommended RevOps SLA routing tiers for AI lead scores?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "RevOps best practice establishes three dynamic action tiers: Tier 1 (Predictive Score > 0.85): Instant Slack/SMS notification to enterprise AEs with a mandatory 15-minute response SLA; Tier 2 (Score 0.50–0.84): Automated behavioral email nurturing via marketing automation; Tier 3 (Score < 0.50): Kept in low-touch educational content tracks."
+          }
+        }
+      ]
+    }
+  ]
+}
   </script>
 </head>
 <body class="bg-brand-dark text-slate-100 font-sans antialiased selection:bg-accent selection:text-slate-950">
@@ -240,7 +204,7 @@
       <!-- Brand Logo -->
       <a href="/" class="flex items-center gap-3 group" aria-label="Detailed Review Homepage">
         <img 
-          src="assets/ui/logo.jpg" 
+          src="/assets/ui/logo.jpg" 
           alt="Detailed Review Logo" 
           width="42" 
           height="42" 
@@ -256,9 +220,9 @@
       <nav class="hidden md:flex items-center gap-8 text-sm font-semibold text-slate-300" aria-label="Main Navigation">
         <a href="/#categories" class="hover:text-accent transition">Categories</a>
         <a href="/#rankings" class="hover:text-accent transition">Rankings</a>
-        <a href="blog.html" class="text-accent font-bold transition">Blog & Playbooks</a>
-        <a href="methodology.html" class="hover:text-accent transition">Methodology</a>
-        <a href="about.html" class="hover:text-accent transition">About</a>
+        <a href="/blog" class="text-accent font-bold transition">Blog & Playbooks</a>
+        <a href="/methodology" class="hover:text-accent transition">Methodology</a>
+        <a href="/about" class="hover:text-accent transition">About</a>
       </nav>
 
       <!-- CTA Button -->
@@ -290,9 +254,9 @@
       <nav class="flex flex-col gap-4 text-base font-semibold text-slate-200">
         <a href="/#categories" class="hover:text-accent">Categories</a>
         <a href="/#rankings" class="hover:text-accent">Rankings</a>
-        <a href="blog.html" class="text-accent font-bold">Blog & Playbooks</a>
-        <a href="methodology.html" class="hover:text-accent">Methodology</a>
-        <a href="about.html" class="hover:text-accent">About</a>
+        <a href="/blog" class="text-accent font-bold">Blog & Playbooks</a>
+        <a href="/methodology" class="hover:text-accent">Methodology</a>
+        <a href="/about" class="hover:text-accent">About</a>
         <a href="/#roi-calculator" class="mt-2 text-center rounded-xl bg-accent py-3 text-xs font-extrabold uppercase text-slate-950">Find Software</a>
       </nav>
     </div>
@@ -303,7 +267,7 @@
     <div class="mx-auto flex max-w-7xl items-center gap-2 text-slate-400">
       <a href="/" class="hover:text-white transition">Home</a>
       <span>/</span>
-      <a href="blog.html" class="hover:text-white transition">Blog</a>
+      <a href="/blog" class="hover:text-white transition">Blog</a>
       <span>/</span>
       <span class="text-accent font-medium truncate">AI Lead Scoring Models</span>
     </div>
@@ -333,14 +297,14 @@
       <div class="mt-8 flex flex-wrap items-center justify-center gap-6 border-y border-white/10 py-4 text-xs text-slate-400 sm:text-sm">
         <div class="flex items-center gap-3">
           <img 
-            src="assets/ui/author.jpg" 
+            src="/assets/ui/author.jpg" 
             alt="Leonardo Puertas" 
             width="38" 
             height="38" 
             class="h-9 w-9 rounded-full object-cover ring-1 ring-accent"
           >
           <div class="text-left">
-            <span class="block font-bold text-white">By <a href="author-leonardo-puertas.html" class="hover:text-accent transition">Leonardo Puertas</a></span>
+            <span class="block font-bold text-white">By <a href="/author-leonardo-puertas" class="hover:text-accent transition">Leonardo Puertas</a></span>
             <span class="text-[11px] text-slate-400">Lead Enterprise Software Analyst & Founder</span>
           </div>
         </div>
@@ -386,17 +350,17 @@
             <span class="text-[11px] font-bold uppercase tracking-wider text-slate-400">Related Pipeline Guides</span>
             <ul class="mt-3 space-y-2 text-xs">
               <li>
-                <a href="blog-setup-b2b-sales-pipeline.html" class="text-slate-300 hover:text-accent transition">
+                <a href="/blog/setup-b2b-sales-pipeline" class="text-slate-300 hover:text-accent transition">
                   → Set Up a B2B Sales Pipeline from Scratch
                 </a>
               </li>
               <li>
-                <a href="blog-best-ai-cold-email-tools.html" class="text-slate-300 hover:text-accent transition">
+                <a href="/blog/best-ai-cold-email-tools" class="text-slate-300 hover:text-accent transition">
                   → Best AI Cold Email Tools & Deliverability
                 </a>
               </li>
               <li>
-                <a href="blog-sales-automation-reduce-churn.html" class="text-slate-300 hover:text-accent transition">
+                <a href="/blog/sales-automation-reduce-churn" class="text-slate-300 hover:text-accent transition">
                   → Sales Automation to Reduce Customer Churn
                 </a>
               </li>
@@ -419,7 +383,7 @@
             <div>
               <h4 class="font-display text-sm font-bold text-white uppercase tracking-wider">The "Activity ≠ Intent" Trap</h4>
               <p class="mt-1 text-xs sm:text-sm leading-relaxed text-slate-300">
-                In classic marketing automation (<a href="#hubspot-review" class="text-accent underline font-semibold hover:text-accent-hover">HubSpot</a>, Marketo), a university student downloading three PDF whitepapers receives 60 points and is routed immediately to a senior enterprise SDR as an "MQL". Meanwhile, a CTO comparing enterprise API rate limits on your docs page without filling out a form receives 0 points. Predictive AI solves this structural failure.
+                In classic marketing automation (<a href="/blog/setup-b2b-sales-pipeline" class="text-accent underline font-semibold hover:text-accent-hover">HubSpot</a>, Marketo), a university student downloading three PDF whitepapers receives 60 points and is routed immediately to a senior enterprise SDR as an "MQL". Meanwhile, a CTO comparing enterprise API rate limits on your docs page without filling out a form receives 0 points. Predictive AI solves this structural failure.
               </p>
             </div>
           </div>
@@ -630,7 +594,7 @@
                 <h4 class="font-display text-sm font-bold text-white">Firmographic & Technographic Fit (Static Heuristic)</h4>
               </div>
               <p class="mt-2 text-xs sm:text-sm text-slate-300">
-                Pulls real-time data from <a href="#apollo-review" class="text-accent underline font-semibold hover:text-accent-hover">Apollo</a> or Clearbit. Evaluates company headcount, verified funding rounds, geographic presence, and existing tech stack installations (e.g., whether they currently use Stripe, Salesforce, or Segment).
+                Pulls real-time data from <a href="/blog/best-ai-cold-email-tools" class="text-accent underline font-semibold hover:text-accent-hover">Apollo</a> or Clearbit. Evaluates company headcount, verified funding rounds, geographic presence, and existing tech stack installations (e.g., whether they currently use Stripe, Salesforce, or Segment).
               </p>
             </div>
 
@@ -650,7 +614,7 @@
                 <h4 class="font-display text-sm font-bold text-white">Third-Party Intent Signals (Dark Funnel Discovery)</h4>
               </div>
               <p class="mt-2 text-xs sm:text-sm text-slate-300">
-                Ingests intent topics from providers like <a href="#6sense-review" class="text-accent underline font-semibold hover:text-accent-hover">6sense</a>, Demandbase, or Bombora. Reveals when an entire company account is actively researching your category, reading competitor reviews on G2, or searching for alternatives across the broader B2B web before ever landing on your website. For building topical silos that capture this organic intent, see our guide on <a href="blog-build-topical-authority-ai.html" class="text-accent font-semibold hover:underline">how to build topical authority with AI writing tools</a>.
+                Ingests intent topics from providers like <a href="/blog/ai-lead-scoring-models" class="text-accent underline font-semibold hover:text-accent-hover">6sense</a>, Demandbase, or Bombora. Reveals when an entire company account is actively researching your category, reading competitor reviews on G2, or searching for alternatives across the broader B2B web before ever landing on your website. For building topical silos that capture this organic intent, see our guide on <a href="/blog/build-topical-authority-ai" class="text-accent font-semibold hover:underline">how to build topical authority with AI writing tools</a>.
               </p>
             </div>
           </div>
@@ -766,7 +730,7 @@
         <div class="rounded-2xl border border-white/10 glass-card p-6 sm:p-8">
           <div class="flex flex-col sm:flex-row items-center sm:items-start gap-6">
             <img 
-              src="assets/ui/author.jpg" 
+              src="/assets/ui/author.jpg" 
               alt="Leonardo Puertas" 
               width="80" 
               height="80" 
@@ -778,7 +742,7 @@
                   <h3 class="font-display text-lg font-bold text-white">Leonardo Puertas</h3>
                   <span class="text-xs text-accent font-medium">Lead Enterprise Software Analyst & Founder</span>
                 </div>
-                <a href="author-leonardo-puertas.html" class="rounded-lg border border-accent/40 bg-accent/10 px-3 py-1 text-xs font-bold text-accent hover:bg-accent hover:text-slate-950 transition">
+                <a href="/author-leonardo-puertas" class="rounded-lg border border-accent/40 bg-accent/10 px-3 py-1 text-xs font-bold text-accent hover:bg-accent hover:text-slate-950 transition">
                   View Author Profile →
                 </a>
               </div>
@@ -803,7 +767,7 @@
         <div class="md:col-span-4">
           <a href="/" class="flex items-center gap-3" aria-label="Detailed Review Footer Homepage">
             <img 
-              src="assets/ui/logo.jpg" 
+              src="/assets/ui/logo.jpg" 
               alt="Detailed Review Logo" 
               width="40" 
               height="40" 
@@ -839,9 +803,9 @@
           <h4 class="font-display text-sm font-bold uppercase tracking-wider text-white">Resources</h4>
           <ul class="mt-4 space-y-2.5 text-xs text-slate-400">
             <li><a href="/#rankings" class="transition hover:text-accent">2026 Rankings</a></li>
-            <li><a href="blog.html" class="transition hover:text-accent">Blog & Playbooks</a></li>
-            <li><a href="methodology.html" class="transition hover:text-accent">Testing Methodology</a></li>
-            <li><a href="author-leonardo-puertas.html" class="transition hover:text-accent">Editorial Team</a></li>
+            <li><a href="/blog" class="transition hover:text-accent">Blog & Playbooks</a></li>
+            <li><a href="/methodology" class="transition hover:text-accent">Testing Methodology</a></li>
+            <li><a href="/author-leonardo-puertas" class="transition hover:text-accent">Editorial Team</a></li>
           </ul>
         </nav>
 
@@ -849,11 +813,11 @@
         <nav class="md:col-span-3" aria-label="Legal & Company Links">
           <h4 class="font-display text-sm font-bold uppercase tracking-wider text-white">Detailed Review</h4>
           <ul class="mt-4 space-y-2.5 text-xs text-slate-400">
-            <li><a href="about.html" class="transition hover:text-accent">About Detailed Review</a></li>
-            <li><a href="contact.html" class="transition hover:text-accent">Contact Our Analysts</a></li>
-            <li><a href="affiliate-disclosure.html" class="transition hover:text-accent">Affiliate Disclosure</a></li>
-            <li><a href="privacy-policy.html" class="transition hover:text-accent">Privacy Policy</a></li>
-            <li><a href="terms-of-service.html" class="transition hover:text-accent">Terms of Service</a></li>
+            <li><a href="/about" class="transition hover:text-accent">About Detailed Review</a></li>
+            <li><a href="/contact" class="transition hover:text-accent">Contact Our Analysts</a></li>
+            <li><a href="/affiliate-disclosure" class="transition hover:text-accent">Affiliate Disclosure</a></li>
+            <li><a href="/privacy-policy" class="transition hover:text-accent">Privacy Policy</a></li>
+            <li><a href="/terms-of-service" class="transition hover:text-accent">Terms of Service</a></li>
           </ul>
         </nav>
 
